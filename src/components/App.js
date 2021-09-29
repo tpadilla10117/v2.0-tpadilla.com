@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
@@ -7,6 +7,15 @@ import { Landing, AboutMe} from './utils';
 import './App.css';
 
 function App() {
+
+
+/* State for Modals: */
+  const [modalVisibility, setModalVisibility] = useState(false);
+
+  const [activeProject, setActiveProject] = useState(null);
+
+
+
   return (
     <div>
       <div className="route-container">
@@ -14,7 +23,12 @@ function App() {
         {/* TODO: Landing Section */}
           <Route exact path="/">
           
-            <Landing />
+            <Landing 
+              modalVisibility={modalVisibility}
+              setModalVisibility={setModalVisibility}
+              activeProject={activeProject}
+              setActiveProject={setActiveProject}
+            />
 
           </Route>
 
