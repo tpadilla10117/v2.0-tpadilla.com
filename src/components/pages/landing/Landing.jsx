@@ -53,8 +53,8 @@ const Landing = (props) => {
                 }
             />
 
-        {/* The modal that appears when clicking a project card: */}
-
+        {/* TODO: The modal that appears when clicking a project card: */}
+{/* TODO: make ProjectPage and BulletList components */}
 
 
 
