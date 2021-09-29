@@ -1,9 +1,11 @@
 import React from 'react';
 
+import { SectionWrapper } from '../../utils';
+
 const Landing = (props) => {
     return (
         <div>
-
+<h1>Greetings from Layout</h1>
         </div>
     );
 };
