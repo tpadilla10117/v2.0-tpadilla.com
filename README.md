@@ -81,3 +81,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### `npm install react-transition-group`
 
 - Exposes simple components useful for defining entering and exiting transitions. React Transition Group is not an animation library like React-Motion, it does not animate styles by itself. Instead it exposes transition stages, manages classes and group elements and manipulates the DOM in useful ways, making the implementation of actual visual transitions much easier.
+
+### `npm install sass`
+
+- Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
+(https://sass-lang.com/documentation)
