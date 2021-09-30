@@ -24,7 +24,7 @@ export { default as LinkButton } from './layout/linkbutton/LinkButton.jsx';
 
 //Pages:
 
-export { default as Landing } from './pages/landing/landing.jsx';
+export { default as Landing } from './pages/landing/Landing.jsx';
 
 export { default as Developer } from './pages/developer/Developer.jsx';
 

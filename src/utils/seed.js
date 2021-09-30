@@ -1,7 +1,5 @@
 /* For default data to be used in project: */
 
-import React from 'react';
-
 import CrwnClothing from "../assets/images/crwn_clothing_landing.png";
 import Codalorians from "../assets/images/codalorians.png";
 import PixelDraw from "../assets/images/pixel_draw.png";

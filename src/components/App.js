@@ -31,7 +31,7 @@ function App() {
             <AboutMe />
           </Route>
 
-        {/* TODO: Developer Section */}
+        {/* TODO: Developer Section - styling */}
           <Route exact path="/developer">
           
             <Developer 
