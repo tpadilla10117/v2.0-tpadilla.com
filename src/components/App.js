@@ -22,8 +22,10 @@ function App() {
 
 
         {/* TODO: Landing Section */}
-        <Route exact path='/'>
-            <Landing />
+          <Route exact path='/'>
+            <CSSTransition>
+              <Landing />
+            </CSSTransition>
           </Route>
 
           {/* TODO: About Section */}

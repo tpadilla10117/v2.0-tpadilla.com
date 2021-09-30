@@ -1,8 +1,10 @@
 .landing-section {
-    display: flex;
-    flex-direction: column;
-    
+    width: 100%;
 
+    &:hover {
+        cursor: pointer;
+    }
+    
     div {
         display: flex;
         flex-direction: column;
@@ -11,12 +13,54 @@
     }
 
    
+
+
+    .landing-CardBox {
+        position: relative;
+        height: 300px;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        box-shadow: 0 0 20px #494f653b;
+        max-width: 100%;
+        width: 100%;
+
+        .landing-imgWrapper {
+            position: relative;
+            width: 100%;
+            
+
+
+            img {
+                max-width: 100%;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                image-rendering: auto;
+                image-rendering: crisp-edges;
+                /* image-rendering: pixelated; */
+                transition: transform 2s;
+            }
+        }
+
+        &:hover .landing-imgWrapper {
+            img {
+                transform: scale(1.2)
+                
+                
+            }
+        }
+/* TODO: Finish styling - add text overlay to image */
+        .landing-detailsBox {
+
+        }
+    
+    }
+
 }
 
-h1 {
-    color: red;
-}
-
-/* .landingImage-cardHead {
-    color: blue;
+/* .landing-section .landing-CardBox:hover .landing-imgWrapper img {
+    transform: scale(1.2);
 } */
+
+
