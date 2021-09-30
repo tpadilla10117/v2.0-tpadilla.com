@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SectionWrapper, CardWrapper, ProjectCard, ProjectPage } from '../../utils';
+import { SectionWrapper, CardWrapper, ProjectCard, ProjectPage, Modal } from '../../utils';
 import { projects } from '../../../utils/seed';
 
 const Landing = (props) => {
@@ -54,6 +54,27 @@ const Landing = (props) => {
             />
 
         {/* TODO: The modal that appears when clicking a project card: */}
+            {modalVisibility && 
+                <Modal onModalClose={() => setModalVisibility(false) }>
+                    <ProjectPage 
+                        title={activeProject.title}
+                        tech={activeProject.tech}
+                        img={activeProject.img}
+                        alt={activeProject.alt}
+                        description={activeProject.description}
+                        /* techHighlightsList={} */
+                    />
+
+
+
+                </Modal>
+            
+            }
+
+
+
+
+
 {/* TODO: make ProjectPage and BulletList components */}
 
 
