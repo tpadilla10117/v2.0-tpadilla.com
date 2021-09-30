@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import { Landing, AboutMe} from './utils';
+import { Developer, AboutMe, Landing, Ux, Contact, Resume} from './utils';
 import './App.css';
 
 function App() {
@@ -20,10 +20,21 @@ function App() {
     <div>
       <div className="route-container">
 
+
         {/* TODO: Landing Section */}
-          <Route exact path="/">
+        <Route exact path='/'>
+            <Landing />
+          </Route>
+
+          {/* TODO: About Section */}
+          <Route exact path='/about'>
+            <AboutMe />
+          </Route>
+
+        {/* TODO: Developer Section */}
+          <Route exact path="/developer">
           
-            <Landing 
+            <Developer 
               modalVisibility={modalVisibility}
               setModalVisibility={setModalVisibility}
               activeProject={activeProject}
@@ -32,21 +43,22 @@ function App() {
 
           </Route>
 
-        {/* TODO: About Section */}
-          <Route exact path='/about'>
-            <AboutMe />
-          </Route>
-
-        {/* TODO: Developer Section */}
-
 
         {/* TODO: UX Design Section */}
-
+          <Route exact path='/ux'>
+            <Ux />
+          </Route>
 
         {/* TODO: Contact Section */}
+          <Route exact path='/contact'>
+            <Contact />
+          </Route>
 
 
         {/* TODO: Resume Section */}
+         <Route exact path='/resume'>
+            <Resume />
+          </Route>
 
       </div>
 

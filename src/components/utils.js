@@ -13,16 +13,28 @@ export { default as ProjectCard } from './layout/projectcard/ProjectCard.jsx';
 
 export { default as ProjectPage } from './layout/projectpage/ProjectPage.jsx';
 
+export { default as BulletList } from './layout/bulletlist/BulletList.jsx';
+
+export { default as LinkBlock } from './layout/linkblock/LinkBlock.jsx';
+
+export { default as LinkButton } from './layout/linkbutton/LinkButton.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 
 //Pages:
 
-export { default as Landing } from './pages/landing/Landing.jsx';
+export { default as Landing } from './pages/landing/landing.jsx';
+
+export { default as Developer } from './pages/developer/Developer.jsx';
 
 export { default as AboutMe } from './pages/about/AboutMe.jsx';
 
+export { default as Ux } from './pages/ux/UX.jsx';
 
+export { default as Contact } from './pages/contact/Contact.jsx';
+
+export { default as Resume } from './pages/resume/Resume.jsx';
 
 
 /* -------------------------------------------------------------------------- */
