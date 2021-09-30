@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SectionWrapper, CardWrapper, ProjectCard } from '../../utils';
+import { SectionWrapper, CardWrapper, ProjectCard, ProjectPage } from '../../utils';
 import { projects } from '../../../utils/seed';
 
 const Landing = (props) => {
