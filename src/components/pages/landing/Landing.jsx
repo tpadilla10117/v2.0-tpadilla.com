@@ -2,6 +2,7 @@ import React from 'react';
 import "./Landing.scss";
 
 import hike from "../../../assets/images/hike.jpeg";
+import resume from "../../../assets/images/resume.png";
 
 const Landing = () => {
 
@@ -14,19 +15,23 @@ const Landing = () => {
         },
         {
             id: 2,
-            title: "Developer"
+            title: "Developer",
+            img: `${hike}`
         },
         {
             id: 3,
-            title: "UX Designer"
+            title: "UX Designer",
+            img: `${hike}`
         },
         {
             id: 4,
-            title: "Contact"
+            title: "Contact",
+            img: `${hike}`
         },
         {
             id: 5,
-            title: "Resume"
+            title: "Resume",
+            img: `${resume}`
         }
       ];
 
