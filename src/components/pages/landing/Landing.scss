@@ -46,8 +46,7 @@
         &:hover .landing-imgWrapper {
             img {
                 transform: scale(1.2)
-                
-                
+                     
             }
         }
 /* TODO: Finish styling - add text overlay to image */
@@ -63,4 +62,47 @@
     transform: scale(1.2);
 } */
 
+@media only screen and (min-device-width: 280px) and (max-width: 480px) {
 
+}
+
+@media only screen and (min-device-width: 375px)and (max-width: 768px) {
+    
+   
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+
+}
+
+/* TODO: Finish up the responsive layout: */
+@media only screen and (min-device-width: 1000px) /* and (max-device-width: 1366px) */ {
+    .landing-section {
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+
+
+        .landing-CardBox {
+            height: 100vh;
+
+            .landing-imgWrapper {
+
+                img {
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+    
+        }
+        
+    }
+}
+
+/* @media only screen and (min-device-width: 1366px) and (max-device-width: 2500px) {
+
+} */
