@@ -39,8 +39,7 @@ const Landing = () => {
 
     return (
         <main>
-            <h1>Greetings from Landing</h1>
-
+        
             {/* TODO: Style the divs */}
 
             <section className="landing-section">
@@ -52,13 +51,13 @@ const Landing = () => {
                                 <img src={landingImage.img} alt="" />
                             </div>
                     
-                            <div className="landing-detailsBox"> 
+                            {/* <div className="landing-detailsBox">  */}
                                 <div className="landing-contentBox">
                                     <p className="landing-cardText">{landingImage.title}</p>
                                     
                                 </div>
 
-                            </div>
+                            {/* </div> */}
             
                         </div>
                     )

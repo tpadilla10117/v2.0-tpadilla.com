@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import { Developer, AboutMe, Landing, Ux, Contact, Resume} from './utils';
+import { Developer, AboutMe, Landing, Ux, Contact, Resume, Navbar} from './utils';
 import './App.css';
 
 function App() {
@@ -20,6 +20,8 @@ function App() {
     <div>
       <div className="route-container">
 
+        {/* TODO: Need to make Navbar vertical */}
+        <Navbar />
 
         {/* TODO: Landing Section */}
           <Route exact path='/'>

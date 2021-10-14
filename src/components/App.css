@@ -19,5 +19,17 @@
 } */
 
 
+/* TODO: Navbar Breakpoints: */
+@media only screen and (min-device-width: 1000px) /* and (max-device-width: 1366px) */ {
+
+  .route-container {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    text-align: center;
+    
+  }
+
+}
+
 
 
