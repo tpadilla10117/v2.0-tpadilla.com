@@ -2,7 +2,9 @@ import React from 'react';
 import "./Landing.scss";
 
 import hike from "../../../assets/images/hike.jpeg";
-import resume from "../../../assets/images/resume.png";
+import turtle from "../../../assets/images/turtleBeach.jpg"
+import fort1 from "../../../assets/images/FortBragg1.jpeg"
+/* import resume from "../../../assets/images/resume.png"; */
 
 const Landing = () => {
 
@@ -16,22 +18,22 @@ const Landing = () => {
         {
             id: 2,
             title: "Developer",
-            img: `${hike}`
+            img: `${fort1}`
         },
         {
             id: 3,
             title: "UX Designer",
-            img: `${hike}`
+            img: `${fort1}`
         },
         {
             id: 4,
             title: "Contact",
-            img: `${hike}`
+            img: `${turtle}`
         },
         {
             id: 5,
             title: "Resume",
-            img: `${resume}`
+            img: `${hike}`
         }
       ];
 
