@@ -1,33 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Navbar.scss';
 
 import NavIcon from '../../../assets/icons/navIcon.svg';
 import Placeholder from '../../../assets/icons/placeholder.png';
 
-const Navbar = () => {
+import { NavbarData } from '../../../utils/seed';
 
-    const navOptions = [
-        {
-          id: 1,
-          title: "About",
-        },
-        {
-            id: 2,
-            title: "Developer",
-        },
-        {
-            id: 3,
-            title: "UX Designer",
-        },
-        {
-            id: 4,
-            title: "Contact",
-        },
-        {
-            id: 5,
-            title: "Resume",
-        }
-      ];
+const Navbar = (props) => {
+
+   const { navToggle } = props;
+   const [scrollNav, setScrollNav] = useState(false);
+   const [ navLinkState, changeNavLinkState ] = useState(NavbarData);
 
 /* TODO: This is going to be for when you click on the hamburger icon */
     return (
@@ -36,17 +19,9 @@ const Navbar = () => {
             {/* Logo: */}
 
 
-        {/* TODO: This data goes in the overlay for the nav */}
-
-           {/*  {navOptions.map( navItems => {
-                return (
-                    <ul id={navItems.id} className="navItems" key={navItems.id} >
-                        <li>{navItems.title}</li>
-                    </ul>
-                )
-            })} */}
 
             <img className="mobile-icon" src={NavIcon} alt="" />
+            
             {/* <img className="nav-logo" src={Placeholder} alt="" /> */}
 
 

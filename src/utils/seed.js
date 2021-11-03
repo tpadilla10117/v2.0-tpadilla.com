@@ -11,6 +11,61 @@ import Amazon from "../assets/images/Amazon.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
 import Netflix from "../assets/images/Netflix.png";
 
+export const NavbarData = [
+
+  {
+    title: 'Home',
+    path: '/',
+    /* icon: <AiIcons.AiFillHome />, */
+    cName: 'nav-text',
+    activeObject: null,
+    id: 1
+},
+
+{
+    title: 'About',
+    path: '/about',
+    /* icon: <AiIcons.AiOutlineUser />, */
+    cName: 'nav-text',
+    activeObject: null,
+    id: 2
+},
+
+ {
+    title: 'Developer',
+    path: '/developer',
+   /*  icon: <FaIcons.FaProjectDiagram />, */
+    cName: 'nav-text',
+    id: 3
+},
+{
+    title: 'UX',
+    path: '/ux',
+    /* icon: <IoIcons.IoMdPhonePortrait />, */
+    cName: 'nav-text',
+    activeObject: null,
+    id: 4
+},
+{
+    title: 'Contact',
+    path: '/contact',
+    /* icon: <AiIcons.AiOutlineFilePdf />, */
+    cName: 'nav-text',
+    activeObject: null,
+    id: 5
+},
+
+{
+  title: 'Resume',
+  path: '/resume',
+  /* icon: <AiIcons.AiOutlineFilePdf />, */
+  cName: 'nav-text',
+  activeObject: null,
+  id: 6
+}
+
+]
+
 export const projects = [
     {
       id: 1,
