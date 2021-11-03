@@ -1,6 +1,9 @@
 import React from 'react';
 import './Navbar.scss';
 
+import NavIcon from '../../../assets/icons/navIcon.svg';
+import Placeholder from '../../../assets/icons/placeholder.png';
+
 const Navbar = () => {
 
     const navOptions = [
@@ -35,13 +38,16 @@ const Navbar = () => {
 
         {/* TODO: This data goes in the overlay for the nav */}
 
-            {/* {navOptions.map( navItems => {
+           {/*  {navOptions.map( navItems => {
                 return (
                     <ul id={navItems.id} className="navItems" key={navItems.id} >
                         <li>{navItems.title}</li>
                     </ul>
                 )
             })} */}
+
+            <img className="mobile-icon" src={NavIcon} alt="" />
+            {/* <img className="nav-logo" src={Placeholder} alt="" /> */}
 
 
         </nav>

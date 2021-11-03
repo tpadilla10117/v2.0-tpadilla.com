@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Sidebar } from '../../utils';
+import "./Header.scss";
 
 /* Header Component is to contain the navigation components: */
 
@@ -15,10 +16,10 @@ import { Navbar, Sidebar } from '../../utils';
         return (
             <div id="header-wrapper">
                 <header className="header">
-                   {/* TODO: Nav component: */}
-                    <Navbar />
-                   {/* TODO: Sidebar component: */}
-                    <Sidebar />
+                   
+                    <Navbar isOpen={isOpen} navToggle={navToggle} />
+                   
+                    <Sidebar isOpen={isOpen} navToggle={navToggle} />
 
                 </header>
             </div>

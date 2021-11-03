@@ -17,7 +17,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="app-container">
 
       <CSSTransition 
       timeout={300}>
@@ -28,7 +28,7 @@ function App() {
       <div className="route-container">
 
         {/* TODO: Need to make Navbar vertical */}
-        <Navbar />
+        {/* <Navbar /> */}
 
         {/* TODO: Landing Section */}
           <Route exact path='/'>
