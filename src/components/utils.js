@@ -3,6 +3,10 @@
 // Layout:
 export { default as Navbar } from './layout/navbar/Navbar.jsx';
 
+export { default as Sidebar } from './layout/sidebar/Sidebar.jsx'; 
+
+export { default as Header } from './layout/header/Header.jsx';
+
 export { default as SectionWrapper } from './layout/sectionwrapper/SectionWrapper.jsx';
 
 export { default as Modal } from './layout/modal/Modal.jsx';

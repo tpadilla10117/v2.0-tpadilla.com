@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import { Developer, AboutMe, Landing, Ux, Contact, Resume, Navbar} from './utils';
+import { Developer, AboutMe, Landing, Ux, Contact, Resume, Navbar, Header} from './utils';
 import './App.css';
 
 function App() {
@@ -18,6 +18,13 @@ function App() {
 
   return (
     <div>
+
+      <CSSTransition 
+      timeout={300}>
+        <Header/>
+      </CSSTransition>
+
+
       <div className="route-container">
 
         {/* TODO: Need to make Navbar vertical */}

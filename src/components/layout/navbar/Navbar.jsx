@@ -29,13 +29,21 @@ const Navbar = () => {
 /* TODO: This is going to be for when you click on the hamburger icon */
     return (
         <nav className="navbar">
-            {navOptions.map( navItems => {
+
+            {/* Logo: */}
+
+
+        {/* TODO: This data goes in the overlay for the nav */}
+
+            {/* {navOptions.map( navItems => {
                 return (
                     <ul id={navItems.id} className="navItems" key={navItems.id} >
                         <li>{navItems.title}</li>
                     </ul>
                 )
-            })}
+            })} */}
+
+
         </nav>
     );
 };
