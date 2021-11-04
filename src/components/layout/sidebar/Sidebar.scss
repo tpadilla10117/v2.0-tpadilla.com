@@ -17,7 +17,7 @@
     background: transparent;
     font-size: 2rem;
     cursor: pointer;
-    outline: nine;
+    /* outline: nine; */
 }
 
 .close-icon {
@@ -55,17 +55,17 @@ li {
     text-decoration: none;
     list-style: none;
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-size: 1.5em;
     font-family: 'Otomanopee One', sans-serif;
     /* font-weight: 500; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 20px);
+    grid-template-rows: repeat(6, 15px);
     text-align: center;
 
     &:hover{
-        color: var(--main-btn-color);
+        color: red;
         transition: color 600ms ease 0s;
     }
 }

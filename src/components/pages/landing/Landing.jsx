@@ -6,38 +6,9 @@ import turtle from "../../../assets/images/turtleBeach.jpg"
 import fort1 from "../../../assets/images/FortBragg1.jpeg"
 /* import resume from "../../../assets/images/resume.png"; */
 
+import { LandingOptions } from '../../../utils/seed';
+
 const Landing = () => {
-
-
-    const landingOptions = [
-        {
-          id: 1,
-          title: "About",
-          img: `${hike}`
-        },
-        {
-            id: 2,
-            title: "Developer",
-            img: `${fort1}`
-        },
-        {
-            id: 3,
-            title: "UX Designer",
-            img: `${fort1}`
-        },
-        {
-            id: 4,
-            title: "Contact",
-            img: `${turtle}`
-        },
-        {
-            id: 5,
-            title: "Resume",
-            img: `${hike}`
-        }
-      ];
-
-
 
     return (
         <main>
@@ -46,20 +17,22 @@ const Landing = () => {
 
             <section className="landing-section">
                 
-                {landingOptions.map(landingImage => {
+                {LandingOptions.map(landingImage => {
                     return (
                         <div id={landingImage.id} key={landingImage.id} className="landing-CardBox">
+                            <a href={landingImage.path} >
                             <div className="landing-imgWrapper">
                                 <img src={landingImage.img} alt="" />
                             </div>
                     
                             {/* <div className="landing-detailsBox">  */}
                                 <div className="landing-contentBox">
-                                    <p className="landing-cardText">{landingImage.title}</p>
-                                    
+                                    <p className="landing-cardText">{landingImage.title}</p>        
                                 </div>
 
                             {/* </div> */}
+
+                            </a>
             
                         </div>
                     )

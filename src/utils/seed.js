@@ -10,6 +10,9 @@ import AirBNB from "../assets/images/AirBNB.png";
 import Amazon from "../assets/images/Amazon.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
 import Netflix from "../assets/images/Netflix.png";
+import hike from "../assets/images/hike.jpeg";
+import turtle from "../assets/images/turtleBeach.jpg"
+import fort1 from "../assets/images/FortBragg1.jpeg"
 
 export const NavbarData = [
 
@@ -19,7 +22,7 @@ export const NavbarData = [
     /* icon: <AiIcons.AiFillHome />, */
     cName: 'nav-text',
     activeObject: null,
-    id: 1
+    id: 1,
 },
 
 {
@@ -28,15 +31,18 @@ export const NavbarData = [
     /* icon: <AiIcons.AiOutlineUser />, */
     cName: 'nav-text',
     activeObject: null,
-    id: 2
+    id: 2,
+    img: `${hike}`
 },
 
  {
     title: 'Developer',
     path: '/developer',
    /*  icon: <FaIcons.FaProjectDiagram />, */
+    activeObject: null,
     cName: 'nav-text',
-    id: 3
+    id: 3,
+    img: `${fort1}`
 },
 {
     title: 'UX',
@@ -44,7 +50,8 @@ export const NavbarData = [
     /* icon: <IoIcons.IoMdPhonePortrait />, */
     cName: 'nav-text',
     activeObject: null,
-    id: 4
+    id: 4,
+    img: `${fort1}`
 },
 {
     title: 'Contact',
@@ -52,7 +59,8 @@ export const NavbarData = [
     /* icon: <AiIcons.AiOutlineFilePdf />, */
     cName: 'nav-text',
     activeObject: null,
-    id: 5
+    id: 5,
+    img: `${turtle}`
 },
 
 {
@@ -61,7 +69,60 @@ export const NavbarData = [
   /* icon: <AiIcons.AiOutlineFilePdf />, */
   cName: 'nav-text',
   activeObject: null,
-  id: 6
+  id: 6,
+  img: `${hike}`
+}
+
+]
+
+export const LandingOptions = [
+
+{
+    title: 'About',
+    path: '/about',
+    /* icon: <AiIcons.AiOutlineUser />, */
+    cName: 'nav-text',
+    activeObject: null,
+    id: 2,
+    img: `${hike}`
+},
+
+ {
+    title: 'Developer',
+    path: '/developer',
+   /*  icon: <FaIcons.FaProjectDiagram />, */
+    activeObject: null,
+    cName: 'nav-text',
+    id: 3,
+    img: `${fort1}`
+},
+{
+    title: 'UX',
+    path: '/ux',
+    /* icon: <IoIcons.IoMdPhonePortrait />, */
+    cName: 'nav-text',
+    activeObject: null,
+    id: 4,
+    img: `${fort1}`
+},
+{
+    title: 'Contact',
+    path: '/contact',
+    /* icon: <AiIcons.AiOutlineFilePdf />, */
+    cName: 'nav-text',
+    activeObject: null,
+    id: 5,
+    img: `${turtle}`
+},
+
+{
+  title: 'Resume',
+  path: '/resume',
+  /* icon: <AiIcons.AiOutlineFilePdf />, */
+  cName: 'nav-text',
+  activeObject: null,
+  id: 6,
+  img: `${hike}`
 }
 
 ]
