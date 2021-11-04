@@ -20,7 +20,7 @@ const Navbar = (props) => {
 
 
 
-            <img className="mobile-icon" src={NavIcon} alt="" />
+            <img className="mobile-icon" src={NavIcon} alt="" onClick={navToggle}/>
             
             {/* <img className="nav-logo" src={Placeholder} alt="" /> */}
 
