@@ -1,11 +1,5 @@
 import React from 'react';
 import "./Landing.scss";
-
-import hike from "../../../assets/images/hike.jpeg";
-import turtle from "../../../assets/images/turtleBeach.jpg"
-import fort1 from "../../../assets/images/FortBragg1.jpeg"
-/* import resume from "../../../assets/images/resume.png"; */
-
 import { LandingOptions } from '../../../utils/seed';
 
 const Landing = () => {
@@ -13,7 +7,7 @@ const Landing = () => {
     return (
         <main>
         
-            {/* TODO: Style the divs */}
+            {/* TODO: Style the divs, Routing transitions */}
 
             <section className="landing-section">
                 
