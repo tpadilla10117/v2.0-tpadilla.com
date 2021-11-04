@@ -18,8 +18,7 @@ import "./Header.scss";
                 {/* <header className="header"> */}
                    
                     <Navbar isOpen={isOpen} navToggle={navToggle} />
-                   
-                   {/*  <Sidebar isOpen={isOpen} navToggle={navToggle} /> */}
+                    <Sidebar isOpen={isOpen} navToggle={navToggle} />
 
                 {/* </header> */}
             </div>

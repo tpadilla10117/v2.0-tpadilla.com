@@ -20,6 +20,10 @@
     outline: nine;
 }
 
+.close-icon {
+    color: #fff;
+}
+
 .sidebar-wrapper {
     color: #fff;
 }
@@ -65,3 +69,23 @@ li {
         transition: color 600ms ease 0s;
     }
 }
+
+/* THIS IS WHERE THE ANIMATION FOR SIDEBAR IS APPLIED */
+
+.sideBarTransition-enter {
+    opacity: 0;
+    transform: scale(1);
+  }
+  .sideBarTransition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .sideBarTransition-exit {
+    opacity: 1;
+  }
+  .sideBarTransition-exit-active {
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
