@@ -5,4 +5,10 @@
     position: fixed;
     /* display: flex;  */
     z-index: 999;
+
+    /* //TODO: This is new - deleted if ruins hamburger nav */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
