@@ -14,7 +14,7 @@ import "./Header.scss";
 
 
         return (
-            <div id="header-wrapper">
+            <div className="header-wrapper">
                 {/* <header className="header"> */}
                    
                     <Navbar isOpen={isOpen} navToggle={navToggle} />

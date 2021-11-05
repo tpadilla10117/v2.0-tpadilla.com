@@ -20,6 +20,9 @@ ul {
   justify-content: center;
   align-items: flex-end;
   padding: 30px;
+  top: 0px;
+  left: 0px;
+  /* position: fixed; */
 }
 
 .mobile-icon {
@@ -28,6 +31,18 @@ ul {
   max-width: 100%;
   height: 15px;
   
+}
+
+.main-nav-item {
+  /* s */
+ 
+}
+
+.main-nav-item > li {
+  /* position: absolute; */
+  color: black;
+  transform: rotate(-90deg);
+  /* align-items: center; */
 }
 
 /* .nav-logo {
