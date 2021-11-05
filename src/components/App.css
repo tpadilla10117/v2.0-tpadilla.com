@@ -17,9 +17,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 } */
-.app-container {
-  z-index: 0;
-}
+
+/* .app-container {
+  z-index: 1;
+} */
 
 .route-container {
   width: 100%;
