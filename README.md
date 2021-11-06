@@ -91,3 +91,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - A simple JavaScript utility for conditionally joining classNames together.
 (https://www.npmjs.com/package/classnames)
+
+### `npm i react-icons`
+
+- Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
