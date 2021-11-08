@@ -70,7 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-## Installation:
+## Integrations, Tools, & Libraries:
 
 ### `npm install dotenv`
 
@@ -95,3 +95,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### `npm i react-icons`
 
 - Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+
+### `npm i emailjs.com`
+
+- Email.js (email server provider library)
