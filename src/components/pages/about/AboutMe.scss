@@ -140,6 +140,19 @@
         overflow-x: hidden;
         overflow-y: auto;
 
+        h1 {
+            font-family: 'Otomanopee One', sans-serif;
+        //TODO: Need to define the variable in SCSS based in First Portfolio:
+            /* color: var(--sec-bg-color); */
+        }
+
+        h3 {
+            display: flex;
+            text-align: center;
+            font-family: 'Otomanopee One', sans-serif;
+            color: var(--sec-bg-color);
+        }
+
         p {
             font-family: 'Amatic SC', sans-serif;
             font-weight: 300;
@@ -161,6 +174,93 @@
               width: 100%;
             }
           }
+
+        .links-about {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 1rem;
+            margin-top: 2rem;
+            position: relative;
+
+
+            a {
+                display: block;
+                width: 120px;
+                height: 50px;
+                text-decoration: none;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 3px;
+                color: #f0e9dc;
+
+                &:nth-child(1) {
+                    &:hover {
+                        /* color: var(--main-btn-color); */
+                        color: green;
+                        transition: color 500ms ease .15s;
+                        animation-name: scale;
+                        animation-duration: .4s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }                    
+                }
+
+                &:nth-child(2) {
+                    &:hover {
+                        /* color: var(--main-btn-color); */
+                        color: green;
+                        transition: color 500ms ease .15s;
+                        animation-name: scale;
+                        animation-duration: 4s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+                }
+
+                &:nth-child(3) {
+                    &:hover {
+                        /* color: var(--main-btn-color); */
+                        color: green;
+                        transition: color 500ms ease .15s;
+                        animation-name: scale;
+                        animation-duration: 4s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+                }
+
+                &:nth-child(4) {
+                    &:hover {
+                        /* color: var(--main-btn-color); */
+                        color: green;
+                        transition: color 500ms ease .15s;
+                        animation-name: scale;
+                        animation-duration: 4s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+                }
+
+                @keyframes scale {
+                    0% {
+                        transform: scale(1.5);
+                    }
+                    25% {
+                        transform: scale(1.5);
+                    }
+                    75% {
+                        transform: scale(1.5);
+                    }
+                    100% {
+                        transform: scale(1.5);
+                    }
+                }
+                
+            }
+        }
+
+        
     }
 
 /* ------------------------------------------------------------------------------- */
