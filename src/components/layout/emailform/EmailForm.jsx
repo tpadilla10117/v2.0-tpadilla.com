@@ -33,10 +33,17 @@ const EmailForm = () => {
                 <input type="text" placeholder="Subject" name="user_subject" />
                 <input type="text" placeholder="Email" name="user_email" />
                 <textarea rows="5" placeholder="Message" name="message" /* style={ {backgroundColor: darkMode && "#333"}} *//>
-        
+            {!emailSent ? 
                 <button className="contact-button">
-                    <img className="formBtn-img" src={paperPlane} alt=""/>{!emailSent ? "Submit" : emailSent && buttonText}
-                </button>
+                    <img className="formBtn-img" src={paperPlane} alt=""/>{/* {!emailSent ? "Submit" : emailSent && buttonText} */}{buttonText}
+                </button> 
+                
+                : 
+                
+                <p>{emailSent && buttonText}</p>
+        
+            }
+                
                 
             </form>
         
