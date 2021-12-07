@@ -11,8 +11,13 @@ import Amazon from "../assets/images/Amazon.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
 import Netflix from "../assets/images/Netflix.png";
 import hike from "../assets/images/hike.jpeg";
-import turtle from "../assets/images/turtleBeach.jpg"
-import fort1 from "../assets/images/FortBragg1.jpeg"
+/* import turtle from "../assets/images/turtleBeach.jpg";
+import fort1 from "../assets/images/FortBragg1.jpeg"; */
+import keyboard from '../assets/images/keyboard.jpg';
+/* import wireframes from '../assets/images/wireframes.jpg'; */
+import ux from '../assets/images/ux.jpg';
+import greeting from '../assets/images/greeting.jpg';
+import resume from '../assets/images/resume.jpg';
 
 export const NavbarData = [
 
@@ -42,7 +47,7 @@ export const NavbarData = [
     activeObject: null,
     cName: 'nav-text',
     id: 3,
-    img: `${fort1}`
+    img: `${keyboard}`
 },
 {
     title: 'UX',
@@ -51,7 +56,7 @@ export const NavbarData = [
     cName: 'nav-text',
     activeObject: null,
     id: 4,
-    img: `${fort1}`
+    img: `${ux}`
 },
 {
     title: 'Contact',
@@ -60,7 +65,7 @@ export const NavbarData = [
     cName: 'nav-text',
     activeObject: null,
     id: 5,
-    img: `${turtle}`
+    img: `${greeting}`
 },
 
 {
@@ -70,7 +75,7 @@ export const NavbarData = [
   cName: 'nav-text',
   activeObject: null,
   id: 6,
-  img: `${hike}`
+  img: `${resume}`
 }
 
 ]
@@ -94,7 +99,7 @@ export const LandingOptions = [
     activeObject: null,
     cName: 'nav-text',
     id: 3,
-    img: `${fort1}`
+    img: `${keyboard}`
 },
 {
     title: 'UX',
@@ -103,7 +108,7 @@ export const LandingOptions = [
     cName: 'nav-text',
     activeObject: null,
     id: 4,
-    img: `${fort1}`
+    img: `${ux}`
 },
 {
     title: 'Contact',
@@ -112,7 +117,7 @@ export const LandingOptions = [
     cName: 'nav-text',
     activeObject: null,
     id: 5,
-    img: `${turtle}`
+    img: `${greeting}`
 },
 
 {
@@ -122,7 +127,7 @@ export const LandingOptions = [
   cName: 'nav-text',
   activeObject: null,
   id: 6,
-  img: `${hike}`
+  img: `${resume}`
 }
 
 ]
