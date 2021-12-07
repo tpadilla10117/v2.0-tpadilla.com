@@ -329,3 +329,28 @@ export const projects = [
     },
     
   ]
+
+/* Data for carousel in AboutMe.jsx: */
+  export const carouselData = [
+    {
+        image: 'https://images.unsplash.com/photo-1620165366489-d08eff58ccf5?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1636888302671-de09823cddac?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+    },
+    {
+        image: 'https://images.unsplash.com/photo-1636844799799-fb41e4dc62ee?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+    }
+  ]
+
+  export const carouselIndicatorData = [
+      {
+          id: 0
+      },
+      {
+          id: 1
+      },
+      {
+          id: 2
+      }
+  ];

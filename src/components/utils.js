@@ -25,6 +25,8 @@ export { default as LinkBlock } from './layout/linkblock/LinkBlock.jsx';
 
 export { default as LinkButton } from './layout/linkbutton/LinkButton.jsx';
 
+export  { default as Carousel } from './layout/carousel/Carousel.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 

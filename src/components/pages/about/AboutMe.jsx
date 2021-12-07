@@ -2,8 +2,11 @@ import React from 'react';
 import './AboutMe.scss';
 import Trin from '../../../assets/images/trin.jpg';
 import { SiGithub, SiLinkedin, /* SiInstagram, SiFacebook, */ SiBehance, SiTwitter  } from "react-icons/si";
+import { Carousel } from '../../utils';
+import { carouselData } from '../../../utils/seed';
 
 const AboutMe = (props) => {
+
     return (
         <div id="mainPage-wrapper">
             <div className="bio-wrapper">
@@ -48,9 +51,11 @@ const AboutMe = (props) => {
 
             </div>
 
-            <div className="container">
+            <Carousel slides={carouselData} />
 
-            </div>
+            {/* <div className="container">
+
+            </div> */}
 
         </div>
     );
