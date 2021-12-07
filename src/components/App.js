@@ -28,6 +28,7 @@ function App() {
       <div className="route-container">
 
         {/* TODO: Need to make Navbar vertical */}
+        {/* TODO: Can't make the mobile icon appear because it exists in this component - need to unmount component, then render a different one, also compensate for the grid of this overall parent container */}
         {/* <Navbar /> */}
 
         {/* TODO: Landing Section */}
