@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './Navbar.scss';
 
 import NavIcon from '../../../assets/icons/navIcon.svg';
+import googleMenu from '../../../assets/icons/googlemenu.svg';
 import Placeholder from '../../../assets/icons/placeholder.png';
 import { Link } from 'react-router-dom';
 import { NavbarData } from '../../../utils/seed';
@@ -31,7 +32,7 @@ const Navbar = (props) => {
                             })}
             </div>
             <div className="mobile-icon-container">
-                <img className="mobile-icon" src={NavIcon} alt="" onClick={navToggle}/>
+                <img className="mobile-icon" src={googleMenu} alt="" onClick={navToggle}/>
             </div>
             
             {/* <img className="nav-logo" src={Placeholder} alt="" /> */}

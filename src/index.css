@@ -18,3 +18,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+
+  --gray-primary: #C4C4C4;
+  --main-bg-color: #F0E9DC; /* Alabaster */
+  --sec-bg-color: #07678E; /* Blue Sapphire */
+  --main-btn-color: #2DBCB4; /* Tiffany Blue */
+  --neutral-color: #12130F; /* Smoky Black */
+  --misc-color: #BF4E30; /* Vermillion */
+  --txt-color: #2c426a;
+  }
