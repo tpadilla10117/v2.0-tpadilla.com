@@ -1,3 +1,68 @@
+# App Description
+
+- The second version of my personal portfolio
+
+## Deployment:
+
+N/A
+
+<!-- ## Usage Instructions:
+
+- 1) In the searchbar, type in the name of a city who's conditions you wish to view.
+- 2) Click "return" or "enter" depending on the machine you're using.
+- 3) If city exists within dataset provided by OpenWeather API { https://openweathermap.org/api }, results will be displayed in the User Interface (UI)
+- 4) View Results! -->
+
+## Tech Stack:
+
+- Node.js, JS, React.js, HTML, CSS, SASS, GoogleIcons
+
+## Limitations & Future Iterations:
+
+- As of 11/12/21 - Integrate a shopping cart for an e-commerce experience
+- * Need to create a contact form using email.js
+- Consider creating additional routes
+
+## Integrations, Tools, & Libraries:
+
+### `npm install dotenv`
+
+- Installed dotenv for load env. variables from .env into process.env
+
+### `npm install react-router-dom`
+
+### `npm install react-transition-group`
+
+- Exposes simple components useful for defining entering and exiting transitions. React Transition Group is not an animation library like React-Motion, it does not animate styles by itself. Instead it exposes transition stages, manages classes and group elements and manipulates the DOM in useful ways, making the implementation of actual visual transitions much easier.
+
+<!-- ### `npm install sass`
+
+- Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
+(https://sass-lang.com/documentation) -->
+
+### `npm install classnames`
+
+- A simple JavaScript utility for conditionally joining classNames together.
+(https://www.npmjs.com/package/classnames)
+
+### `npm i react-icons`
+
+- Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+
+### `npm i emailjs.com`
+
+- Email.js (email server provider library)
+
+### `npm i styled-components`
+
+(https://styled-components.com/docs/basics#getting-started)
+
+### `npm i react-scroll`
+
+- React component for animating vertical scrolling
+- (https://www.npmjs.com/package/react-scroll)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,34 +133,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-## Integrations, Tools, & Libraries:
-
-### `npm install dotenv`
-
-- Installed dotenv for load env. variables from .env into process.env
-
-### `npm install react-router-dom`
-
-### `npm install react-transition-group`
-
-- Exposes simple components useful for defining entering and exiting transitions. React Transition Group is not an animation library like React-Motion, it does not animate styles by itself. Instead it exposes transition stages, manages classes and group elements and manipulates the DOM in useful ways, making the implementation of actual visual transitions much easier.
-
-### `npm install sass`
-
-- Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
-(https://sass-lang.com/documentation)
-
-### `npm install classnames`
-
-- A simple JavaScript utility for conditionally joining classNames together.
-(https://www.npmjs.com/package/classnames)
-
-### `npm i react-icons`
-
-- Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
-
-### `npm i emailjs.com`
-
-- Email.js (email server provider library)
