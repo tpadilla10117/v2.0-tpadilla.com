@@ -40,7 +40,8 @@
       /* grid-template-columns: 1fr 15fr; */
       grid-template-columns: 10vw auto;
       /* text-align: center; */
-      background-color: red;
+      /* background-color: red; */
+      background-color: #101522;
       
     }
   
