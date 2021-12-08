@@ -32,6 +32,7 @@ const Carousel = ( {slides} ) => {
         setCurrent(current === length - 1 ? 0 : current + 1);
     };
 
+/* TODO: Need to use this function for arrows on the carousel: */
     const previousSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }   
@@ -39,8 +40,6 @@ const Carousel = ( {slides} ) => {
     /* console.log("Here is the current slide: ", current) */
     return (
         <>
-
-             {/* TODO: Putting the image carousel here: */}
              <section id="carousel-wrapper">
                 {/* Arrow */}
                 {/* Arrow */}
@@ -62,7 +61,6 @@ const Carousel = ( {slides} ) => {
                             <button id="carousel-btn-indicator" className={index === current ? 'indicator active' : 'indicator'} key={index} onClick={nextSlide}/>
                         )
                     })}
-            
                 </div>
 
             </section>
