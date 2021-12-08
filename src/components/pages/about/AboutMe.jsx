@@ -36,8 +36,13 @@ const AboutMe = (props) => {
                 </div>
 
                 <div className="sideBio">
-                    <h1>Jr Full Stack UX Engineer</h1><br/>
+                    <h1 className="sideBio-heading1">Jr Full Stack UX Engineer</h1><br/>
                     <p>I'm a Jack-of-All-Trades: "Master of None though oftentimes better than a Master of One" type who's dedicated his life to both learning and specializing in the following trades: Full Stack Web-Development and UX Design.  I find myself fascinated with both the creative arts and problem solving.  I have a knack for rapid ideation and creativity in each area of focus.  Users experience web-applications every day, and one of my many responsibilities is to ensure those user experiences are profound, memorable, and intuitive (to name a few).  Whether behind pen & paper, Figma, or VS Code, it's my duty to convey these experiences in a manner that users will enjoy!  Get to know a bit more about me and my work below through my socials below!   </p>
+                    <br/>
+                    <h2 className="sideBio-heading2">Going With the Flow</h2>
+                    <br/>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
 
                     <div className="links-about">
                                 <a href="https://github.com/tpadilla10117" className="github">{<SiGithub size={45}/>}</a>

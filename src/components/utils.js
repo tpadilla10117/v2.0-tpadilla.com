@@ -27,6 +27,8 @@ export { default as LinkButton } from './layout/linkbutton/LinkButton.jsx';
 
 export  { default as Carousel } from './layout/carousel/Carousel.jsx';
 
+export { default as BlueBg } from './layout/BlueBgSection/BlueBg.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 
