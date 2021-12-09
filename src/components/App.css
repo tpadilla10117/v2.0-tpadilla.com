@@ -18,9 +18,10 @@
   }
 } */
 
-/* .app-container {
-  z-index: 1;
-} */
+.app-container {
+  /* z-index: 1; */
+  background-color: #101522;
+}
 
 .route-container {
   width: 100%;
@@ -33,6 +34,12 @@
   grid-column-start: 2; /* crucial for content nested in second column */
 }
 
+@media screen and (max-width: 768px) {
+  .route-container {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-device-width: 1000px) {
 
     .app-container {
@@ -41,7 +48,7 @@
       grid-template-columns: 10vw auto;
       /* text-align: center; */
       /* background-color: red; */
-      background-color: #101522;
+      
       
     }
   

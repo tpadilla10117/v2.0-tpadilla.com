@@ -5,3 +5,9 @@
 .GrayBg {
     background-color: #f7f8f8;
 }
+
+@media only screen and (max-width: 768px) {
+    .SectionWrapper {
+        padding-top: 1rem;
+    }
+  }

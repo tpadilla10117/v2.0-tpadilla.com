@@ -4,9 +4,21 @@ $--width-main: 1180px;
 .CardWrapper {
     width: 100%;
     min-height: 50px;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     display: grid;
     flex-direction: column;
     flex-wrap: wrap;
     grid-template-columns: 50% 50%;
 }
+
+@media only screen and (max-width: 768px) {
+    .CardWrapper {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      /* flex-direction: column; */
+      max-width: $--width-main;
+      /* margin: 1rem auto */
+    }
+  }
