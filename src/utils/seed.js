@@ -28,6 +28,11 @@ export const NavbarData = [
     cName: 'nav-text',
     activeObject: null,
     id: 1,
+    smooth: true,
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80,
 },
 
 {
@@ -37,7 +42,12 @@ export const NavbarData = [
     cName: 'nav-text',
     activeObject: null,
     id: 2,
-    img: `${hike}`
+    img: `${hike}`,
+    smooth: true,
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80
 },
 
  {
@@ -47,7 +57,12 @@ export const NavbarData = [
     activeObject: null,
     cName: 'nav-text',
     id: 3,
-    img: `${keyboard}`
+    img: `${keyboard}`,
+    smooth: true,
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80
 },
 {
     title: 'UX',
@@ -56,7 +71,12 @@ export const NavbarData = [
     cName: 'nav-text',
     activeObject: null,
     id: 4,
-    img: `${ux}`
+    img: `${ux}`,
+    smooth: true,
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80
 },
 {
     title: 'Contact',
@@ -65,7 +85,12 @@ export const NavbarData = [
     cName: 'nav-text',
     activeObject: null,
     id: 5,
-    img: `${greeting}`
+    img: `${greeting}`,
+    smooth: true,
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80
 },
 
 {
@@ -75,7 +100,12 @@ export const NavbarData = [
   cName: 'nav-text',
   activeObject: null,
   id: 6,
-  img: `${resume}`
+  img: `${resume}`,
+  smooth: true,
+    duration: 500,
+    spy: true,
+    exact: 'true',
+    offset: -80
 }
 
 ]

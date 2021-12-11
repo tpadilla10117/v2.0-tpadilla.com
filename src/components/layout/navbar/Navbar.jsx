@@ -4,7 +4,7 @@ import './Navbar.scss';
 import NavIcon from '../../../assets/icons/navIcon.svg';
 import googleMenu from '../../../assets/icons/googlemenu.svg';
 import Placeholder from '../../../assets/icons/placeholder.png';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { NavbarData } from '../../../utils/seed';
 
 const Navbar = (props) => {
@@ -12,6 +12,7 @@ const Navbar = (props) => {
    const { navToggle } = props;
    const [scrollNav, setScrollNav] = useState(false);
    const [ navLinkState, changeNavLinkState ] = useState(NavbarData);
+   const [ isActive, setIsActive ] = useState(false);
 
 /* TODO: This is going to be for when you click on the hamburger icon */
     return (
@@ -23,11 +24,11 @@ const Navbar = (props) => {
 
             {NavbarData.map( (item, index) => {
                                 return (
-                                    <Link to={item.path} className="main-nav-item" style={ {textDecoration: "none"} } key={index}>
-                                        <li key={index} className={item.title}>
+                                    <NavLink to={item.path} exact activeClassName="active" className='main-nav-item' style={ {textDecoration: "none"} } key={index}>
+                                        <li key={index} className={item.title} id="navlinks">
                                             <span>{item.title}</span>
                                         </li>
-                                    </Link>
+                                    </NavLink>
                                 )
                             })}
             </div>

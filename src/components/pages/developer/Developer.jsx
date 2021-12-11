@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionWrapper, CardWrapper, ProjectCard, ProjectPage, Modal, BulletList, LinkBlock, LinkButton } from '../../utils';
+import { SectionWrapper, CardWrapper, ProjectCard, ProjectPage, Modal, BulletList, LinkBlock, LinkButton, Footer } from '../../utils';
 import { projects } from '../../../utils/seed';
 
 const Developer = (props) => {
@@ -50,6 +50,8 @@ const Developer = (props) => {
                     </CardWrapper>
                 }
             />
+
+            <Footer />
 
         {/* TODO: The modal that appears when clicking a project card: */}
             {modalVisibility && 

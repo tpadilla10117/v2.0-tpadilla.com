@@ -1,10 +1,15 @@
 import React from 'react';
+import { Footer } from '../../utils'
 
 const Ux = () => {
     return (
-        <main>
-            <h1>Greetings from UX</h1>
-        </main>
+        <>
+            {/* TODO:// Put main content here */}
+            <div>
+
+            </div>
+            <Footer />
+        </>
     );
 };
 

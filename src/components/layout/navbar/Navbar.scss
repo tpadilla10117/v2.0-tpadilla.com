@@ -45,6 +45,14 @@
         /* background-color: orange;
         border: 1px solid red; */
         max-width: 100%;
+
+        &.active {
+          li {
+            span {
+              opacity: 1;
+              color: #2DBCB4;
+            }
+          }
         
       }
 
@@ -62,6 +70,10 @@
         max-width: 100%;
         width: 100%;
         /* margin: 1rem; */
+
+        /* &.active {
+          border-bottom: 3px solid blue; */
+      }
         
         span {
           display: flex;
