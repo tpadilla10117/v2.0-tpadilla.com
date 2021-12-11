@@ -6,3 +6,8 @@ General:
 Developer.jsx:
 
     - Styles for individual components in this files are in their respective component files.
+
+<!-- TODO: -->
+- Add a script that loads your site with an animation
+- Add skeleton loading screens
+- Add transitions when navigating to other routes

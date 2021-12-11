@@ -21,7 +21,9 @@ const Landing = () => {
                     
                             {/* <div className="landing-detailsBox">  */}
                                 <div className="landing-contentBox">
-                                    <p className="landing-cardText">{landingImage.title}</p>        
+                                    <div className='landing-textWrapper'>
+                                        <p className="landing-cardText">{landingImage.title}</p>        
+                                    </div>
                                 </div>
 
                             {/* </div> */}
