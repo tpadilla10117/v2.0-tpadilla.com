@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutMe.scss';
 import Trin from '../../../assets/images/trin.jpg';
 import { SiGithub, SiLinkedin, /* SiInstagram, SiFacebook, */ SiBehance, SiTwitter  } from "react-icons/si";
-import { Carousel, BlueBg } from '../../utils';
+import { Carousel, BlueBg, Footer } from '../../utils';
 import { carouselData } from '../../../utils/seed';
 
 const AboutMe = (props) => {
@@ -69,6 +69,8 @@ const AboutMe = (props) => {
             <Carousel slides={carouselData} />
 
             {/* </BlueBg> */}
+
+            <Footer />
        
         </>
 
