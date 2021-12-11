@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CSSTransition } from "react-transition-group";
 import { NavbarData } from "../../../utils/seed";
 import closeIcon from '../../../assets/icons/closeIcon.svg';
+import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
 import './Sidebar.scss';
 
 /* This component renders a Sidebar / overlay when hamburger icon clicked (mobile view): */
@@ -62,8 +63,32 @@ import './Sidebar.scss';
                             </div>
                         </ul>
                     </div>
+{/* TODO: Need to put social media inside the sidebar component to get rid of that extra padding */}
+                    <section className='socialmedia'>
+                       <div className='socialmedia-wrap'>
+                        
+                        <div className='socialicons'>
+                            <a className='socialiconlink' href='/' target="blank" aria-label="Linkedin">
+                                <FaLinkedin />
+                            </a>
+                            <a className='socialiconlink' href='/' target="blank" aria-label="Twitter">
+                                <FaTwitter />
+                            </a>
+                            <a className='socialiconlink' href='/' target="blank" aria-label="Github">
+                                <FaGithub />
+                            </a>
+                            <a className='socialiconlink' href='/' target="blank" aria-label="Behance">
+                                <FaBehance />
+                            </a>
+
+                        </div>
+
+                        </div>
+
+                    </section>
 
                 </div>
+             
 
 {/* TODO: This data goes in the overlay for the nav */}
 
