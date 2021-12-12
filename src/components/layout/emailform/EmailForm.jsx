@@ -36,11 +36,12 @@ const EmailForm = () => {
             <form ref={formRef} onSubmit={handleSubmit}>
                 <div className='forminput-wrapper'>
 
-                    <input type="text" placeholder="Name" name="user_name" />
-                    <input type="text" placeholder="Subject" name="user_subject" />
-                    <input type="text" placeholder="Email" name="user_email" />
-                    <textarea rows="5" placeholder="Message" name="message" /* style={ {backgroundColor: darkMode && "#333"}} *//>
+                    <input type="text" placeholder="Name" name="user_name" required />
+                    <input type="text" placeholder="Subject" name="user_subject" required />
+                    <input type="text" placeholder="Email" name="user_email" required />
+                    <textarea rows="5" placeholder="Message" name="message" required /* style={ {backgroundColor: darkMode && "#333"}} *//>
                 </div>
+                {/* TODO: Need to make icon consistent with icon library: */}
             {!emailSent ? 
                 <button className="contact-button">
                     <img className="formBtn-img" src={paperPlane} alt=""/>{/* {!emailSent ? "Submit" : emailSent && buttonText} */}{buttonText}
