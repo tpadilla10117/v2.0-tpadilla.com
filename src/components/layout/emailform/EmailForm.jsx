@@ -27,12 +27,20 @@ const EmailForm = () => {
     }
 
     return (
-        <div>
+        <div className='emailform-container'>
+            <div className='bg-img'>
+
+            </div>
+            <div className='content'>
+
             <form ref={formRef} onSubmit={handleSubmit}>
-                <input type="text" placeholder="Name" name="user_name" />
-                <input type="text" placeholder="Subject" name="user_subject" />
-                <input type="text" placeholder="Email" name="user_email" />
-                <textarea rows="5" placeholder="Message" name="message" /* style={ {backgroundColor: darkMode && "#333"}} *//>
+                <div>
+
+                    <input type="text" placeholder="Name" name="user_name" />
+                    <input type="text" placeholder="Subject" name="user_subject" />
+                    <input type="text" placeholder="Email" name="user_email" />
+                    <textarea rows="5" placeholder="Message" name="message" /* style={ {backgroundColor: darkMode && "#333"}} *//>
+                </div>
             {!emailSent ? 
                 <button className="contact-button">
                     <img className="formBtn-img" src={paperPlane} alt=""/>{/* {!emailSent ? "Submit" : emailSent && buttonText} */}{buttonText}
@@ -41,12 +49,11 @@ const EmailForm = () => {
                 : 
                 
                 <p>{emailSent && buttonText}</p>
-        
-            }
                 
-                
+            }    
             </form>
         
+            </div>
         </div>
     );
 };

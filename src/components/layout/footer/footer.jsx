@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Footer.scss';
 
 function  Footer() {
@@ -11,33 +11,33 @@ function  Footer() {
                     <div className='footerlinks-wrapper'>
                         <div className='footerlink-items'>
                             {/* <ul className='footerlink-title'>Home</ul> */}
-                                <Link className='footerlink' to="/about">
+                                <NavLink className='footerlink' to="/about" exact activeClassName="active">
                                     About
-                                </Link>                            
+                                </NavLink>                            
                         </div>
                         <div className='footerlink-items'>
                             {/* <ul className='footerlink-title'>Home</ul> */}
-                                <Link className='footerlink' to="/developer">
+                                <NavLink className='footerlink' to="/developer" exact activeClassName="active">
                                     Developer
-                                </Link>                            
+                                </NavLink>                            
                         </div>
                         <div className='footerlink-items'>
                             {/* <ul className='footerlink-title'>Home</ul> */}
-                                <Link className='footerlink' to="/ux">
+                                <NavLink className='footerlink' to="/ux" exact activeClassName="active">
                                     UX
-                                </Link>                            
+                                </NavLink>                            
                         </div>
                         <div className='footerlink-items'>
                             {/* <ul className='footerlink-title'>Home</ul> */}
-                                <Link className='footerlink' to="/contact">
+                                <NavLink className='footerlink' to="/contact" exact activeClassName="active">
                                     Contact
-                                </Link>                            
+                                </NavLink>                            
                         </div>
                         <div className='footerlink-items'>
                             {/* <ul className='footerlink-title'>Home</ul> */}
-                                <Link className='footerlink' to="/resume">
+                                <NavLink className='footerlink' to="/resume" exact activeClassName="active">
                                     Resume
-                                </Link>                            
+                                </NavLink>                            
                         </div>
 
                     </div>

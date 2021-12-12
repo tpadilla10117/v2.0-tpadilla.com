@@ -1,6 +1,7 @@
 /* STYLES FOR Footer.jsx: */
     #footer-container {
         background-color: #101522;
+        border-top: 2px solid #ddd;
 
         .footer-wrapper {
             padding: 48px 24px;
@@ -57,9 +58,14 @@
                             text-transform: uppercase;
                             letter-spacing: 2px;
                             font-size: 14px;
+                            
+                            &.active {
+                                opacity: 1;
+                                color: #2DBCB4;
+                            }
 
                             &:hover {
-                                color: #01bf71;
+                                color: #2DBCB4;
                                 transition: 0.3s ease-out;
                             }
                         }
