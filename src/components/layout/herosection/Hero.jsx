@@ -9,8 +9,8 @@ const Hero = () => {
                 <video className='videobg' autoPlay loop muted src={water} type="video/mp4"></video>
             </div>
             <div className='herocontent'>
-                <h1 className='hero-h1'></h1>
-                <p className='hero-p'></p>
+                <h1 className='hero-h1'>Contact</h1>
+                <p className='hero-p'>Sonme text</p>
             </div>
             
         </section>
