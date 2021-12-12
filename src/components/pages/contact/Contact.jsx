@@ -3,10 +3,14 @@ import { EmailForm, Footer } from '../../utils';
 
 const Contact = () => {
     return (
-        <main>
-            <EmailForm />
+        <>
+            <main>
+                <EmailForm />
+                
+            </main>
             <Footer />
-        </main>
+            
+        </>
     );
 };
 

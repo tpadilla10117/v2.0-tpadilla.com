@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
+import {Link} from 'react-router-dom';
 import paperPlane from '../../../assets/icons/paperPlane.svg';
 import './EmailForm.scss';
+import keyboard from '../../../assets/images/keyboard.jpg';
 
 const EmailForm = () => {
 
@@ -28,13 +30,11 @@ const EmailForm = () => {
 
     return (
         <div className='emailform-container'>
-            <div className='bg-img'>
-
-            </div>
+            <img className='bg-img' src={keyboard} alt=""></img>
             <div className='content'>
 
             <form ref={formRef} onSubmit={handleSubmit}>
-                <div>
+                <div className='forminput-wrapper'>
 
                     <input type="text" placeholder="Name" name="user_name" />
                     <input type="text" placeholder="Subject" name="user_subject" />
@@ -52,7 +52,13 @@ const EmailForm = () => {
                 
             }    
             </form>
-        
+            <p className='formtxt'>Want to see my Resume ? <a href="#">Download Resume</a></p>
+            <Link className='sociallogo' to='/'>
+                Trin Padilla
+            </Link>
+            {/* <img src="" width='100' align="center"></img> */}
+
+            {/* src={landingImage.img} */}
             </div>
         </div>
     );

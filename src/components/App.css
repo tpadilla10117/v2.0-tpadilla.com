@@ -30,8 +30,6 @@
   overflow-y: auto;
   min-height: 100%;
   max-width: 100%;
-  top: 0;
-  bottom: 0;
   grid-column-start: 2; /* crucial for content nested in second column */
 }
 
