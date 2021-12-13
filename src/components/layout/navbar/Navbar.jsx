@@ -11,12 +11,26 @@ const Navbar = (props) => {
 
    const { navToggle } = props;
    const [scrollNav, setScrollNav] = useState(false);
-   const [ navLinkState, changeNavLinkState ] = useState(NavbarData);
-   const [ isActive, setIsActive ] = useState(false);
+   /* const [ navLinkState, changeNavLinkState ] = useState(NavbarData);
+   const [ isActive, setIsActive ] = useState(false); */
 
+
+   const changeNav = () => {
+       if (window.scrollY >= 80) {
+           setScrollNav(true);
+       } else {
+           setScrollNav(false);
+       }
+   };
+
+   useEffect(() => {
+       window.addEventListener('scroll', changeNav)
+   }, [] );
+
+   /* background: ${ ( { scrollNav } ) => (scrollNav ? '#000' : 'transparent')}; */
 /* TODO: This is going to be for when you click on the hamburger icon */
     return (
-        <nav className="navbar">
+        <nav className="navbar" /* scrollNav={scrollNav}  */style={ {background: `${scrollNav ? '#101522' : 'transparent' }`}}>
             <div className="nav-items-container">
 
             {/* Logo: */}

@@ -100,7 +100,9 @@
   @media screen and (max-width: 1000px) {
 
     .navbar {
-      background-color: $main-bg-color;
+      /* background-color: $main-bg-color; */
+      /* background: ${ ( { scrollNav } ) => (scrollNav ? '#000' : 'transparent')}; */
+      transition: 0.8s all ease;
       padding: 0px;
       height: 8vh;
       justify-content: flex-end;
