@@ -9,7 +9,6 @@ Landing.jsx:
 
 Navbar.jsx:
     - <!-- TODO:  -->
-    - Make the nav items stay lit up when on respective route
 
     Bonus:
     - Animations on the modal icon
@@ -40,13 +39,13 @@ UX.jsx: <!-- TODO: -->
 
 Contact.jsx: <!-- TODO: -->
 
-    - remake form
+    - remake form -> **The Submit button needs fixing when clocked
     - make form functional with email.js
     - decide on what to do with rest of the page / negative space
 
 Resume.jsx: <!-- TODO: -->
 
-    - Decide on whether or not to keep
+    - Decide on whether or not to keep the component
 
 <!-- TODO: -->
 - Add a script that loads your site with an animation
