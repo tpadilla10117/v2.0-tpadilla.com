@@ -15,6 +15,7 @@
     bottom: 0px;
     /* background-color: green; */
     border-right: 2px solid #ddd;
+    /* background-color: $main-bg-color; */
 
     .nav-items-container {
       position: /* absolute */fixed;
@@ -102,12 +103,14 @@
     .navbar {
       /* background-color: $main-bg-color; */
       /* background: ${ ( { scrollNav } ) => (scrollNav ? '#000' : 'transparent')}; */
+      
       transition: 0.8s all ease;
       padding: 0px;
       height: 8vh;
       justify-content: flex-end;
       width: 100%;
       border-right: none;
+      
       
       .nav-items-container {
         display: none;

@@ -39,6 +39,12 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .route-container {
+    margin-top: -75px;
+  }
+}
+
 @media only screen and (min-device-width: 1000px) {
 
     .app-container {

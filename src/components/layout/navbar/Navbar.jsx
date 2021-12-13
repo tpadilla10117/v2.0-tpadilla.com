@@ -27,6 +27,7 @@ const Navbar = (props) => {
        window.addEventListener('scroll', changeNav)
    }, [] );
 
+   /* TODO: the transition on the navbar breaks the color in the navbar when its vertical! */
    /* background: ${ ( { scrollNav } ) => (scrollNav ? '#000' : 'transparent')}; */
 /* TODO: This is going to be for when you click on the hamburger icon */
     return (
