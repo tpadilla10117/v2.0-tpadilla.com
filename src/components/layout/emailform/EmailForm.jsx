@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import paperPlane from '../../../assets/icons/paperPlane.svg';
 import './EmailForm.scss';
 import keyboard from '../../../assets/images/keyboard.jpg';
+import cabana from '../../../assets/images/cabana.jpg';
 
 const EmailForm = () => {
 
@@ -30,7 +31,7 @@ const EmailForm = () => {
 
     return (
         <div className='emailform-container'>
-            <img className='bg-img' src={keyboard} alt=""></img>
+            <img className='bg-img' src={cabana} alt=""></img>
             <div className='content'>
 
             <form ref={formRef} onSubmit={handleSubmit}>

@@ -4,7 +4,7 @@
 
 .emailform-container {
     position: relative;
-    width: 295px;
+    width: 500px;
     /* width: 100%; */
     height: 650px;
     /* height: 100%; */
@@ -19,7 +19,8 @@
         width: 100%;
         height: 100%;
         z-index: 1;
-        background: linear-gradient(to top, #121212 65%, transparent);
+        background: linear-gradient(to top, #121212 65%, transparent);/* #2DBCB4 */
+
     }
 
     .bg-img {
@@ -147,4 +148,10 @@
         }
     }
     
+}
+
+@media screen and (max-width: 1000px) {
+    .emailform-container {
+        width: 100%;
+    }
 }

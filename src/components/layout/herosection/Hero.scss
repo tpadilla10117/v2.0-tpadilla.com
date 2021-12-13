@@ -72,3 +72,10 @@
     }
 
 }
+
+@media screen and (max-width: 1000px) {
+   #hero-container {
+       border: none;
+       height: 325px;
+   }
+}
