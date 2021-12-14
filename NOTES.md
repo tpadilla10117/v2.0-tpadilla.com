@@ -9,7 +9,7 @@ Landing.jsx:
 
 Navbar.jsx:
     - <!-- TODO:  -->
-    **Need to make the Navbar into a separate component -> one for the Vertical nav, the other for the horizontal.  Only render the Vertical past the 1000px breakpoints in the Home.jsx file
+    **Need to make the Navbar into a separate component  -> one for the Vertical nav, the other for the horizontal.  Only render the Vertical past the 1000px breakpoints in the Home.jsx file OR make a Styled component out of ONLY THE NAVBAR
 
     Bonus:
     - Animations on the modal icon

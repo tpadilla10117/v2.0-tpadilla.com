@@ -15,7 +15,7 @@
     bottom: 0px;
     /* background-color: green; */
     border-right: 2px solid #ddd;
-    /* background-color: $main-bg-color; */
+    /* background-color: $main-bg-color !important; */
 
     .nav-items-container {
       position: /* absolute */fixed;
@@ -101,7 +101,7 @@
   @media screen and (max-width: 1000px) {
 
     .navbar {
-      /* background-color: $main-bg-color; */
+      /* background-color: transparent !important; */
       /* background: ${ ( { scrollNav } ) => (scrollNav ? '#000' : 'transparent')}; */
       
       transition: 0.8s all ease;
