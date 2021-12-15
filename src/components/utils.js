@@ -3,6 +3,8 @@
 // Layout:
 export { default as Navbar } from './layout/navbar/Navbar.jsx';
 
+export { default as HorizontalNav } from './layout/horizontalNav/HorizontalNav.jsx';
+
 export { default as Sidebar } from './layout/sidebar/Sidebar.jsx'; 
 
 export { default as Header } from './layout/header/Header.jsx';

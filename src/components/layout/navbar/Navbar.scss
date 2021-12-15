@@ -15,7 +15,7 @@
     bottom: 0px;
     /* background-color: green; */
     border-right: 2px solid #ddd;
-    /* background-color: $main-bg-color !important; */
+    background-color: $main-bg-color !important;
 
     .nav-items-container {
       position: /* absolute */fixed;
@@ -98,11 +98,10 @@
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  /* THIS IS ALL Horizontal NAV: */
+ /*  @media screen and (max-width: 1000px) {
 
     .navbar {
-      /* background-color: transparent !important; */
-      /* background: ${ ( { scrollNav } ) => (scrollNav ? '#000' : 'transparent')}; */
       
       transition: 0.8s all ease;
       padding: 0px;
@@ -139,6 +138,13 @@
     }
 
     
+  } */
+
+/* TODO: We this needs to be empty so HorizontalNav.jsx takes the space on the DOM: */
+  @media screen and (max-width: 1000px) {
+    .navbar {
+      display: none;
+    }
   }
 
   .mobile-icon {

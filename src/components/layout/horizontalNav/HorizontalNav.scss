@@ -1,0 +1,45 @@
+/* Horizontal Nav: */
+ @media screen and (max-width: 1000px) {
+
+    .horizontal-navbar {
+ 
+        transition: 0.8s all ease;
+        padding: 0px;
+        height: 8vh;
+        justify-content: flex-end;
+        width: 100%;
+        border-right: none;
+        display: flex;
+        position: fixed;
+        max-width: 100%;
+        align-items: center;
+        
+      
+        .hnav-items-container {
+            display: none;
+        }
+    
+        .hnav-mobile-icon-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        
+
+        .hnav-mobile-icon {
+        
+          display: flex;
+          transform: translate(-80%);
+          cursor: pointer;
+          color: #fff;
+          height: 60%;
+        }
+      
+      }
+
+    }
+
+    
+  }
