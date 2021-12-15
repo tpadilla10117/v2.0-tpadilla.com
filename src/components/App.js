@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import { Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import { Developer, AboutMe, Landing, Ux, Contact, Resume, Navbar, Header} from './utils';
+import { Developer, AboutMe, Landing, Ux, Contact, Resume, Header} from './utils';
 import './App.css';
 
 function App() {
@@ -11,16 +11,14 @@ function App() {
 
 /* State for Modals: */
   const [modalVisibility, setModalVisibility] = useState(false);
-
   const [activeProject, setActiveProject] = useState(null);
 
-
+  const nodeRef = React.useRef(null);
 
   return (
     
     <div className="app-container">
 
-      
 
       <CSSTransition 
       timeout={300}>
@@ -30,49 +28,102 @@ function App() {
 
       <div className="route-container">
 
-        {/* TODO: Need to make Navbar vertical */}
-        {/* TODO: Can't make the mobile icon appear because it exists in this component - need to unmount component, then render a different one, also compensate for the grid of this overall parent container */}
-        {/* <Navbar /> */}
-
         {/* TODO: Landing Section */}
-          <Route exact path='/'>
-            <CSSTransition>
-              <Landing />
+          <Route exact path='/'>{ ({ match }) => (
+            <CSSTransition
+            nodeRef={nodeRef}
+            in={match != null}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit>
+              <div className='fade' ref={nodeRef}>
+                <Landing />
+              </div>
             </CSSTransition>
+          )} 
           </Route>
 
-          {/* TODO: About Section */}
-          <Route exact path='/about'>
-            <AboutMe />
+        {/* TODO: About Section */}
+          <Route exact path='/about'>{ ({ match }) => (
+            <CSSTransition
+            nodeRef={nodeRef}
+            in={match != null}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit>
+              <div className='fade' ref={nodeRef}>
+                <AboutMe />
+              </div>
+            </CSSTransition>
+          )} 
           </Route>
 
-        {/* TODO: Developer Section - styling */}
-          <Route exact path="/developer">
-          
-            <Developer 
-              modalVisibility={modalVisibility}
-              setModalVisibility={setModalVisibility}
-              activeProject={activeProject}
-              setActiveProject={setActiveProject}
-            />
-
+        {/* TODO: Developer Section */}
+          <Route exact path='/developer'>{ ({ match }) => (
+            <CSSTransition
+            nodeRef={nodeRef}
+            in={match != null}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit>
+              <div className='fade' ref={nodeRef}>
+                <Developer 
+                 modalVisibility={modalVisibility}
+                 setModalVisibility={setModalVisibility}
+                 activeProject={activeProject}
+                 setActiveProject={setActiveProject}
+                />
+              </div>
+            </CSSTransition>
+          )} 
           </Route>
 
 
         {/* TODO: UX Design Section */}
-          <Route exact path='/ux'>
-            <Ux />
+           <Route exact path='/ux'>{ ({ match }) => (
+            <CSSTransition
+            nodeRef={nodeRef}
+            in={match != null}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit>
+              <div className='fade' ref={nodeRef}>
+                <Ux />
+              </div>
+            </CSSTransition>
+          )} 
           </Route>
 
-        {/* TODO: Contact Section */}
-          <Route exact path='/contact'>
-            <Contact />
+          {/* TODO: Contact Section */}
+
+           <Route exact path='/contact'>{ ({ match }) => (
+            <CSSTransition
+            nodeRef={nodeRef}
+            in={match != null}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit>
+              <div className='fade' ref={nodeRef}>
+                <Contact />
+              </div>
+            </CSSTransition>
+          )} 
           </Route>
 
+          {/* TODO: Resume Section */}
 
-        {/* TODO: Resume Section */}
-         <Route exact path='/resume'>
-            <Resume />
+           <Route exact path='/resume'>{ ({ match }) => (
+            <CSSTransition
+            nodeRef={nodeRef}
+            in={match != null}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit>
+              <div className='fade' ref={nodeRef}>
+                <Resume />
+              </div>
+            </CSSTransition>
+          )} 
           </Route>
 
       </div>

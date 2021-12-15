@@ -177,6 +177,18 @@ $main-bg-color: #101522;
                 color: #2DBCB4;
                 transition: color 600ms ease 0s;
             }
+
+            
+        }
+
+        &.active {
+            li {
+              span {
+                opacity: 1;
+                color: #2DBCB4;
+              }
+            }
+          
         }
 
         @media screen and (max-width: 768px) {

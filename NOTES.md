@@ -9,13 +9,13 @@ Landing.jsx:
 
 Navbar.jsx:
     - <!-- TODO:  -->
-    **Need to make the Navbar into a separate component  -> one for the Vertical nav, the other for the horizontal.  Only render the Vertical past the 1000px breakpoints in the Home.jsx file OR make a Styled component out of ONLY THE NAVBAR
 
     Bonus:
     - Animations on the modal icon
 
 Sidebar.jsx:
     - <!-- TODO: --> Color, fonts, social icons on the bottom
+    - side view needs adjustment
 
 AboutMe.jsx:
     <!-- TODO: -->
@@ -49,6 +49,7 @@ Resume.jsx: <!-- TODO: -->
     - Decide on whether or not to keep the component
 
 <!-- TODO: -->
+- React transition-group and CSS transtions are acting weird [http://reactcommunity.org/react-transition-group/css-transition]
 - Add a script that loads your site with an animation
 - Add skeleton loading screens
 - Add transitions when navigating to other routes

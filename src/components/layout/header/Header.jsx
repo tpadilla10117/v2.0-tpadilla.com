@@ -14,15 +14,13 @@ import "./Header.scss";
 
 
         return (
-            <div className="header-wrapper">
-                {/* <header className="header"> */}
+            <header className="header-wrapper">
                    
                     <Navbar isOpen={isOpen} navToggle={navToggle} />
                     <HorizontalNav isOpen={isOpen} navToggle={navToggle} />
                     <Sidebar isOpen={isOpen} navToggle={navToggle} />
 
-                {/* </header> */}
-            </div>
+            </header>
         );
     };
 
