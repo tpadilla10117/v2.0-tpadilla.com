@@ -30,7 +30,7 @@ const EmailForm = () => {
     }
 
     return (
-        <div className='emailform-container'>
+        <section className='emailform-container'>
             <img className='bg-img' src={cabana} alt=""></img>
             <div className='content'>
 
@@ -62,7 +62,7 @@ const EmailForm = () => {
 
             {/* src={landingImage.img} */}
             </div>
-        </div>
+        </section>
     );
 };
 

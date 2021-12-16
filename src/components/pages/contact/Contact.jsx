@@ -8,6 +8,7 @@ const Contact = () => {
         <div id='contact-container'>
             <main className="contact-wrapper">
                 {/* <VideoSection /> */}
+                {/* <video className='contact-videobg' autoPlay loop muted src={beach} type="video/mp4"></video> */}
                 <EmailForm />
                 <Hero />
             </main>
