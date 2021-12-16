@@ -13,6 +13,8 @@ export { default as Footer } from './layout/footer/Footer.jsx';
 
 export { default as Hero } from './layout/herosection/Hero.jsx';
 
+export { default as VideoSection } from './layout/videosection/VideoSection.jsx';
+
 export { default as EmailForm } from './layout/emailform/EmailForm.jsx';
 
 export { default as SectionWrapper } from './layout/sectionwrapper/SectionWrapper.jsx';

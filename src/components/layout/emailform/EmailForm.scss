@@ -12,6 +12,9 @@
     border-radius: 20px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, .4);
     overflow: hidden;
+    background: hsla(0,0%,42.7%,.12);
+    box-shadow: 0 3px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
 
     &:before {
         content: "";
@@ -153,5 +156,7 @@
 @media screen and (max-width: 1000px) {
     .emailform-container {
         width: 100%;
+        border-top: 2px solid #ddd;
+        /* border-top: 1px solid #e7e7e7; */
     }
 }

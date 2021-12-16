@@ -49,6 +49,7 @@ Resume.jsx: <!-- TODO: -->
     - Decide on whether or not to keep the component
 
 <!-- TODO: -->
+- Bugg between 820 px resize and 1000px
 - React transition-group and CSS transtions are acting weird [http://reactcommunity.org/react-transition-group/css-transition]
 - Add a script that loads your site with an animation
 - Add skeleton loading screens
