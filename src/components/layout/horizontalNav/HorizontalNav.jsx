@@ -9,6 +9,17 @@ const HorizontalNav = (props) => {
    const { navToggle } = props;
    const [scrollNav, setScrollNav] = useState(false);
 
+/* Box and transparent are referencing inline style properties: */
+   const box = {
+       background: 'hsla(0,0%,42.7%,.12)',
+       boxShadow: '0 3px 30px rgb(0 0 0 / 10%)',
+       backdropFilter: 'blur(5px)'
+   };
+
+   const transparent =  {
+       background: 'transparent'
+   };
+
    const changeNav = () => {
        if (window.scrollY >= 80) {
            setScrollNav(true);
@@ -23,7 +34,7 @@ const HorizontalNav = (props) => {
    }, [] );
 
     return (
-        <nav className="horizontal-navbar" style={ {background: `${scrollNav ? '#101522' : 'transparent' }` } }>
+        <nav className="horizontal-navbar" style={  Object.assign({}, scrollNav ? box : transparent)      }>
             <div className="hnav-items-container">
 
             {NavbarData.map( (item, index) => {
