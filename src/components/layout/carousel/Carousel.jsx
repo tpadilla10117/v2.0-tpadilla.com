@@ -9,17 +9,17 @@ const Carousel = ( {slides} ) => {
     const length = slides.length;
 
 /* This automatically updates the carousel after a designated time with setTimeout, a DOM Method: */
-    useEffect( () => {
+   /*  useEffect( () => {
         
         const time = setTimeout( () => {
             setCurrent(current === length - 1 ? 0 : current + 1);
-        }, 6000);
+        }, 6000); */
 
     /* Effect cleanup: */
-        return () => {
+       /*  return () => {
             clearTimeout(time);
         }
-    }, [current, length]);
+    }, [current, length]); */
 
 /* If no data, or our array isn't an array, return null: */
     if(!Array.isArray(slides) || slides.length <= 0 ) {

@@ -36,7 +36,9 @@
           image-rendering: auto;
           image-rendering: crisp-edges;
           image-rendering: pixelated;
-          height: 300px;       
+          /* height: auto;    */    
+          height: 300px;
+          
         }
       }
       
@@ -51,6 +53,9 @@
         opacity: .95;
         transform: scaleY(0);
         transition: transform .5s;
+        /* background: hsla(0,0%,42.7%,.12); */
+        box-shadow: 0 3px 30px rgb(0 0 0 / 10%);
+        backdrop-filter: blur(10px);
   
         .contentBox {
           position: absolute;

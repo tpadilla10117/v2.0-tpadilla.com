@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionWrapper, CardWrapper, ProjectCard, ProjectPage, Modal, BulletList, LinkBlock, LinkButton, Footer } from '../../utils';
+import { SectionWrapper, CardWrapper, ProjectCard, ProjectPage, Modal, BulletList, LinkBlock, LinkButton, Footer, VideoSection } from '../../utils';
 import { projects } from '../../../utils/seed';
 
 const Developer = (props) => {
@@ -27,6 +27,7 @@ const Developer = (props) => {
     return (
         <div>
 
+            <VideoSection />
         {/* This renders the main project cards on the Landing Page: */}
             <SectionWrapper 
                 id="projects"
