@@ -26,6 +26,7 @@ AboutMe.jsx:
 
 Developer.jsx: <!-- TODO: -->
 
+    *Can't scroll with the modal in view
     - **Styles for individual components in this files are in their respective component files.
     - consider borders for scaling beyond mobile view
     - adjust color palettes and font
