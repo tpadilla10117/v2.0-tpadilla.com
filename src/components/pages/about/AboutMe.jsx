@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutMe.scss';
 import Trin from '../../../assets/images/trin.jpg';
-import { SiGithub, SiLinkedin, /* SiInstagram, SiFacebook, */ SiBehance, SiTwitter  } from "react-icons/si";
+import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
 import { Carousel, BlueBg, Footer } from '../../utils';
 import { carouselData } from '../../../utils/seed';
 
@@ -46,10 +46,10 @@ const AboutMe = (props) => {
 
 
                         <div className="links-about">
-                                    <a href="https://github.com/tpadilla10117" className="github">{<SiGithub size={45}/>}</a>
-                                    <a href="https://www.behance.net/tpadilla10117" className="behance">{<SiBehance size={45}/>}</a>
-                                    <a href="https://twitter.com/tpadilla101" className="twitter">{<SiTwitter size={45}/>}</a>
-                                    <a href="https://www.linkedin.com/in/t-p-101/" className="linkedin">{<SiLinkedin size={45}/>}</a>
+                                    <a href="https://www.linkedin.com/in/t-p-101/" className="links-socialicons">{<FaLinkedin /* size={45} *//>}</a>
+                                    <a href="https://twitter.com/tpadilla101" className="links-socialicons">{<FaTwitter /* size={45} *//>}</a>
+                                    <a href="https://github.com/tpadilla10117" className="links-socialicons">{<FaGithub /* size={45} *//>}</a>
+                                    <a href="https://www.behance.net/tpadilla10117" className="links-socialicons">{<FaBehance /* size={45} *//>}</a>
                         </div>
 
                     </div>
