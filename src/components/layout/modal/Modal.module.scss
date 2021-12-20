@@ -20,6 +20,7 @@ $--width-main: 1180px;
     z-index: 999;
     box-shadow: 0 0 10px #494f653b;
     animation: fadein .5s;
+    overflow-y: auto;
   }
 
   @keyframes fadein {
@@ -45,7 +46,7 @@ $--width-main: 1180px;
   } */
 
   .ModalContent {
-    background-color: /* $--main-bg-color */#fff;
+    background-color: /* $--main-bg-color */#F0E9DC;
     border-radius: 3px;
     max-width: $--width-text; 
     margin: 50px 1rem;

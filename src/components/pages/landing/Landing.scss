@@ -143,10 +143,10 @@
                         
 
                         .landing-cardText {
-                            font-size: 30px;
-                            font-weight: bold;
+                            font-size: 44px;
+                            font-weight: 700;
                             /* padding: 4rem; */
-                            font-family: 'Amatic SC', sans-serif;
+                            font-family: 'Original surfer', sans-serif;
                             letter-spacing: 5px;
                             /* background-color: #494f653b; */
                             /* box-shadow: 0 0 20px #494f653b; */
@@ -160,6 +160,7 @@
                             position: relative;
                             transition: transform 2s;
                             /* border: medium solid; */
+                            
                       
                         }
                         &:hover .landing-cardText {

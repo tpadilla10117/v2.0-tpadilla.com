@@ -1,5 +1,10 @@
 .List {
     list-style: disc;
+    margin-bottom: 20px;
+
+    li {
+      padding: 5px;
+    }
   }
   
   .Modal {
@@ -13,6 +18,7 @@
     overflow: hidden;
     padding-left: 1.25rem;
   }
+
 
   /* @include medium-screens {
   .Skill {

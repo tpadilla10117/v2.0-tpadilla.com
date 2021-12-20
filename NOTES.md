@@ -7,7 +7,7 @@ General:
     - Colors: secondary: #386FA4 (Honolulu blue); 
         main / dominant section: #24496A( Indigo Dye);
         secondary bg: #f0e9dc (alabaster); 
-        text: #101522 (Indigo Dye)
+        section-text: #716252 (Raw Umber)
         call to action: 
 
     - Buttons: 

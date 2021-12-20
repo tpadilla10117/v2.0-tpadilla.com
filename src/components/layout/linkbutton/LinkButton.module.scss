@@ -1,9 +1,3 @@
-$--main-bg-color: #F0E9DC; /* Alabaster */
-$--sec-bg-color: #07678E; /* Blue Sapphire */
-$--main-btn-color: #2DBCB4; /* Tiffany Blue */
-$--neutral-color: #12130F; /* Smoky Black */
-$--misc-color: #BF4E30; /* Vermillion */
-$--txt-color: #2c426a;
 
 /* .Button p {
     font-size: .8rem;
@@ -12,36 +6,36 @@ $--txt-color: #2c426a;
 } */
 
 .Button {
-    border: 1px solid $--main-btn-color;
+    border: 1px solid #60D2B6;
     outline: none;
     background: #fff;
-    color:$--main-btn-color;
+    color:#60D2B6;
     cursor: pointer;
-    /* background: transparent; */
     display: inline-block;
-    border-radius: .2em;
-    font-family: 'Otomanopee One', sans-serif;
-    letter-spacing: .08em;
+    border-radius: 20px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     font-size: 18px;
-    padding: 12px 20px;
+    text-align: center;
+    padding: 12px;
     line-height: 120%;
     height: 48px;
     min-width: 48px;
-    --webkit-transition: all 250ms ease 50ms;
-    /* transform: translate(40%, 0%); */
+    width: 500px;
     margin-top: 2rem;
-    /* margin-left: 3.5rem; */
+    margin-top: 20px;
     text-decoration: none;
+    /* opacity: .5; */
+    transition: all 0.3s ease 0s;
 }
 
 .Button:hover {
-    background: $--main-btn-color;
-    transition: background 0.5s;
-    box-shadow: 0 0 10px #494f653b;
-    border: 1px solid $--sec-bg-color;
-    color: #fff;
-    /* transition: all 250ms ease 50ms; */
-    /* -webkit-transition: all 250ms ease 50ms; */
+  background-color: #36BF9D; //Mountain Meadow
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+  
 }
 
 .Wide {
