@@ -11,7 +11,7 @@ const EmailForm = () => {
 /* Logic for Handling Form state & values: */
     const formRef = useRef();
     const [ emailSent, setEmailSent ] = useState(false);
-    const [ buttonText, setButtonText ] = useState("Submit")
+    const [ buttonText, setButtonText ] = useState("")
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -40,17 +40,17 @@ const EmailForm = () => {
                     <input type="text" placeholder="Name" name="user_name" required />
                     <input type="text" placeholder="Subject" name="user_subject" required />
                     <input type="text" placeholder="Email" name="user_email" required />
-                    <textarea rows="5" placeholder="Message" name="message" required /* style={ {backgroundColor: darkMode && "#333"}} *//>
+                    <textarea rows="5" placeholder="Message" name="message" required />
                 </div>
                 {/* TODO: Need to make icon consistent with icon library: */}
             {!emailSent ? 
                 <button className="contact-button">
-                    <img className="formBtn-img" src={paperPlane} alt=""/>{/* {!emailSent ? "Submit" : emailSent && buttonText} */}{buttonText}
+                    <img className="formBtn-img" src={paperPlane} alt=""/>Submit
                 </button> 
                 
                 : 
                 
-                <p>{emailSent && buttonText}</p>
+                <p className='contact-txt-fade'>{emailSent && buttonText}</p>
                 
             }    
             </form>

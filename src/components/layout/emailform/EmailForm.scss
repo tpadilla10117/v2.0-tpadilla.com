@@ -131,6 +131,17 @@
                     transform: translateY(-7px);
                   }
             }
+
+            .contact-txt-fade {
+                /* opacity: 0.01; */
+                -webkit-animation: fadein 1s cubic-bezier(0.445,0.05,0.55,0.95) forwards;
+                animation: fadein 1s cubic-bezier(0.445,0.05,0.55,0.95) forwards;
+            }
+
+            @keyframes fadein {
+                0% {opacity: 0; }
+                100% {opacity: 1;}
+            }
         }
 
         .formtxt {
