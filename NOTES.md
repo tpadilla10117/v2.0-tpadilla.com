@@ -2,6 +2,18 @@
 
 General:
     - Style inconsistencies.  Some pure SASS, but some usage of classnames & style tags (primarily in Devloper.jsx)
+    - Colors: Need contrast of 4.5: 1 (minimum), 16:1 (high contrast)
+    - Colors: 60:30:10 rule
+    - Colors: secondary: #386FA4 (Honolulu blue); 
+        main / dominant section: #24496A( Indigo Dye);
+        secondary bg: #f0e9dc (alabaster); 
+        call to action: 
+
+    - *Background (#f0e9dc) and Foreground / Text (#101522) = 15.09: 1 High contrast
+    - Buttons: 
+        Btn-Bg: #60D2B6 (Turquoise); 
+        Btn-Txt: #FFF (White); 
+        Btn-Hover-State: #36BF9D (Mountain Meadow);
 
 Landing.jsx:
     - <!-- TODO: Double check the responsive design -->
@@ -52,6 +64,7 @@ Resume.jsx: <!-- TODO: -->
 <!-- TODO: -->
 - Bugg between 820 px resize and 1000px
 - Change Icons to HeroIcons
+- Progress Bar
 - React transition-group and CSS transtions are acting weird [http://reactcommunity.org/react-transition-group/css-transition]
 - Add a script that loads your site with an animation
 - Add skeleton loading screens
