@@ -3,13 +3,13 @@
 General:
     - Style inconsistencies.  Some pure SASS, but some usage of classnames & style tags (primarily in Devloper.jsx)
     - Colors: Need contrast of 4.5: 1 (minimum), 16:1 (high contrast)
-    - Colors: 60:30:10 rule
+    - Colors: 60:30:10 rule & 15:1 contrast ratio
     - Colors: secondary: #386FA4 (Honolulu blue); 
         main / dominant section: #24496A( Indigo Dye);
         secondary bg: #f0e9dc (alabaster); 
+        text: #101522 (Indigo Dye)
         call to action: 
 
-    - *Background (#f0e9dc) and Foreground / Text (#101522) = 15.09: 1 High contrast
     - Buttons: 
         Btn-Bg: #60D2B6 (Turquoise); 
         Btn-Txt: #FFF (White); 

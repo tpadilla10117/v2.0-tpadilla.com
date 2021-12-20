@@ -60,15 +60,17 @@
                             text-transform: uppercase;
                             letter-spacing: 2px;
                             font-size: 14px;
+                            opacity: 0.5;
                             
                             &.active {
                                 opacity: 1;
-                                color: #2DBCB4;
+                                color: #36BF9D;
                             }
 
                             &:hover {
-                                color: #2DBCB4;
+                                color: #FFF;
                                 transition: 0.3s ease-out;
+                                opacity: 1;
                             }
                         }
                     }
