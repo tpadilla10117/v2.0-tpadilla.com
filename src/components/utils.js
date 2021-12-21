@@ -52,6 +52,8 @@ export { default as AboutMe } from './pages/about/AboutMe.jsx';
 
 export { default as Ux } from './pages/ux/UX.jsx';
 
+export { default as CaseStudies } from './pages/ux/casestudies/CaseStudies.jsx';
+
 export { default as Contact } from './pages/contact/Contact.jsx';
 
 export { default as Resume } from './pages/resume/Resume.jsx';

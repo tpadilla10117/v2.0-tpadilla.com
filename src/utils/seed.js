@@ -11,7 +11,7 @@ import Amazon from "../assets/images/Amazon.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
 import Netflix from "../assets/images/Netflix.png";
 import hike from "../assets/images/hike.jpeg";
-import aerialist from '../assets/images/aerialist.jpg';
+import aerial from '../assets/images/aerial.jpg';
 import musicfest from '../assets/images/musicfest.jpg';
 /* import turtle from "../assets/images/turtleBeach.jpg";
 import fort1 from "../assets/images/FortBragg1.jpeg"; */
@@ -173,6 +173,7 @@ export const caseStudies = [
     svgImg: `${musicfest}`,
     img: `${musicfest}`,
     alt: "Screenshot of a music festival",
+    path: '/ux/tri-tix-app',
     /* description: "A responsive, full stack replica of Amazon deployed via Vercel. Users can log into an account, browse items, and initialize checkout with Stripe API integration.",
     techHighlights: [
       "Integrated Fake Store API for product queries and managed app state with Redux",
@@ -190,9 +191,10 @@ export const caseStudies = [
     title: "Aerlial Turtles",
     /* tech: "Next.js, Tailwind CSS, Firebase (Firestore), Stripe API, Fake Store API, Vercel, HTML, Redux, React.js, JS", */
     cardCoverText: "A responsive portfolio for a professional Aerialist",
-    svgImg: `${aerialist}`,
-    img: `${aerialist}`,
+    svgImg: `${aerial}`,
+    img: `${aerial}`,
     alt: "Screenshot of an aerialist performing",
+    path: '/ux/aerialturtles',
     /* description: "A responsive, full stack replica of Amazon deployed via Vercel. Users can log into an account, browse items, and initialize checkout with Stripe API integration.",
     techHighlights: [
       "Integrated Fake Store API for product queries and managed app state with Redux",

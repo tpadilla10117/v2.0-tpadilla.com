@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 import { Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import { Developer, AboutMe, Landing, Ux, Contact, Resume, Header} from './utils';
+import { Developer, AboutMe, Landing, Ux, Contact, Resume, Header, CaseStudies} from './utils';
 import './App.css';
 
 function App() {
@@ -12,6 +12,8 @@ function App() {
 /* State for Modals: */
   const [modalVisibility, setModalVisibility] = useState(false);
   const [activeProject, setActiveProject] = useState(null);
+
+/* State for Case Study routing: */
 
   const nodeRef = React.useRef(null);
 
@@ -121,6 +123,21 @@ function App() {
             unmountOnExit>
               <div className='fade' ref={nodeRef}>
                 <Resume />
+              </div>
+            </CSSTransition>
+          )} 
+          </Route>
+
+          {/* TODO: UX Design Sections: */}
+          <Route exact path='/ux/tri-tix-app'>{ ({ match }) => (
+            <CSSTransition
+            nodeRef={nodeRef}
+            in={match != null}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit>
+              <div className='fade' ref={nodeRef}>
+                <CaseStudies />
               </div>
             </CSSTransition>
           )} 
