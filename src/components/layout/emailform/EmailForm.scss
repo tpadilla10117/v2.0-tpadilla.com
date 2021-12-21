@@ -46,7 +46,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: 'Poppins', sans-serif; /* TODO: Change fonts */
+        font-family: 'Dosis', sans-serif; /* TODO: Change fonts */
 
         form {
             /* margin-top: 20px; */
@@ -72,7 +72,7 @@
                 /* padding-left: 10px; */
 
                 &::placeholder {
-                    font-family: "Poppins", sans-serif;
+                    font-family: "Dosis", sans-serif;
                     /* color: blue; */
                 }
             }
@@ -89,11 +89,11 @@
                 padding: 0 10px;
                 padding-top: 10px;
                 /* border-bottom: 1px solid black; */
-                font-family: 'Poppins', sans-serif;
+                font-family: 'Dosis', sans-serif;
                 /* padding-left: 10px; */
 
                 &::placeholder {
-                    font-family: "Poppins", sans-serif;
+                    font-family: "Dosis", sans-serif;
                     /* color: blue; */
                 }
             }
@@ -119,7 +119,7 @@
                 transition: all 0.3s ease 0s;
                 font-size: 16px;
                 font-weight: bolder;
-                font-family: "Poppins", sans-serif;
+                font-family: "Dosis", sans-serif;
                 margin-top: 15px;
                 /* align-items: center;
                 justify-content: center; */
@@ -153,13 +153,13 @@
             a {
                 text-decoration: none;
                 /* color: #fff; */
-                color: #bb5858;
+                color: #36BF9D;
             }
         }
 
         .sociallogo {
             /* color: #fff; */
-            color: #bb5858;
+            color: #36BF9D;
             justify-self: start;
             cursor: pointer;
             text-decoration: none;
@@ -170,6 +170,7 @@
             font-weight: bold;
             padding-top: 20px;
             padding-bottom: 25px;
+            font-family: "Original surfer", sans-serif;
             
         }
     }

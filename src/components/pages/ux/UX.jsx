@@ -1,9 +1,10 @@
 import React from 'react';
-import { Footer } from '../../utils'
+import { Footer, UxHeroSection } from '../../utils'
 
 const Ux = () => {
     return (
         <>
+            <UxHeroSection />
             {/* TODO:// Put main content here */}
             <div>
 

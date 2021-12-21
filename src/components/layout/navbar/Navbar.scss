@@ -16,6 +16,7 @@
     /* background-color: green; */
     border-right: 2px solid #ddd;
     background-color: $main-bg-color !important;
+    /* background: linear-gradient(#24496A,#36BF9D); */
 
     .nav-items-container {
       position: /* absolute */fixed;
@@ -73,9 +74,11 @@
           justify-content: center;
           opacity: 0.5;
           transition: opacity 400ms ease 0s;
-          font-size: 10px;
+          font-size: 15px;
           width: 100%;
           padding: 1rem;
+          font-family: 'Dosis', sans-serif;
+          font-weight: 400;
 
           &:hover {
             opacity:  1;

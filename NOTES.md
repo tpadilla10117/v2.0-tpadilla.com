@@ -9,6 +9,7 @@ General:
         secondary bg: #f0e9dc (alabaster); 
         section-text: #716252 (Raw Umber)
         call to action: 
+    //TODO: <!-- Place colors in the global scope -->
 
     - Buttons: 
         Btn-Bg: #60D2B6 (Turquoise); 
@@ -20,7 +21,7 @@ Landing.jsx:
     - Think about borders inbetween columns
 
 Navbar.jsx:
-    - <!-- TODO:  -->
+    - <!-- TODO:  --> Something going on with memory leak when resizing nav
 
     Bonus:
     - Animations on the modal icon
@@ -37,12 +38,12 @@ AboutMe.jsx:
     - Decide what to do with carousel component - add overlays? Card flips?
 
 Developer.jsx: <!-- TODO: -->
-
-    *Can't scroll with the modal in view
     - **Styles for individual components in this files are in their respective component files.
     - consider borders for scaling beyond mobile view
     - adjust color palettes and font
     - Double-check modal view
+     - Animations on the modal close icon
+     //TODO: Images on the cards need to be better quality
 
     Bonus:
     - Animations on the modal icon
