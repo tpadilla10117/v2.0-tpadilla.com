@@ -11,15 +11,13 @@ $--width-main: 1180px;
     grid-template-columns: 50% 50%;
 
     @media only screen and (max-width: 768px) {
-      .CardWrapper {
+      
         display: flex;
         align-items: center;
         align-content: center;
         justify-content: space-between;
-        /* flex-direction: column; */
         max-width: $--width-main;
-        /* margin: 1rem auto */
-      }
+      
     }
 }
 
