@@ -1,5 +1,6 @@
 import React from 'react';
-import { Footer, UxHeroSection } from '../../utils'
+import { Footer, UxHeroSection, SectionWrapper, CardWrapper, ProjectCard } from '../../utils';
+
 
 const Ux = () => {
     return (

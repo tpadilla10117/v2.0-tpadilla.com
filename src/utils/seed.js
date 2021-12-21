@@ -11,6 +11,8 @@ import Amazon from "../assets/images/Amazon.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
 import Netflix from "../assets/images/Netflix.png";
 import hike from "../assets/images/hike.jpeg";
+import aerialist from '../assets/images/aerialist.jpg';
+import musicfest from '../assets/images/musicfest.jpg';
 /* import turtle from "../assets/images/turtleBeach.jpg";
 import fort1 from "../assets/images/FortBragg1.jpeg"; */
 import keyboard from '../assets/images/keyboard.jpg';
@@ -160,6 +162,49 @@ export const LandingOptions = [
   img: `${resume}`
 }
 
+]
+
+export const caseStudies = [
+  {
+    id: 1,
+    title: "TriTix",
+    /* tech: "Next.js, Tailwind CSS, Firebase (Firestore), Stripe API, Fake Store API, Vercel, HTML, Redux, React.js, JS", */
+    cardCoverText: "An app for connecting local artists to their communities",
+    svgImg: `${musicfest}`,
+    img: `${musicfest}`,
+    alt: "Screenshot of a music festival",
+    /* description: "A responsive, full stack replica of Amazon deployed via Vercel. Users can log into an account, browse items, and initialize checkout with Stripe API integration.",
+    techHighlights: [
+      "Integrated Fake Store API for product queries and managed app state with Redux",
+      "Integrated Stripe API with Firebase (Firestore, NoSQL DB) for user-checkout and data storage",
+      "Developed responsive and optimized UI with Tailwind CSS",
+      "Produced custom, re-usable functional components that can be used in future builds",
+    ],
+    links: [
+      {text: "Demo", link: "https://trinp-amazon-clone.vercel.app/"},
+      {text: "GitHub", link: "https://github.com/tpadilla10117/amazon-clone"}
+    ] */
+  }, 
+  {
+    id: 2,
+    title: "Aerlial Turtles",
+    /* tech: "Next.js, Tailwind CSS, Firebase (Firestore), Stripe API, Fake Store API, Vercel, HTML, Redux, React.js, JS", */
+    cardCoverText: "A responsive portfolio for a professional Aerialist",
+    svgImg: `${aerialist}`,
+    img: `${aerialist}`,
+    alt: "Screenshot of an aerialist performing",
+    /* description: "A responsive, full stack replica of Amazon deployed via Vercel. Users can log into an account, browse items, and initialize checkout with Stripe API integration.",
+    techHighlights: [
+      "Integrated Fake Store API for product queries and managed app state with Redux",
+      "Integrated Stripe API with Firebase (Firestore, NoSQL DB) for user-checkout and data storage",
+      "Developed responsive and optimized UI with Tailwind CSS",
+      "Produced custom, re-usable functional components that can be used in future builds",
+    ],
+    links: [
+      {text: "Demo", link: "https://trinp-amazon-clone.vercel.app/"},
+      {text: "GitHub", link: "https://github.com/tpadilla10117/amazon-clone"}
+    ] */
+  }, 
 ]
 
 export const projects = [
