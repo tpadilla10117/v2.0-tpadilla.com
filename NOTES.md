@@ -51,7 +51,10 @@ Developer.jsx: <!-- TODO: -->
 
 UX.jsx: <!-- TODO: -->
 
-    - Decide on layout for case studies (maybe same as developer? -> Take to new routes?)
+    - Create a dynamic component for the general layout of the case study, being able to pass in children to populate with content
+    (Use the same methods that you did with the Developer section)
+
+
 
 Contact.jsx: <!-- TODO: -->
 

@@ -194,7 +194,7 @@ export const caseStudies = [
     svgImg: `${aerial}`,
     img: `${aerial}`,
     alt: "Screenshot of an aerialist performing",
-    path: '/ux/aerialturtles',
+    path: '/ux/aerial-turtles',
     /* description: "A responsive, full stack replica of Amazon deployed via Vercel. Users can log into an account, browse items, and initialize checkout with Stripe API integration.",
     techHighlights: [
       "Integrated Fake Store API for product queries and managed app state with Redux",

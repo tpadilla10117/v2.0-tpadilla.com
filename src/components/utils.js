@@ -52,7 +52,11 @@ export { default as AboutMe } from './pages/about/AboutMe.jsx';
 
 export { default as Ux } from './pages/ux/UX.jsx';
 
-export { default as CaseStudies } from './pages/ux/casestudies/CaseStudies.jsx';
+/* export { default as CaseStudies } from './pages/ux/casestudies/CaseStudies.jsx'; */
+
+export { default as TriTixApp } from './pages/ux/casestudies/tri-tix-app/TriTixApp.jsx';
+
+export { default as AerialTurtles } from './pages/ux/casestudies/aerial-turtles/AerialTurtles.jsx';
 
 export { default as Contact } from './pages/contact/Contact.jsx';
 

@@ -2,8 +2,8 @@ import React, { useState, useRef } from 'react';
 
 import { Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
-
-import { Developer, AboutMe, Landing, Ux, Contact, Resume, Header, CaseStudies} from './utils';
+import { caseStudies } from '../utils/seed';
+import { Developer, AboutMe, Landing, Ux, Contact, Resume, Header, TriTixApp, AerialTurtles } from './utils';
 import './App.css';
 
 function App() {
@@ -129,6 +129,7 @@ function App() {
           </Route>
 
           {/* TODO: UX Design Sections: */}
+
           <Route exact path='/ux/tri-tix-app'>{ ({ match }) => (
             <CSSTransition
             nodeRef={nodeRef}
@@ -137,7 +138,21 @@ function App() {
             classNames="fade"
             unmountOnExit>
               <div className='fade' ref={nodeRef}>
-                <CaseStudies />
+                <TriTixApp />
+              </div>
+            </CSSTransition>
+          )} 
+          </Route>
+
+          <Route exact path='/ux/aerial-turtles'>{ ({ match }) => (
+            <CSSTransition
+            nodeRef={nodeRef}
+            in={match != null}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit>
+              <div className='fade' ref={nodeRef}>
+                <AerialTurtles />
               </div>
             </CSSTransition>
           )} 
