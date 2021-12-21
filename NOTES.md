@@ -2,6 +2,7 @@
 
 General:
     - Style inconsistencies.  Some pure SASS, but some usage of classnames & style tags (primarily in Devloper.jsx)
+    - Typography: Original surfer, Lora
     - Colors: Need contrast of 4.5: 1 (minimum), 16:1 (high contrast)
     - Colors: 60:30:10 rule & 15:1 contrast ratio
     - Colors: secondary: #386FA4 (Honolulu blue); 

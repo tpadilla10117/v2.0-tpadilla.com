@@ -22,7 +22,7 @@
         width: 100%;
         height: 100%;
         z-index: 1;
-        background: linear-gradient(to top, #f0e9dc 65%, transparent);
+        background: linear-gradient(to top, #f0e9dc 55%, transparent);
 
     }
 
@@ -30,7 +30,8 @@
         position: absolute;
         top: -60px;
         width: 100%;
-        height: 400px;
+        height: 600px;
+        object-fit: cover;
         /* height: 100%; */
         /* background: url("1639030449622.jpg") center / cover; */
     }
@@ -46,7 +47,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: 'Dosis', sans-serif; /* TODO: Change fonts */
+        font-family: 'Lora', sans-serif; /* TODO: Change fonts */
 
         form {
             /* margin-top: 20px; */
@@ -72,7 +73,7 @@
                 /* padding-left: 10px; */
 
                 &::placeholder {
-                    font-family: "Dosis", sans-serif;
+                    font-family: "Lora", sans-serif;
                     /* color: blue; */
                 }
             }
@@ -89,11 +90,11 @@
                 padding: 0 10px;
                 padding-top: 10px;
                 /* border-bottom: 1px solid black; */
-                font-family: 'Dosis', sans-serif;
+                font-family: 'Lora', sans-serif;
                 /* padding-left: 10px; */
 
                 &::placeholder {
-                    font-family: "Dosis", sans-serif;
+                    font-family: "Lora", sans-serif;
                     /* color: blue; */
                 }
             }
@@ -119,7 +120,7 @@
                 transition: all 0.3s ease 0s;
                 font-size: 16px;
                 font-weight: bolder;
-                font-family: "Dosis", sans-serif;
+                font-family: "Lora", sans-serif;
                 margin-top: 15px;
                 /* align-items: center;
                 justify-content: center; */
