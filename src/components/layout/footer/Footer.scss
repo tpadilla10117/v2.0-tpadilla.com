@@ -40,6 +40,8 @@
                         width: 160px;
                         box-sizing: border-box;
                         color: #fff;
+                        font-family: 'Dosis', sans-serif;
+                        font-weight: 400;
 
                         @media screen and (max-width: 420px) {
                             margin: 0;
@@ -102,11 +104,14 @@
                         align-items: center;
                         margin-bottom: 16px;
                         font-weight: bold;
+                        font-family: 'Original surfer', sans-serif;
                     }
 
                     .websiterights {
                         color: #fff;
                         margin-bottom: 16px;
+                        font-family: 'Dosis', sans-serif;
+                        font-weight: 200;
                     }
 
                     .socialicons {

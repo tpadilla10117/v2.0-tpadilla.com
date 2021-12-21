@@ -54,13 +54,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: hsla(0,0%,42.7%,.12);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
 
         .hero-h1 {
             color: #fff;
             font-size: 48px;
             text-align: center;
             font-family: "Original surfer", sans-serif;
-            letter-spacing: 2px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+            @media only screen and (max-device-width: 480px) {
+                font-size: 30px;
+            }
 
         }
         .hero-p {
@@ -70,6 +79,10 @@
             text-align: center;
             max-width: 600px;
             font-family: "Dosis", sans-serif;
+
+            @media only screen and (max-device-width: 480px) {
+                font-size: 15px;
+            }
         }
 
     }
