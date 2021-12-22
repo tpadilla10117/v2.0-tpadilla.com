@@ -37,6 +37,24 @@ const Carousel = ( {slides} ) => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }   
 
+
+/* track
+    slide
+        img */
+
+/* TODO: Logic to make each dot ("carousel-btn-indicator") clickable : */
+    const wrapper = document.querySelector('#carousel-wrapper');
+    /* console.log(wrapper) */
+    const carouselSlides = Array.from(wrapper.children);
+        console.log(carouselSlides);
+    const carouselNav = document.querySelector('.carousel-nav')
+        console.log(carouselNav);
+
+    const dots = Array.from(carouselNav.children);
+        console.log(dots);
+
+        //when I click the nav indicators, move to that slide
+
     /* console.log("Here is the current slide: ", current) */
     return (
         <>

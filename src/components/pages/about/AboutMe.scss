@@ -7,13 +7,16 @@
         display: flex;
         align-items: center;
         /* background-color: #24496A; */
+         margin-top: 40px;
+        margin-bottom: 250px;
     }
 /* TODO: Fix up the styling for both desktop and mobile */
     .bio-wrapper {
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 50% 50%;
         grid-gap: 10px;
-        /* margin-top: 2rem; */
+       /*  margin-top: 40px;
+        margin-bottom: 40px; */
         width: 100%;
         height: 100%;
     }
@@ -132,16 +135,18 @@
         text-align: center;
         padding: 5rem;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 1000px;
+        /* align-items: center;
+        justify-content: center; */
         flex-direction: column;
         color: #24496A;
         overflow-x: hidden;
-        overflow-y: auto;
+        /* overflow-y: auto; */
         background: hsla(0,0%,42.7%,.12);
         box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
         backdrop-filter: blur(5px);
         border-radius: 20px;
+        margin-right: 50px;
         /* padding: 10px; */
         
 
@@ -329,6 +334,7 @@
         /* margin-top: 4rem; */
         justify-content: center;
         height: 100%;
+        margin-bottom: 10px;
     }
 
     .bio-wrapper {
@@ -336,6 +342,7 @@
         flex-direction: column;
         width: 90vw;
         margin-top: 65px;
+        margin-bottom: 20px;
         /* height: 100%; */
 
         .overlay-practice {
@@ -364,6 +371,7 @@
             overflow-y: auto;
             padding: 2rem;
             text-align: center;
+            margin: 0px;
             /* padding-bottom: 1rem; */
             
             
