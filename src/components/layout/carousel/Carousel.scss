@@ -9,15 +9,6 @@
     transform: scale(1.08);
 }
 
-.indicator {
-    transition-duration: 1s ease;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background: rgba(0, 0, 0,.75);
-    transition-duration: 1s;
-}
 
 /* TODO: Review the styles: */
 
@@ -67,15 +58,24 @@
         justify-content: center;
         padding: 10px 0;
         margin-top: 30rem;
-    
-        #carousel-btn-indicator {
+
+        .indicator {
+            transition-duration: 1s ease;
+            cursor: pointer;
             border: 0;
             border-radius: 50%;
             width: 15px;
             height: 15px;
             background: rgba(0, 0, 0, .3);
             margin: 0 12px;
+        
+            &.active {
+                background: rgba(0, 0, 0,.75);
+                transition-duration: 1s;
+            }
         }
+
+        
     }
 }
 

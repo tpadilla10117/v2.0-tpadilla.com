@@ -408,6 +408,7 @@ export const projects = [
   ]
 
 /* Data for carousel in AboutMe.jsx: */
+/* Known also as 'slides' in Carousel.jsx */
   export const carouselData = [
     {
         image: 'https://images.unsplash.com/photo-1620165366489-d08eff58ccf5?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
