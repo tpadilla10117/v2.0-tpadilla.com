@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, /* useEffect */ } from 'react';
 import { carouselData, carouselIndicatorData } from '../../../utils/seed';
+import chevronRight from '../../../assets/icons/chevron-right.svg';
+import chevronLeft from '../../../assets/icons/chevron-left.svg';
 import './Carousel.scss';
 
 /* TODO:  12/7 need to finish up and then style: */
@@ -33,22 +35,20 @@ const Carousel = ( {slides} ) => {
             setCurrent(current === length - 1 ? 0 : current + 1);
     };
 
-/* TODO: Need to use this function for arrows on the carousel: */
     const previousSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }   
-/* console.log(current) */
+/* Helper Function to navigate to exact slide in carousel: */
+
     const exactSlide = (index) => {
         setCurrent(parseInt(index))
-        console.log("Here is current: ", current) //is a string
+        /* console.log("Here is current: ", current) */ //is a string
     }
 
-/* TODO: Functionality to navigate to clicked dot: */
+/* Functionality to navigate to clicked dot: */
     const navigateDots = event => {
         
-        
         //First need to target the correct dot at the array index
-            /* console.log(event.target.getAttribute('data-key')); */
             const arrayValues = event.target.getAttribute('data-key');
             console.log(arrayValues); //TODO: Gives me the index of the buttons
 
@@ -57,25 +57,15 @@ const Carousel = ( {slides} ) => {
             }
 
             exactSlide(arrayValues); //updates current
-
-            /* console.log("Here is current: ", current) */
-
-            /* const targetSlide = document.querySelector('.slide'); */
-            /* const targetSlide = arrayValues.classList; */
-            /* console.log(targetSlide); */
-
-        //Then need to find way to navigate to slide at that index on click
-        //Each dot has it's own index, so we have to :
-            //1) navigate to the index of the dot that's clicked
-            //2) make sure the slide also navigates based on the dot that's clicked
-
-    }
+    };
     
     return (
         <>
              <section id="carousel-wrapper">
-                {/* Arrow */}
-                {/* Arrow */}
+                {/* Right Arrow : */}
+                <img className="right-arrow" src={chevronRight} alt="" onClick={nextSlide}/>
+                {/* Left Arrow: */}
+                <img className="left-arrow" src={chevronLeft} alt="" onClick={previousSlide}/>
 
                 {carouselData.map( (slide, index) => {
                 return (
