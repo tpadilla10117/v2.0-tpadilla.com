@@ -2,20 +2,28 @@
     
     width: 100%;
     padding: 15px 20px 15px 20px;
+    height: 100%;
    
     &:hover {
       cursor: pointer;
     }
+
+    @media only screen and (max-width: 768px) {
+      
+      /* padding: 15px 20px 15px 20px; */
+      padding: 10px;
+    
+  }
     
   
     .projCardBox {
       position: relative;
-      height: 300px;
+      height: 100%;
       box-sizing: border-box;
       display: inline-block;
       overflow: hidden;
       box-shadow: 0 0 20px #494f653b;
-      /* border: 10px solid blue; */
+      /* border: 1px solid blue; */
       max-width: 100%;
       width:100%;  
     
@@ -23,6 +31,7 @@
         position: relative;
         overflow: hidden;
         border-radius: 5px;
+        height: 100%;
         
         
         img {
@@ -36,7 +45,7 @@
           image-rendering: crisp-edges;
           image-rendering: pixelated;
           /* height: auto;    */    
-          height: 300px;
+          height: 100%;
           
         }
       }

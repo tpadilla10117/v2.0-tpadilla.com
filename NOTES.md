@@ -39,6 +39,7 @@ AboutMe.jsx:
     - Decide what to do with carousel component - add overlays? Card flips?
 
 Developer.jsx: <!-- TODO: -->
+    <!-- TODO: Responsiveness for the entire container.  I set max height on the cards, but for specific breakpoints, need to adjust -->
     - **Styles for individual components in this files are in their respective component files.
     - consider borders for scaling beyond mobile view
     - adjust color palettes and font

@@ -25,7 +25,7 @@ const Developer = (props) => {
 
 
     return (
-        <div>
+        <>
 
             <VideoSection />
         {/* This renders the main project cards on the Landing Page: */}
@@ -96,7 +96,7 @@ const Developer = (props) => {
 
 
 
-        </div>
+        </>
     );
 };
 
