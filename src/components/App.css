@@ -22,6 +22,8 @@
   /* z-index: 1;
   background-color: #101522; */
   height: 100%;
+  max-height: 100%;
+  max-width: 100%;
   width: 100%;
   background-color: #f0e9dc;
   
@@ -80,16 +82,15 @@
   }
 }
 
+/* TODO:My columns in app arent set properly */
 @media only screen and (min-device-width: 1000px) {
 
     .app-container {
       display: grid;
-      /* grid-template-columns: 1fr 15fr; */
-      grid-template-columns: 10vw auto;
-      /* text-align: center; */
-      /* background-color: red; */
-      
-      
+      /* grid-template-columns: 10vw auto; */      
+      /* grid-template-columns: 10% 90%;  */
+      /* grid-template-columns: 1fr 1fr; */
+      grid-template-columns: 1fr 9fr;
     }
   
   }
