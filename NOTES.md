@@ -16,6 +16,7 @@ General:
         Btn-Bg: #60D2B6 (Turquoise); 
         Btn-Txt: #FFF (White); 
         Btn-Hover-State: #36BF9D (Mountain Meadow);
+<!--TODO: Something going on with parent level container not containg all children..  IT's NOT the nav components  -->
 
 Landing.jsx:
     - <!-- TODO: Double check the responsive design -->

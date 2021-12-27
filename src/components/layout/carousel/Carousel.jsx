@@ -60,7 +60,7 @@ const Carousel = ( {slides} ) => {
     };
     
     return (
-        <>
+        
              <section id="carousel-wrapper">
                 {/* Right Arrow : */}
                 <img className="right-arrow" src={chevronRight} alt="" onClick={nextSlide}/>
@@ -69,7 +69,7 @@ const Carousel = ( {slides} ) => {
 
                 {carouselData.map( (slide, index) => {
                 return (
-                    <div id="carousel-img-wrapper" className={index === current ? 'slide active' : 'slide'} key={index} >
+                    <div className={index === current ? 'carousel-img-wrapper slide active' : 'carousel-img-wrapper slide'} key={index} >
                         {index === current && (<img src={slide.image} alt="travel" key={index} className='slider-image' />)}
                         
                     </div>
@@ -81,14 +81,14 @@ const Carousel = ( {slides} ) => {
                 <div className="carousel-nav" >
                     {carouselIndicatorData.map( (slide, index) => {
                         return (
-                            <button className={index === current ? 'indicator active' : 'indicator'} key={index} data-key={index} onClick={ navigateDots /* () => console.log(index) */ /* nextSlide */ }/>
+                            <button className={index === current ? 'indicator active' : 'indicator'} key={index} data-key={index} onClick={ navigateDots}/>
                         )
                     })}
                 </div>
 
             </section>
 
-        </>
+        
     );
 };
 
