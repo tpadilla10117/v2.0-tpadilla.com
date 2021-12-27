@@ -20,7 +20,7 @@ const Ux = () => {
         <>
             <UxHeroSection />
             
-            {/* <SectionWrapper 
+            <SectionWrapper 
                 id="casestudies"
                 content={
                     <CardWrapper>
@@ -43,7 +43,7 @@ const Ux = () => {
                     </CardWrapper>
                 }
 
-            /> */}
+            />
         
             <Footer />
         </>

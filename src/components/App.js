@@ -53,7 +53,7 @@ function App() {
             timeout={300}
             classNames="fade"
             unmountOnExit>
-              <div  ref={nodeRef}>
+              <div className="fade" ref={nodeRef}>
                 <AboutMe />
               </div>
             </CSSTransition>
