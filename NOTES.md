@@ -53,6 +53,8 @@ Developer.jsx: <!-- TODO: -->
 
 UX.jsx: <!-- TODO: -->
 
+<!-- TODO: Responsiveness for the entire container.  I set max height on the cards, but for specific breakpoints, need to adjust -->
+
     - Create a dynamic component for the general layout of the case study, being able to pass in children to populate with content
     (Use the same methods that you did with the Developer section)
 
