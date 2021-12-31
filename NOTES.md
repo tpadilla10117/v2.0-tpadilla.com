@@ -11,7 +11,6 @@ General:
         section-text: #716252 (Raw Umber)
         call to action: 
     //TODO: <!-- Place colors in the global scope -->
-    <!-- TODO: CSS Transition Makes the scroll transition on mobile views malfunction -->
 
     - Buttons: 
         Btn-Bg: #60D2B6 (Turquoise); 

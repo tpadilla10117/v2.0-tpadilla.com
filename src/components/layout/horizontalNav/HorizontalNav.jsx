@@ -11,7 +11,7 @@ const HorizontalNav = (props) => {
 
 /* Box and transparent are referencing inline style properties: */
    const box = {
-       background: 'hsla(0,0%,42.7%,.12)',
+       background: /* 'hsla(0,0%,42.7%,.12)' */'#24496A',
        boxShadow: '0 3px 30px rgb(0 0 0 / 10%)',
        backdropFilter: 'blur(5px)'
    };
