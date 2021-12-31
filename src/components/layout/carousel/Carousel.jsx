@@ -62,31 +62,36 @@ const Carousel = ( {slides} ) => {
     return (
         
              <section id="carousel-wrapper">
-                {/* Right Arrow : */}
-                <img className="right-arrow" src={chevronRight} alt="" onClick={nextSlide}/>
-                {/* Left Arrow: */}
-                <img className="left-arrow" src={chevronLeft} alt="" onClick={previousSlide}/>
+                 {/* <div className='carousel-container'> */}
+                <div className='arrow-container'>
 
-                {carouselData.map( (slide, index) => {
-                return (
-                    <div className={index === current ? 'carousel-img-wrapper slide active' : 'carousel-img-wrapper slide'} key={index} >
-                        {index === current && (<img src={slide.image} alt="travel" key={index} className='slider-image' />)}
-                        
-                    </div>
-                    
-                )
-            })}
-
-            {/* For the Indicator buttons below: */}
-                <div className="carousel-nav" >
-                    {carouselIndicatorData.map( (slide, index) => {
-                        return (
-                            <button className={index === current ? 'indicator active' : 'indicator'} key={index} data-key={index} onClick={ navigateDots}/>
-                        )
-                    })}
+                    {/* Right Arrow : */}
+                    <img className="right-arrow" src={chevronRight} alt="" onClick={nextSlide}/>
+                    {/* Left Arrow: */}
+                    <img className="left-arrow" src={chevronLeft} alt="" onClick={previousSlide}/>
                 </div>
 
-            </section>
+                    {carouselData.map( (slide, index) => {
+                    return (
+                        <div className={index === current ? 'carousel-img-wrapper slide active' : 'carousel-img-wrapper slide'} key={index} >
+                            {index === current && (<img src={slide.image} alt="travel" key={index} className='slider-image' />)}
+                            
+                        </div>
+                        
+                    )
+                    })}
+
+                {/* For the Indicator buttons below: */}
+                    <div className="carousel-nav" >
+                        {carouselIndicatorData.map( (slide, index) => {
+                            return (
+                                <button className={index === current ? 'indicator active' : 'indicator'} key={index} data-key={index} onClick={ navigateDots}/>
+                            )
+                        })}
+                    </div>
+
+                 {/* </div> */}
+                </section>
 
         
     );

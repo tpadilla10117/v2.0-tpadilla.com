@@ -14,7 +14,7 @@
     background: #f0e9dc;
     border-top: 1px solid #ddd;
     
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
     /* border-bottom: 50px solid yellow; */
     /* background-color: #101522; */
 
@@ -22,36 +22,55 @@
         
     } */
 
+   /*  .carousel-container {
+        border: 10px solid red;
+        display: flex;
+        height: 500px;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    } */
 
-    .right-arrow {
-        position: absolute;
-        top: 50%;
-        right: 10rem;
-        /* font-size: 1.1rem; */
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
+    .arrow-container {
+        /* border: 10px solid red; */
+        /* z-index: 10; */
+        height: 100%;
+        width: 100%;
+        .right-arrow {
+            position: absolute;
+            top: 50%;
+            right: 0rem;
+            /* font-size: 1.1rem; */
+            /* color: #000; */
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+            /* background-color: black; */
+        }
+    
+        .left-arrow {
+            position: absolute;
+            top: 50%;
+            left: 0rem;
+            /* font-size: 1.1rem; */
+            display: flex;
+            color: #000;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+            /* background-color: #000; */
+        }
     }
 
-    .left-arrow {
-        position: absolute;
-        top: 50%;
-        left: 10rem;
-        /* font-size: 1.1rem; */
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-    }
+
 
     .carousel-img-wrapper  {
 
         max-height: 100%;
         /* border: 10px solid red; */
-        max-width: 80%;
+        /* max-width: 80%; */
         height: 100%;
-        width: 80%;
+        /* width: 80%; */
         align-items: center;
         justify-content: center;
         /* background-color: blue; */
@@ -78,13 +97,17 @@
             display: flex;
             margin: 0 auto;
             max-width: 100%;
-            /* width: 100%; */
+            /* width: 600px; */
             object-fit: cover;
             max-height: 100%;
             height: 100%;
             border-radius: 10px;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
             /* position: absolute; */
+
+             @media only screen and (max-width: 768px) {
+                border-radius: 0;
+            }
         }
 
     }
@@ -102,7 +125,7 @@
         .indicator {
             transition-duration: 1s ease;
             cursor: pointer;
-            border: 0;
+            border: .5px solid rgba(0, 0, 0, .3);
             border-radius: 50%;
             width: 15px;
             height: 15px;
@@ -110,8 +133,9 @@
             margin: 0 12px;
         
             &.active {
-                background: rgba(0, 0, 0,.75);
+                background: /* rgba(0, 0, 0,.75) */#fff;
                 transition-duration: 1s;
+                /* border: none; */
             }
         }
 
