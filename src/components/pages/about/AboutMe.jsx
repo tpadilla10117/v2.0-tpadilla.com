@@ -8,7 +8,7 @@ import { carouselData } from '../../../utils/seed';
 const AboutMe = (props) => {
 
     return (
-        <>
+        <main id="aboutme-wrapper">
             <div id="mainPage-wrapper">
                 <div className="bio-wrapper">
 
@@ -72,7 +72,7 @@ const AboutMe = (props) => {
 
             <Footer />
        
-        </>
+        </main>
 
         
     );

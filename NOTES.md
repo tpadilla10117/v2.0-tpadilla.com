@@ -1,5 +1,5 @@
 <!-- General Notes on Project: -->
-
+<!-- TODO: mobile views practically done expect AboutMe -->
 General:
     - Style inconsistencies.  Some pure SASS, but some usage of classnames & style tags (primarily in Devloper.jsx)
     - Typography: Original surfer, Lora
@@ -64,7 +64,7 @@ Contact.jsx: <!-- TODO: -->
 
     - remake form -> **The Submit button needs fixing when clocked
     - make form functional with email.js
-    - decide on what to do with rest of the page / negative space
+    - decide on what to do with rest of the page / negative space on larger views
 
 Resume.jsx: <!-- TODO: -->
 
