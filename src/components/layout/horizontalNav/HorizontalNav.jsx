@@ -20,18 +20,24 @@ const HorizontalNav = (props) => {
        background: 'transparent'
    };
 
+   /* TODO: Event listener not firing regardless of logic: */
    const changeNav = () => {
        if (window.scrollY >= 80) {
            setScrollNav(true);
        } else {
            setScrollNav(false);
-           /* navVariable.style.backgroundColor = '#101522'; */
        }
    };
 
+   console.log(window.scrollY);
+   
+
    useEffect(() => {
-       window.addEventListener('scroll', changeNav)
+       window.addEventListener("scroll", changeNav);
+
+       return () => window.removeEventListener("scroll", changeNav);
    }, [] );
+
 
     return (
         <nav className="horizontal-navbar" style={  Object.assign({}, scrollNav ? box : transparent)      }>

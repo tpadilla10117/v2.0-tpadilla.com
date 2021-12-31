@@ -11,6 +11,7 @@ General:
         section-text: #716252 (Raw Umber)
         call to action: 
     //TODO: <!-- Place colors in the global scope -->
+    <!-- TODO: CSS Transition Makes the scroll transition on mobile views malfunction -->
 
     - Buttons: 
         Btn-Bg: #60D2B6 (Turquoise); 
@@ -79,53 +80,3 @@ Resume.jsx: <!-- TODO: -->
 - Add skeleton loading screens
 - Add transitions when navigating to other routes
 - Add content to the footer.jsx component
-
-<!-- TODO: Carousel logic -->
-
-/* 
-/* track
-    slide
-        img */
-
-/* TODO: Logic to make each dot ("carousel-btn-indicator") clickable : */
-    const wrapper = document.querySelector('#carousel-wrapper');
-    /* console.log(wrapper) */
-    const carouselSlides = Array.from(wrapper.children);
-        /* console.log(carouselSlides); */
-
-    const imgWrapper = document.querySelector('#carousel-img-wrapper');
-        console.log("Here is my img wrapper: ", imgWrapper);
-
-    const carouselNav = document.querySelector('.carousel-nav')
-        /* console.log(carouselNav); */
-
-    const dots = Array.from(carouselNav.children);
-        /* console.log(dots); */
-
-    const slideSize = carouselSlides[0].getBoundingClientRect();
-        /* console.log(slideSize); */
-    
-    const slideWidth = slideSize.width;
-        /* console.log(slideWidth) */
-
-    /* const moveToSlide = (targetSlide) => {
-        targetSlide.classList.add('active');
-    } */
-
-        
-        /* carouselNav.addEventListener('click', event => {
-            
-            const targetDot = event.target.closest('button');
-            
-
-            if(!targetDot) return;
-
-            const targetIndex = dots.findIndex(dot => dot === targetDot);
-            console.log("Here's my index of the buttons:", targetIndex);
-
-            const targetSlide = carouselSlides[targetIndex];
-
-            moveToSlide(targetSlide);
-        }) */
-
-    /* console.log("Here is the current slide: ", current) */ */

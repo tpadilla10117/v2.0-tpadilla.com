@@ -31,22 +31,13 @@ function App() {
       <div className="route-container">
 
         {/* TODO: Landing Section */}
-          <Route exact path='/'>{ ({ match }) => (
-            <CSSTransition
-            nodeRef={nodeRef}
-            in={match != null}
-            timeout={300}
-            classNames="fade"
-            unmountOnExit>
-              <div className='fade' ref={nodeRef}>
-                <Landing />
-              </div>
-            </CSSTransition>
-          )} 
+          <Route exact path='/'>
+            <Landing/>
+            
           </Route>
 
         {/* TODO: About Section */}
-          <Route exact path='/about'>{ ({ match }) => (
+         {/*  <Route exact path='/about'>{ ({ match }) => (
             <CSSTransition
             nodeRef={nodeRef}
             in={match != null}
@@ -58,10 +49,13 @@ function App() {
               </div>
             </CSSTransition>
           )} 
+          </Route> */}
+           <Route exact path='/about'>
+            <AboutMe />
           </Route>
 
         {/* TODO: Developer Section */}
-          <Route exact path='/developer'>{ ({ match }) => (
+          {/* <Route exact path='/developer'>{ ({ match }) => (
             <CSSTransition
             nodeRef={nodeRef}
             in={match != null}
@@ -78,11 +72,20 @@ function App() {
               </div>
             </CSSTransition>
           )} 
+          </Route> */}
+
+          <Route exact path='/developer'>
+            <Developer 
+            modalVisibility={modalVisibility}
+            setModalVisibility={setModalVisibility}
+            activeProject={activeProject}
+            setActiveProject={setActiveProject}
+            />
           </Route>
 
 
         {/* TODO: UX Design Section */}
-           <Route exact path='/ux'>{ ({ match }) => (
+           {/* <Route exact path='/ux'>{ ({ match }) => (
             <CSSTransition
             nodeRef={nodeRef}
             in={match != null}
@@ -94,11 +97,15 @@ function App() {
               </div>
             </CSSTransition>
           )} 
+          </Route> */}
+
+          <Route exact path='/ux'>
+            <Ux />
           </Route>
 
           {/* TODO: Contact Section */}
 
-           <Route exact path='/contact'>{ ({ match }) => (
+           {/* <Route exact path='/contact'>{ ({ match }) => (
             <CSSTransition
             nodeRef={nodeRef}
             in={match != null}
@@ -110,6 +117,10 @@ function App() {
               </div>
             </CSSTransition>
           )} 
+          </Route> */}
+
+          <Route exact path='/contact'>
+            <Contact/>
           </Route>
 
           {/* TODO: Resume Section */}

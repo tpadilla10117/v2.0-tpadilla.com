@@ -1,33 +1,10 @@
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .app-container {
-  /* z-index: 1;
-  background-color: #101522; */
-  height: 100vh;
+  /* height: 100vh; */
   max-height: 100%;
   max-width: 100%;
   width: 100%;
   background-color: #f0e9dc;
-  overflow: auto;
-  
+  /* overflow: auto; */
 }
 
 .fade {
@@ -67,13 +44,12 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  /* position: relative; */
-  /* overflow-y: auto; */
   min-height: 100%;
   max-width: 100%;
-  /* max-height: 100%; */
-  /* overflow-y: hidden; */
-  grid-column-start: 2; /* crucial for content nested in second column */
+  /* grid-column-start: 2; */ /* crucial for content nested in second column */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 /* @media screen and (max-width: 768px) {
