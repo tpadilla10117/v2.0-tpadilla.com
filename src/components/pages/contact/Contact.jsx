@@ -18,5 +18,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-{/* <video className='videobg' autoPlay loop muted src={beach} type="video/mp4"></video> */}

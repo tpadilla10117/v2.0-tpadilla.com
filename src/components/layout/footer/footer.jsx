@@ -11,6 +11,12 @@ function  Footer() {
                     <div className='footerlinks-wrapper'>
                         <div className='footerlink-items'>
                             {/* <ul className='footerlink-title'>Home</ul> */}
+                                <NavLink className='footerlink' to="/" exact activeClassName="active">
+                                    Home
+                                </NavLink>                            
+                        </div>
+                        <div className='footerlink-items'>
+                            {/* <ul className='footerlink-title'>Home</ul> */}
                                 <NavLink className='footerlink' to="/about" exact activeClassName="active">
                                     About
                                 </NavLink>                            
@@ -33,12 +39,12 @@ function  Footer() {
                                     Contact
                                 </NavLink>                            
                         </div>
-                        <div className='footerlink-items'>
-                            {/* <ul className='footerlink-title'>Home</ul> */}
+                       {/*  <div className='footerlink-items'>
+                            
                                 <NavLink className='footerlink' to="/resume" exact activeClassName="active">
                                     Resume
                                 </NavLink>                            
-                        </div>
+                        </div> */}
 
                     </div>
 

@@ -125,7 +125,7 @@ function App() {
 
           {/* TODO: Resume Section */}
 
-           <Route exact path='/resume'>{ ({ match }) => (
+           {/* <Route exact path='/resume'>{ ({ match }) => (
             <CSSTransition
             nodeRef={nodeRef}
             in={match != null}
@@ -137,7 +137,7 @@ function App() {
               </div>
             </CSSTransition>
           )} 
-          </Route>
+          </Route> */}
 
           {/* TODO: UX Design Sections: */}
 

@@ -19,7 +19,7 @@ import keyboard from '../assets/images/keyboard.jpg';
 /* import wireframes from '../assets/images/wireframes.jpg'; */
 import ux from '../assets/images/ux.jpg';
 import greeting from '../assets/images/greeting.jpg';
-import resume from '../assets/images/resume.jpg';
+/* import resume from '../assets/images/resume.jpg'; */
 
 export const NavbarData = [
 
@@ -95,10 +95,9 @@ export const NavbarData = [
     offset: -80
 },
 
-{
+/* {
   title: 'Resume',
   path: '/resume',
-  /* icon: <AiIcons.AiOutlineFilePdf />, */
   cName: 'nav-text',
   activeObject: null,
   id: 6,
@@ -108,7 +107,7 @@ export const NavbarData = [
     spy: true,
     exact: 'true',
     offset: -80
-}
+} */
 
 ]
 
@@ -152,15 +151,14 @@ export const LandingOptions = [
     img: `${greeting}`
 },
 
-{
+/* {
   title: 'Resume',
   path: '/resume',
-  /* icon: <AiIcons.AiOutlineFilePdf />, */
   cName: 'nav-text',
   activeObject: null,
   id: 6,
   img: `${resume}`
-}
+} */
 
 ]
 
