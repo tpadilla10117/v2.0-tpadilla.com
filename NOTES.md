@@ -16,7 +16,6 @@ General:
         Btn-Bg: #60D2B6 (Turquoise); 
         Btn-Txt: #FFF (White); 
         Btn-Hover-State: #36BF9D (Mountain Meadow);
-<!--TODO: Something going on with parent level container not containg all children..  IT's NOT the nav components  -->
 
 Landing.jsx:
     - <!-- TODO: Double check the responsive design -->
@@ -62,8 +61,6 @@ UX.jsx: <!-- TODO: -->
 
 Contact.jsx: <!-- TODO: -->
 
-    - remake form -> **The Submit button needs fixing when clocked
-    - make form functional with email.js
     - decide on what to do with rest of the page / negative space on larger views
 
 Resume.jsx: <!-- TODO: -->

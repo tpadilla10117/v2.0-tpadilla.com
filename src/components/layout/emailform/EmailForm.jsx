@@ -52,8 +52,9 @@ const EmailForm = () => {
                 </button> 
                 
                 : 
-                
-                <p className='contact-txt-fade'>{emailSent && buttonText}</p>
+                <div className='contact-txt-container'>
+                    <p className='contact-txt-fade'>{emailSent && buttonText}</p>
+                </div>
                 
             }    
             </form>
