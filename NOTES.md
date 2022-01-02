@@ -11,6 +11,7 @@ General:
         section-text: #716252 (Raw Umber)
         call to action: 
     //TODO: <!-- Place colors in the global scope -->
+    <!-- TODO: Mobile largely done, need to adjust for bigger screens, esp iMacs -->
 
     - Buttons: 
         Btn-Bg: #60D2B6 (Turquoise); 

@@ -1,12 +1,20 @@
 #ux-section {
+    height: 100vh;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content:space-between;
     
+    @media only screen and (min-device-width: 1025px) {
+        /* padding: 5rem; */
+        /* display: grid;
+        grid-template-rows: 20% 60% 20%; */
+        
+    }
+
 
     #casestudies {
-        /* height: 100vh; */
-       /*  display: flex;
-        align-items: center;
-        justify-content: center; */
-
+       
         .casestudies-wrapper {
             /* height: 500px; */
             
