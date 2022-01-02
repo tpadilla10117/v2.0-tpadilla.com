@@ -1,13 +1,39 @@
 #ux-section {
-    height: 100vh;
+    
 
     #casestudies {
-        /* height: 50%; */
+        /* height: 100vh; */
+       /*  display: flex;
+        align-items: center;
+        justify-content: center; */
 
         .casestudies-wrapper {
             /* height: 500px; */
+            
+            @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)  {
+                padding: 3rem;
+                
+                
+            }
+
+            @media only screen and (min-device-width: 1025px) {
+                /* padding: 5rem; */
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* height: 80vh; */
+            }
+              
         }
 
        
+    }
+
+    footer {
+        /* @media only screen and (min-device-width: 1025px) {
+          
+            height: 20vh;
+        } */
+
+        
     }
 }

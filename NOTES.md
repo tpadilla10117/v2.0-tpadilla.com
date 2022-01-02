@@ -59,13 +59,12 @@ UX.jsx: <!-- TODO: -->
 
 
 
+
+
 Contact.jsx: <!-- TODO: -->
 
-    - decide on what to do with rest of the page / negative space on larger views
+    - adjust the email component accordingly
 
-Resume.jsx: <!-- TODO: -->
-
-    - Decide on whether or not to keep the component
 
 <!-- TODO: -->
 - Bugg between 820 px resize and 1000px
