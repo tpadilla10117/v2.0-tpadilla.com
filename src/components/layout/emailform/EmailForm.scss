@@ -72,6 +72,7 @@
                 margin: 10px 0px;
                 font-size: 14px;
                 /* padding-left: 10px; */
+                font-family: 'Lora', sans-serif;
 
                 &::placeholder {
                     font-family: "Lora", sans-serif;
@@ -107,6 +108,10 @@
                 /* background-color: #59b256; */
                 /* color: white; */
                 /* font-weight: 800; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
                 cursor: pointer;
                 text-transform: uppercase;
                 width: 260px;
@@ -132,6 +137,15 @@
                     color: #fff;
                     transform: translateY(-7px);
                   }
+
+                img {
+                    padding: 5px;
+                }
+
+                p {
+                    padding: 5px;
+                    letter-spacing: 2px;
+                }
             }
 
             .contact-txt-fade {

@@ -1,9 +1,11 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import {Link} from 'react-router-dom';
-import paperPlane from '../../../assets/icons/paperPlane.svg';
+/* import paperPlane from '../../../assets/icons/paperPlane.svg'; */
+import mail from '../../../assets/icons/mail.svg';
+import chat from '../../../assets/icons/chat.svg';
 import './EmailForm.scss';
-import keyboard from '../../../assets/images/keyboard.jpg';
+/* import keyboard from '../../../assets/images/keyboard.jpg'; */
 import cabana from '../../../assets/images/cabana.jpg';
 
 const EmailForm = () => {
@@ -36,7 +38,7 @@ const EmailForm = () => {
 
             <form ref={formRef} onSubmit={handleSubmit}>
                 <div className='forminput-wrapper'>
-
+                    {/* TODO: Add icons to the input fields: */}
                     <input type="text" placeholder="Name" name="user_name" required />
                     <input type="text" placeholder="Subject" name="user_subject" required />
                     <input type="text" placeholder="Email" name="user_email" required />
@@ -45,7 +47,8 @@ const EmailForm = () => {
                 {/* TODO: Need to make icon consistent with icon library: */}
             {!emailSent ? 
                 <button className="contact-button">
-                    <img className="formBtn-img" src={paperPlane} alt=""/>Submit
+                    <img className="formBtn-img" src={mail} alt="A mail icon"/>
+                    <p>Submit</p>
                 </button> 
                 
                 : 
