@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Footer, UxHeroSection, SectionWrapper, CardWrapper, ProjectCard } from '../../utils';
+import { Footer, UxHeroSection, SectionWrapper, /* CardWrapper, */ ProjectCard } from '../../utils';
 import { caseStudies } from '../../../utils/seed';
 import './UX.scss';
 
@@ -19,12 +19,14 @@ const Ux = () => {
 
     return (
         <main id="ux-section">
+            
+
             <UxHeroSection />
             
             <SectionWrapper 
                 id="casestudies"
                 content={
-                    <CardWrapper className="casestudies-wrapper">
+                    <div className="casestudies-wrapper">
                         {caseStudies.map(study => {
                             return (
                                 <ProjectCard 
@@ -41,10 +43,11 @@ const Ux = () => {
                             )
                         })}
 
-                    </CardWrapper>
+                    </div>
                 }
 
             />
+            
         
             <Footer />
         </main>
