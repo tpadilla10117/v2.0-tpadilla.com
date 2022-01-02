@@ -2,6 +2,7 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
+        /* background-color: #24496A; */
         /* height: 100%; */
 
         /* @media only screen and (min-width: 1000px) {
@@ -18,6 +19,7 @@
             display: flex;
             align-items: center;
             /* background-color: #24496A; */
+            
             margin-bottom: 5rem;
             margin-top: 5rem;
     
@@ -393,15 +395,6 @@
                     height: 100%;
                     /* padding-bottom: 1rem; */
                     
-                    
-        
-                    .sideBio-heading1 {
-        
-                    }
-        
-                    .sideBio-heading2 {
-                        
-                    }
         
                     p {
                         font-size: 17px;
@@ -482,13 +475,16 @@
                 .sideBio {
                     width: 100%;
                     overflow-x: hidden;
-                    overflow-y: auto;
+                    /* overflow-y: auto; */
                     /* padding: 2rem; */
                     text-align: center;
                     margin: 0;
                     margin-top: 2rem;
-                    /* height: 100%; */
+                    justify-content: none;
+                    padding: 5rem;
+                    padding-top: 2rem 4rem;
                     border-radius: 0;
+                    
                 }
             }
         }

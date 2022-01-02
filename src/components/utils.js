@@ -17,6 +17,8 @@ export { default as VideoSection } from './layout/videosection/VideoSection.jsx'
 
 export { default as UxHeroSection } from './layout/uxHeroSection/UxHeroSection.jsx';
 
+export { default as AboutHeroSection } from './layout/aboutHeroSection/AboutHeroSection.jsx';
+
 export { default as EmailForm } from './layout/emailform/EmailForm.jsx';
 
 export { default as SectionWrapper } from './layout/sectionwrapper/SectionWrapper.jsx';

@@ -2,13 +2,14 @@ import React from 'react';
 import './AboutMe.scss';
 import Trin from '../../../assets/images/trin.jpg';
 import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
-import { Carousel, BlueBg, Footer } from '../../utils';
+import { Carousel, Footer, AboutHeroSection } from '../../utils';
 import { carouselData } from '../../../utils/seed';
 
 const AboutMe = (props) => {
 
     return (
         <main id="aboutme-wrapper">
+            <AboutHeroSection />
             <div id="mainPage-wrapper">
                 <div className="bio-wrapper">
 
