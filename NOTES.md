@@ -1,6 +1,9 @@
 <!-- General Notes on Project: -->
 <!-- TODO: mobile views practically done expect AboutMe -->
-Macbook: 1280x800
+<!-- Macbook: 1280x800
+Apple	iMac 21.5-inch	55 (21.5)	1920 x 1080
+Apple	iMac 27-inch	69 (27)	2560 x 1440 -->
+
 General:
     - Style inconsistencies.  Some pure SASS, but some usage of classnames & style tags (primarily in Devloper.jsx)
     - Typography: Original surfer, Lora
