@@ -1,5 +1,6 @@
 <!-- General Notes on Project: -->
 <!-- TODO: mobile views practically done expect AboutMe -->
+Macbook: 1280x800
 General:
     - Style inconsistencies.  Some pure SASS, but some usage of classnames & style tags (primarily in Devloper.jsx)
     - Typography: Original surfer, Lora

@@ -35,6 +35,11 @@
         object-fit: cover;
         /* height: 100%; */
         /* background: url("1639030449622.jpg") center / cover; */
+
+        @media screen and (min-device-width: 2000px) {
+            top: -40px;
+            height: 860px;
+        }
     }
 
     .content {
