@@ -2,10 +2,12 @@ import React from 'react';
 import './AboutMe.scss';
 import Trin from '../../../assets/images/trin.jpg';
 import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
-import { Carousel, Footer, AboutHeroSection } from '../../utils';
+import { Carousel, Footer, AboutHeroSection, PersonalCards } from '../../utils';
 import { carouselData } from '../../../utils/seed';
 
 const AboutMe = (props) => {
+
+    const { cardState, changeCardState } = props;
 
     return (
         <main id="aboutme-wrapper">
@@ -66,7 +68,7 @@ const AboutMe = (props) => {
 
             </div>
             {/* <BlueBg > */}
-
+                <PersonalCards cardState={cardState} changeCardState={changeCardState}/>
             <Carousel slides={carouselData} />
 
             {/* </BlueBg> */}

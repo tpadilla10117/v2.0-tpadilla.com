@@ -27,6 +27,8 @@ export { default as Modal } from './layout/modal/Modal.jsx';
 
 export { default as CardWrapper } from './layout/cardwrapper/CardWrapper.jsx';
 
+export { default as PersonalCards } from './layout/personalcards/PersonalCards.jsx';
+
 export { default as ProjectCard } from './layout/projectcard/ProjectCard.jsx';
 
 export { default as ProjectPage } from './layout/projectpage/ProjectPage.jsx';

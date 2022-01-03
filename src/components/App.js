@@ -1,9 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, /* useRef */ } from 'react';
 
 import { Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
-import { caseStudies } from '../utils/seed';
-import { Developer, AboutMe, Landing, Ux, Contact, Resume, Header, TriTixApp, AerialTurtles } from './utils';
+/* import { caseStudies } from '../utils/seed'; */
+import { Developer, AboutMe, Landing, Ux, Contact, /* Resume, */ Header, TriTixApp, AerialTurtles } from './utils';
 import './App.css';
 
 function App() {
@@ -12,6 +12,12 @@ function App() {
 /* State for Modals: */
   const [modalVisibility, setModalVisibility] = useState(false);
   const [activeProject, setActiveProject] = useState(null);
+
+/* State for PersonalCards.jsx : */
+const [ cardState, changeCardState ] = useState({
+  activeObject: null,
+  objects: [{ id:1}, {id: 2}, {id:3}]
+});
 
 /* State for Case Study routing: */
 
@@ -51,7 +57,7 @@ function App() {
           )} 
           </Route> */}
            <Route exact path='/about'>
-            <AboutMe />
+            <AboutMe cardState={cardState} changeCardState={changeCardState} />
           </Route>
 
         {/* TODO: Developer Section */}
