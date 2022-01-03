@@ -164,6 +164,10 @@
                     margin-right: 150px;
                     /* padding: 10px; */
 
+                    @media screen and (min-device-width: 1900px ) {
+                        justify-content: center;
+                    }
+
             
                     h1 {
                         font-family: 'Original surfer', sans-serif;

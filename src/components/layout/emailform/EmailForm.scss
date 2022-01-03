@@ -242,3 +242,37 @@
         }
     }
 }
+
+@media screen and (min-device-width: 1900px ) {
+    .emailform-container {
+        
+
+        .content {
+            /* display: flex; */
+
+            form {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                max-width: 786px;
+
+                .forminput-wrapper {
+                    
+                    width:100%;
+                    padding: 15px;
+
+                    input {
+                        /* display: flex; */
+                        width: 100%;
+                    }
+
+                    textarea {
+                        /* display: flex; */
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+                
