@@ -5,17 +5,15 @@ const CaseStudies = () => {
 
     /* 1) set the date im counting to */
     let countDownDate = () => {
-        /* Get the current year: */
+        /* 2) Get the current year: */
         let year = new Date().getFullYear();
         
-        /* Calculate difference in time between target date and current date: */
+        /* 3) Calculate difference in time between target date and current date: */
         /* + before new Date is shorthand to cast obj as integer -> yuelkds Unix timestamp in microseconds */
 
         const difference = +new Date(`${year}-01-31`) - +new Date();
 
-        /* console.log("Value from difference: ", difference) */
-
-        /* Calculate the remaining time: */
+        /* 4) Calculate the remaining time: */
         let timeRemaining = {};
 
         if (difference > 0) {
@@ -27,12 +25,14 @@ const CaseStudies = () => {
             };
         }
 
-        /* console.log(timeRemaining); */
         return timeRemaining;
     };
 
+
+/* State for the time calculated in countDownDate() : */
     const [timeRemaining, setTimeRemaining] = useState(countDownDate());
 
+/* Updates the timer: */
     useEffect(() => {
         const timer = setTimeout( () => {
             setTimeRemaining(countDownDate() );
@@ -41,14 +41,24 @@ const CaseStudies = () => {
         return () => clearTimeout(timer);
     });
 
-    /* Used for the UI elements: */
+/* Used for the UI elements: */
     const countdownComponents = [];
-    
-    
+
+    Object.keys(timeRemaining).forEach( (interval) => {
+        if(!timeRemaining[interval]) {
+            return;
+        }
+
+        countdownComponents.push(
+            <span>
+                {timeRemaining[interval]} {interval} {" "}
+            </span>
+        );
+    });
 
     return (
         <div>
-            Hello World.
+            {countdownComponents.length ? countdownComponents : <span>Here's my work!</span>}
         </div>
     );
 };
