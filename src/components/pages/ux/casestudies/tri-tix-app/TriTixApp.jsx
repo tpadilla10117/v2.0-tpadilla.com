@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import {CaseStudies} from '../../../../utils';
 
 const TriTixApp = () => {
     return (
         <div>
-            Hello from TriTix
+            <CaseStudies />
         </div>
     );
 };

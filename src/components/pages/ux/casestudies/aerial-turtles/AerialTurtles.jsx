@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import {CaseStudies} from '../../../../utils';
 
 const AerialTurtles = () => {
     return (
         <div>
-            Hello from Turtles
+            {/* Hello from Turtles */}
+            <CaseStudies />
         </div>
     );
 };
