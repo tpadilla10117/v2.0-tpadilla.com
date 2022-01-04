@@ -4,10 +4,21 @@ import Trin from '../../../assets/images/trin.jpg';
 import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
 import { Carousel, Footer, AboutHeroSection, PersonalCards } from '../../utils';
 import { carouselData } from '../../../utils/seed';
+import Hike from "../../../assets/images/hike.jpeg"
+import GuitarSelfie from "../../../assets/images/GuitarSelfie.jpeg";
+import SanDiego from "../../../assets/images/SanDiego.jpeg";
+import FortBragg1 from "../../../assets/images/FortBragg1.jpeg";
+
 
 const AboutMe = (props) => {
 
     const { cardState, changeCardState } = props;
+
+    const cardInfo = [
+        { id: 0, name: "card card-1", image: `${Hike}`, frontHeader: "Health", backHeader2: '"Health is Wealth"', backHeader3: "Peace of Mind", text: "I strive to not compete with anyone but myself while pushing forward to improve in each of my endeavors: A healthy mind & body, functional / nourshing relationships, and impactful work.", BackImage: `${FortBragg1}` },
+        { id: 1, name: "card card-2",image: `${GuitarSelfie}`, frontHeader: "Guitarist", backHeader2: '"In the Deepest Ocean..."', backHeader3: "Music", text: "Performing and professional audio are two passions I cannot live without.  Whether it's rocking out to my favorite groove or indie jam, or analyzing the complex soundscapes of a recording, music is part of my identity. ", BackImage: `${FortBragg1}` },
+        { id: 2, name: "card card-3",image: `${SanDiego}`, frontHeader: "Adventurer", backHeader2:'"Explore Everything!"' , backHeader3: "Traversing the Earth", text: "As a California native, I've dreamed of expanding my worldview beyond my suburban confounds.  Life is meant to be lived - there are countless people to meet, places to explore, and experiences to be had.  Find me at a beach, in a new city, or even another country.", BackImage: `${FortBragg1}` }
+    ]
 
     return (
         <main id="aboutme-wrapper">
@@ -68,8 +79,8 @@ const AboutMe = (props) => {
 
             </div>
             {/* <BlueBg > */}
-                <PersonalCards cardState={cardState} changeCardState={changeCardState}/>
-            <Carousel slides={carouselData} />
+                {/* <PersonalCards cardState={cardState} changeCardState={changeCardState}/> */}
+            <Carousel /* slides={carouselData} */slides={cardInfo} cardInfo={cardInfo}cardState={cardState} changeCardState={changeCardState} />
 
             {/* </BlueBg> */}
 
