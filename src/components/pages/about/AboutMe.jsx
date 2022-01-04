@@ -2,8 +2,8 @@ import React from 'react';
 import './AboutMe.scss';
 import Trin from '../../../assets/images/trin.jpg';
 import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
-import { Carousel, Footer, AboutHeroSection, PersonalCards } from '../../utils';
-import { carouselData } from '../../../utils/seed';
+import { Carousel, Footer, AboutHeroSection, /* PersonalCards  */} from '../../utils';
+/* import { carouselData } from '../../../utils/seed'; */
 import Hike from "../../../assets/images/hike.jpeg"
 import GuitarSelfie from "../../../assets/images/GuitarSelfie.jpeg";
 import SanDiego from "../../../assets/images/SanDiego.jpeg";
@@ -78,11 +78,11 @@ const AboutMe = (props) => {
                 </div> */}
 
             </div>
-            {/* <BlueBg > */}
+            
                 {/* <PersonalCards cardState={cardState} changeCardState={changeCardState}/> */}
             <Carousel /* slides={carouselData} */slides={cardInfo} cardInfo={cardInfo}cardState={cardState} changeCardState={changeCardState} />
 
-            {/* </BlueBg> */}
+            
 
             <Footer />
        
