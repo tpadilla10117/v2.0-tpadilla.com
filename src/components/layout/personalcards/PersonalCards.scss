@@ -97,14 +97,14 @@
   }
   
   .card__face--front {
-    /* background-image: linear-gradient(to bottom, var(--primary), var(--secondary)); */
+    background-image: linear-gradient(to bottom, #2c426a, #f0e9dc);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .card__face.card__face--front h2 {
-    /* color: var(--secondary); */
+    color: #f0e9dc;
     font-size: 40px;
     transform: translate(0%, 75%);
     position: absolute;
@@ -112,7 +112,7 @@
   
   /*We rotate the back content to the back of the card*/
   .card__face--back {
-    /* background-color: var(--light); */
+    background-color: #f0e9dc;
     transform: rotateY(180deg);
     overflow-x: hidden;
     overflow-y: auto;
@@ -142,8 +142,8 @@
     bottom: 0;
     z-index: -1;
     border-radius: 0 0 0 0;
-    /* background-color: var(--primary); */
-   /*  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%); */
+    background-color: rgb(36, 73, 106);;
+    /* background-image: linear-gradient(to bottom left, #2c426a 10%, #f0e9dc 115%); */
   }
   
   
@@ -156,33 +156,39 @@
     height: 128px;
     margin: 0 auto 30px;
     border-radius: 50%;
-   /*  background-color: var(--secondary);
-    border: 5px solid var(--secondary); */
+    background-color: #f0e9dc;
+    border: 5px solid #f0e9dc;
     object-fit: cover;
   }
   
   .card__header h2 {
-    /* color: var(--secondary); */
+    color: #f0e9dc;
     font-size: 32px;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
+    font-family: 'Original surfer', sans-serif;
   }
   
   .card__body {
     padding: 30px;
+
+    h3 {
+      color: #386FA4;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-family: 'Original surfer', sans-serif;
+    }
+
+    p {
+        color: #716252;
+        font-size: 18px;
+        line-height: 1.5;
+        font-family: 'Lora', sans-serif;
+      }
   }
   
-  .card__body h3 {
-    /* color: var(--dark); */
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-  }
   
-  .card_body p {
-    /* color: var(--primary); */
-    font-size: 18px;
-    line-height: 1.5;
-    font-family: 'Amatic SC', sans-serif;
-  }
+  
+  
