@@ -5,11 +5,6 @@ import chevronLeft from '../../../assets/icons/chevron-left.svg';
 import './Carousel.scss';
 import { PersonalCards } from '../../utils';
 
-/* import Hike from "../../../assets/images/hike.jpeg"
-import GuitarSelfie from "../../../assets/images/GuitarSelfie.jpeg";
-import SanDiego from "../../../assets/images/SanDiego.jpeg";
-import FortBragg1 from "../../../assets/images/FortBragg1.jpeg";
- */
 /* TODO:  12/7 need to finish up and then style: */
 const Carousel = ( {slides, cardState, changeCardState, cardInfo} ) => {
 
