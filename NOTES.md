@@ -4,6 +4,20 @@
 Apple	iMac 21.5-inch	55 (21.5)	1920 x 1080
 Apple	iMac 27-inch	69 (27)	2560 x 1440 -->
 
+
+<!-- TODO: DEPLOY BUGS!!!: -->
+
+    <!-- TODO: Meta data -->
+
+    Landing.jsx:
+        - Routing not working from Landing.jsx -> the image clicks fail
+
+    - Developer.jsx and Contact.jsx:
+        - Video tags are playing -> need to stop
+        - Get rid of video controls
+
+    - About.jsx - Iphone view has personal card buttons in footer
+
 General:
     - Style inconsistencies.  Some pure SASS, but some usage of classnames & style tags (primarily in Devloper.jsx)
     - Typography: Original surfer, Lora
