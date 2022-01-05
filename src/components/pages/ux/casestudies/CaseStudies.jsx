@@ -53,9 +53,9 @@ const CaseStudies = () => {
         }
 
         countdownComponents.push(
-            <h1 className='countdown-heading'>
+            <p className='countdown-heading'>
                 {timeRemaining[interval]} <span className='countdown-heading-interval'>{interval}</span> {" "}
-            </h1>
+            </p>
         );
     });
 
@@ -68,7 +68,7 @@ const CaseStudies = () => {
 
             <div className='casestudy-hero-content'>
                 {/* <h1 className='casestudy-hero-h1'>UX Designer</h1> */}
-                <p className='casestudy-hero-p'>I'm still actively working on some details, stay tuned!</p>
+                <h1 className='casestudy-hero-h1'>I'm still actively working on some details, stay tuned!</h1>
                 <div className='countdown-heading-wrapper'>
 
                 {countdownComponents.length ? countdownComponents : <h1 >Here's my work!</h1>}
