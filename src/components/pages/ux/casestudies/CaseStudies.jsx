@@ -54,7 +54,7 @@ const CaseStudies = () => {
 
         countdownComponents.push(
             <p className='countdown-heading'>
-                {timeRemaining[interval]} <span className='countdown-heading-interval'>{interval}</span> {" "}
+                {timeRemaining[interval]} <span className='countdown-heading-interval'>  {interval}</span> {" "}
             </p>
         );
     });
