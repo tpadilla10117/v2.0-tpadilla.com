@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './CaseStudies.scss';
+import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
 import uxbeach from '../../../../assets/images/uxbeach.jpg';
 
 
@@ -64,14 +65,40 @@ const CaseStudies = () => {
             <div className='casestudy-heroSection-bg'>
                 <img className='casestudy-hero-img' src={uxbeach} alt='Cabanas along a beach'/>
             </div>
+
             <div className='casestudy-hero-content'>
                 {/* <h1 className='casestudy-hero-h1'>UX Designer</h1> */}
                 <p className='casestudy-hero-p'>I'm still actively working on some details, stay tuned!</p>
                 <div className='countdown-heading-wrapper'>
 
                 {countdownComponents.length ? countdownComponents : <h1 >Here's my work!</h1>}
+
                 </div>
+                <aside className='casestudy-socialmedia'>
+                        <div className='casestudy-socialmedia-wrap'>
+                            
+                            <div className='casestudy-socialicons'>
+                                <a className='casestudy-socialiconlink' href="https://www.linkedin.com/in/t-p-101/" target="blank" aria-label="Linkedin">
+                                    <FaLinkedin />
+                                </a>
+                                <a className='casestudy-socialiconlink' href="https://twitter.com/tpadilla101" target="blank" aria-label="Twitter">
+                                    <FaTwitter />
+                                </a>
+                                <a className='casestudy-socialiconlink' href="https://github.com/tpadilla10117" target="blank" aria-label="Github">
+                                    <FaGithub />
+                                </a>
+                                <a className='casestudy-socialiconlink' href="https://www.behance.net/tpadilla10117" target="blank" aria-label="Behance">
+                                    <FaBehance />
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                </aside>
             </div>
+
+            
             
         </section>
     );
