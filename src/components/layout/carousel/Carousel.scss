@@ -53,7 +53,12 @@
             /* background-color: black; */
             transition: all 0.3s ease 0s;
             opacity: .5;
+            /* box-shadow: 0 3px 30px rgb(0 0 0 / 10%); */
             
+            
+            /* background-color: rgba(0, 0, 0, .3);
+            border-radius: 25px; */
+           
             &:hover {
                 opacity: 1;
                 /* color: #36BF9D; */
@@ -62,7 +67,10 @@
 
             @media only screen and (max-width: 768px) {
                 right: 0rem;
+                fill: black
             }
+
+            
 
             /* TODO: MEDIA 1000 and 1366px - ipad pro - keep as columns*/
 
@@ -94,6 +102,7 @@
 
             @media only screen and (max-width: 768px) {
                 left: 0rem;
+                fill: black;
             }
         }
     }
