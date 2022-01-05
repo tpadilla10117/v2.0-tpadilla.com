@@ -3,6 +3,7 @@
     background: #0c0c0c;
     display: flex;
     height: 100vh;
+    /* height: 100%; */
     max-height: 100%;
     width: 100%;
     justify-content: center;
@@ -27,7 +28,7 @@
     @media screen and (max-width: 1000px) {
         #casestudy-countdown {
             border: none;
-            height: 325px;
+            /* height: 325px; */
             /* display: none; */
             /* margin-top: -75px; */
         }
@@ -71,7 +72,8 @@
         @media only screen and (max-device-width: 768px) {
             justify-content:space-between;
             /* justify-content: space-around; */
-            /* justify-content: center; */
+            /* justify-content: space-evenly; */
+            /* margin-top: 40px; */
             height: 100%;
         }
 
@@ -86,13 +88,23 @@
             border-radius: 5px;
             /* border: 10px solid blue; */
             max-width: 100%;
-            width: 50%;
+            /* width: 60%; */
 
             @media only screen and (max-device-width: 768px) {
                 flex-direction: column;
                 padding: 20px;
                 justify-content: center;
+                /* width: 100%; */
+               /*  background: none;
+                box-shadow: none;
+                backdrop-filter: none; */
+                margin: 20px;
+                width: 60%;
 
+            }
+
+            @media only screen and (min-device-width: 375px) and(max-device-width: 768px) {
+                width: 80%;
             }
 
             .countdown-heading {
@@ -124,7 +136,7 @@
         }
 
         
-        .casestudy-hero-h1 {
+       /*  .casestudy-hero-h1 {
             color: #fff;
             font-family: 'Original surfer', sans-serif;
             font-size: 48px;
@@ -132,26 +144,29 @@
             text-transform: uppercase;
             letter-spacing: 5px;
 
-           /*  @media only screen and (max-device-width: 480px) {
-                font-size: 30px;
-            } */
-        }
+        } */
 
-        .casestudy-hero-h1 {
+        .casestudy-hero-p {
             /* margin-top: 5px; */
             color: #fff;
-            font-size: 48px;
+            font-size: 24px;
             text-align: center;
             max-width: 400px;
             font-family: 'Original surfer', sans-serif;
             letter-spacing: 5px;
             text-transform: uppercase;
+            /* margin: 40px; */
             /* padding: 40px; */
-            /* padding: 20px; */
+            /* border: 2px solid blue; */
 
             @media only screen and (max-device-width: 768px) {
-                font-size: 25px;
-                /* height: 40px; */
+                font-size: 15px;
+                margin-top: 50px;
+                padding: 20px;
+            }
+
+            @media only screen and (min-device-width: 375px) and(max-device-width: 768px) {
+                margin-top: 80px;
             }
 
         }
@@ -163,9 +178,8 @@
         height: 100px;
         max-height: 100%;
         display: flex;
-        /* border: 10px solid yellow; */
         justify-content: center;
-        border: 2px solid orange;
+        /* border: 2px solid orange; */
 
         @media only screen and (max-device-width: 768px) {
             
@@ -175,7 +189,7 @@
         
         .casestudy-socialmedia-wrap {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
             max-width: 1100px;
             /* margin: 40px auto 0 auto; */
