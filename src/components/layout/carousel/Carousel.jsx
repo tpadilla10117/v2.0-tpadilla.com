@@ -70,16 +70,16 @@ console.log(slides)
                     {/* Right Arrow : */}
                     {/* <img className="right-arrow" src={chevronRight} alt="" onClick={nextSlide}/> */}
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" viewBox="0 0 20 20" fill="#fff" height='70' width="50" onClick={nextSlide} >
-                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    <svg xmlns="http://www.w3.org/2000/svg" className="right-arrow" viewBox="0 0 20 20" fill="#fff" height='70' width="50" onClick={nextSlide} >
+                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
 
                     </svg>
                     
                     {/* Left Arrow: */}
                     {/* <img className="left-arrow" src={chevronLeft} alt="" onClick={previousSlide}/> */}
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="left-arrow" viewBox="0 0 20 20" fill="#fff" height="70" width="50" onClick={previousSlide}>
-                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    <svg xmlns="http://www.w3.org/2000/svg" className="left-arrow" viewBox="0 0 20 20" fill="#fff" height="70" width="50" onClick={previousSlide}>
+                        <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
 
                 </div>
