@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import './CaseStudies.scss';
+import uxbeach from '../../../../assets/images/uxbeach.jpg';
 
 
 const CaseStudies = () => {
@@ -50,16 +52,25 @@ const CaseStudies = () => {
         }
 
         countdownComponents.push(
-            <span>
+            <h1 className='countdown-heading'>
                 {timeRemaining[interval]} {interval} {" "}
-            </span>
+            </h1>
         );
     });
 
     return (
-        <div>
-            {countdownComponents.length ? countdownComponents : <span>Here's my work!</span>}
-        </div>
+        <section id="casestudy-countdown">
+             
+            <div className='casestudy-heroSection-bg'>
+                <img className='casestudy-hero-img' src={uxbeach} alt='Cabanas along a beach'/>
+            </div>
+            <div className='casestudy-hero-content'>
+                {/* <h1 className='casestudy-hero-h1'>UX Designer</h1> */}
+                <p className='casestudy-hero-p'>Here is a collection of some of UX Case Studies:</p>
+                {countdownComponents.length ? countdownComponents : <h1 >Here's my work!</h1>}
+            </div>
+            
+        </section>
     );
 };
 
