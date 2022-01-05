@@ -22,6 +22,15 @@ General:
         Btn-Txt: #FFF (White); 
         Btn-Hover-State: #36BF9D (Mountain Meadow);
 
+    - Paragraph (Sections / Asides) :
+        font-size: 16px;
+
+    -h2 :
+        font-size: 24px;
+
+    -h3: 
+        font-size: 20px;
+
 Landing.jsx:
     - <!-- TODO: Double check the responsive design -->
     - Think about borders inbetween columns
