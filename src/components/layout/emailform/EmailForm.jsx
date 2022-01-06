@@ -59,7 +59,7 @@ const EmailForm = () => {
                 
             }    
             </form>
-            <p className='formtxt'>Want to see my Resume ? <a href={resume} download={resume}>Download Resume</a></p>
+            <p className='formtxt'>Want to see my Resume ? <a href={resume} download={resume} className='form-download'>Download Resume</a></p>
             <Link className='sociallogo' to='/'>
                 Trin Padilla
             </Link>

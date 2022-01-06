@@ -186,7 +186,16 @@
             a {
                 text-decoration: none;
                 /* color: #fff; */
-                color: #36BF9D;
+                color: #737373;
+                opacity: .5;
+                transition: all 250ms ease-in-out;
+
+                &:hover {
+                    color: #36BF9D;
+                    opacity: 1;
+                    transform: scale(1.1);
+
+                }
             }
         }
 

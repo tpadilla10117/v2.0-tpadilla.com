@@ -134,7 +134,8 @@
           
         
           p {
-            font-size: 35px;
+            /* font-size: 35px; */
+            font-size: 16px;
             /* text-transform: uppercase; */
             /* padding: 4rem; */
             font-family: 'Lora', sans-serif;
@@ -144,7 +145,7 @@
             vertical-align: middle;
 
             @media only screen and (max-device-width: 480px) {
-              font-size: 25px;
+              /* font-size: 25px; */
               padding: 5px;
               
             }

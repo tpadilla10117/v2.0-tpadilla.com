@@ -12,7 +12,7 @@ Apple	iMac 27-inch	69 (27)	2560 x 1440 -->
     Landing.jsx:
         - Routing not working from Landing.jsx -> the image clicks fail
 
-    - About.jsx - Iphone view has personal card buttons in footer
+    
 
 General:
     - Style inconsistencies.  Some pure SASS, but some usage of classnames & style tags (primarily in Devloper.jsx)
