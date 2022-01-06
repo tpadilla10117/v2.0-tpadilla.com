@@ -7,7 +7,7 @@ const VideoSection = () => {
     return (
         <section id="video-container">
             <div className='videoSection-bg'>
-                <video className='videobg' autoPlay loop muted src={water} type="video/mp4"></video>
+                <video className='videobg' autoPlay="autoPlay" loop="loop" muted="muted" preload="auto" playsInline="playsInline" src={water} type="video/mp4"></video>
             </div>
             <div className='videocontent'>
                 <h1 className='hero-h1'>Developer</h1>
