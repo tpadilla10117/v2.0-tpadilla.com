@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import "./Landing.scss";
 import { LandingOptions } from '../../../utils/seed';
 
@@ -14,7 +15,8 @@ const Landing = () => {
                 {LandingOptions.map(landingImage => {
                     return (
                         <div id={landingImage.id} key={landingImage.id} className="landing-CardBox">
-                            <a href={landingImage.path} >
+                            <NavLink to={landingImage.path} exact key={landingImage.id}>
+                            {/* <a href={landingImage.path} > */}
                             <div className="landing-imgWrapper">
                                 <img src={landingImage.img} alt="" />
                             </div>
@@ -28,8 +30,9 @@ const Landing = () => {
 
                             {/* </div> */}
 
-                            </a>
+                            {/* </a> */}
             
+                        </NavLink>
                         </div>
                     )
                 })}
