@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <section id="hero-container">
             <div className='herobg'>
-                <video className='videobg' autoPlay loop muted src={beach} type="video/mp4"></video>
+                <video className='videobg' autoPlay="autoPlay" loop="loop" muted="muted" preload="auto" playsInline="playsInline" src={beach} type="video/mp4"></video>
             </div>
             <div className='herocontent'>
                 <h1 className='hero-h1'>Contact</h1>
