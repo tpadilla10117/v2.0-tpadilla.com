@@ -64,7 +64,7 @@ console.log(slides)
     return (
         
              <section id="carousel-wrapper">
-                 {/* <div className='carousel-container'> */}
+                 <div className='carousel-container'>
                 <div className='arrow-container'>
 
                     {/* Right Arrow : */}
@@ -103,7 +103,7 @@ console.log(slides)
                         })}
                     </div>
 
-                 {/* </div> */}
+                 </div>
                 </section>
 
         
