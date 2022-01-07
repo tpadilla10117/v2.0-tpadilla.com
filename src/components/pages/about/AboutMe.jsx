@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.scss';
-import Trin from '../../../assets/images/trin.jpg';
+import Trin from '../../../assets/images/trin2.jpg';
 import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
 import { Carousel, Footer, AboutHeroSection, /* PersonalCards  */} from '../../utils';
 /* import { carouselData } from '../../../utils/seed'; */
