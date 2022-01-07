@@ -10,7 +10,7 @@ const UxHeroSection = () => {
             </div>
             <div className='ux-hero-content'>
                 <h1 className='ux-hero-h1'>UX Designer</h1>
-                <p className='ux-hero-p'>Here is a collection of some of UX Case Studies:</p>
+                <p className='ux-hero-p'>Here is a collection of my UX Case Studies:</p>
             </div>
             
         </section>

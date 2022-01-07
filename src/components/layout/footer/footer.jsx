@@ -59,16 +59,16 @@ function  Footer() {
                             Trin Padilla © {new Date().getFullYear() } All rights reserved.
                         </small>
                         <div className='socialicons'>
-                            <a className='socialiconlink' href='/' target="blank" aria-label="Linkedin">
+                            <a className='socialiconlink' href="https://www.linkedin.com/in/t-p-101/" target="blank" aria-label="Linkedin">
                                 <FaLinkedin />
                             </a>
-                            <a className='socialiconlink' href='/' target="blank" aria-label="Twitter">
+                            <a className='socialiconlink' href="https://twitter.com/tpadilla101" target="blank" aria-label="Twitter">
                                 <FaTwitter />
                             </a>
-                            <a className='socialiconlink' href='/' target="blank" aria-label="Github">
+                            <a className='socialiconlink' href="https://github.com/tpadilla10117" target="blank" aria-label="Github">
                                 <FaGithub />
                             </a>
-                            <a className='socialiconlink' href='/' target="blank" aria-label="Behance">
+                            <a className='socialiconlink' href="https://www.behance.net/tpadilla10117" target="blank" aria-label="Behance">
                                 <FaBehance />
                             </a>
 

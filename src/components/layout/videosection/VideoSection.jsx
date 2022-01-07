@@ -11,7 +11,7 @@ const VideoSection = () => {
             </div>
             <div className='videocontent'>
                 <h1 className='hero-h1'>Developer</h1>
-                <p className='hero-p'>Here is a collection of some of my web-development work:</p>
+                <p className='hero-p'>Here is a collection of my web-development work:</p>
             </div>
             
         </section>
