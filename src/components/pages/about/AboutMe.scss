@@ -225,15 +225,16 @@
                         /* overflow-y: auto; */
                         text-align: center;
                         animation-duration: 1s;
-                        animation-name: slidein;
-                        line-height: 36px;
+                        /* animation-name: slidein; */
+                        line-height: 26px;
                         /* font-weight: bold; */
                         color: #716252;
                         letter-spacing: 1px;
                         font-size: 16px;
+
                     }
             
-                    @keyframes slidein {
+                   /*  @keyframes slidein {
                         from {
                           margin-left: 100%;
                           width: 300%;
@@ -243,7 +244,7 @@
                           margin-left: 0%;
                           width: 100%;
                         }
-                      }
+                      } */
             
                     .links-about {
                         display: flex;
