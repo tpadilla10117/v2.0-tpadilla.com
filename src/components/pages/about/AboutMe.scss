@@ -422,6 +422,33 @@
                     margin-top: 2rem;
                     height: 100%;
                     /* padding-bottom: 1rem; */
+
+                    .fade-in {
+                        opacity: 0;
+                        transition: opacity 350ms ease-in;
+                    }
+
+                    .fade-in.appear {
+                        opacity: 1;
+                    }
+                    .from-left {
+                        transform: translateX(-10%);
+                        transition: transform 300ms ease-in;
+                    }
+                
+                    .from-right {
+                        transform: translateX(50%);
+                    }
+                
+                    .from-left.appear, .from-right.appear {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                
+                    .from-left, .from-right {
+                        transition: opacity 250ms ease-in, transform 300ms ease-in;
+                        opacity: 0;
+                    }
                     
         
                     p {
