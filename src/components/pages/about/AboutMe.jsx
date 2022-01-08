@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useMemo, useState} from 'react';
 import './AboutMe.scss';
 import Trin from '../../../assets/images/trin2.jpg';
 import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
@@ -27,18 +27,25 @@ const AboutMe = (props) => {
     const containerRef = useRef(null);
     const subheadingRef = useRef(null);
     const imgRef = useRef(null);
+    const [threshold, setThreshold] = useState(null);
+    const [rootMargin, setRootMargin] = useState(null);
 
     /*  "Options" argument for intersection observer:*/
-    const appearOptions = {
+    /* const appearOptions = {
         threshold: 1,
         rootMargin: "0px 0px -300px 0px"
-    };
+    }; */
 
-    const imgAppearOptions = {
-        threshold: .2,
-        rootMargin: "0px 0px -300px 0px"
-    };
+    
 
+    function computeValue(a, b) {
+        setThreshold(1);
+        setRootMargin("0px 0px -300px 0px");
+    }
+
+    const appearOptions = useMemo( () => computeValue(threshold, rootMargin), [threshold, rootMargin]  );
+
+    const imgAppearOptions = useMemo( () => computeValue(threshold, rootMargin), [threshold, rootMargin]  );
     /* Intersection Observer: */
 
 
@@ -79,7 +86,7 @@ const AboutMe = (props) => {
         }
         
 
-    }, [] );
+    }, [appearOptions] );
 
     useEffect( () => {
 
@@ -109,7 +116,7 @@ const AboutMe = (props) => {
         }
         
 
-    }, [] );
+    }, [appearOptions] );
 
     useEffect( () => {
         const imgAppearOnScroll = new IntersectionObserver(
@@ -137,7 +144,7 @@ const AboutMe = (props) => {
             cleanUp();
         }
 
-    }, []);
+    }, [imgAppearOptions]);
 
     return (
         <main id="aboutme-wrapper">
