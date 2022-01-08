@@ -1,6 +1,6 @@
   /* This is the component for the Vertical Navbar view:  */  
 
-    import React, {useState} from 'react';
+    import React from 'react';
     import './Navbar.scss';
     /* import { CSSTransition } from "react-transition-group"; */
     /* import NavIcon from '../../../assets/icons/navIcon.svg'; */
