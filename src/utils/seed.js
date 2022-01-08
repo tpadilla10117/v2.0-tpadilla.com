@@ -78,7 +78,8 @@ export const NavbarData = [
     duration: 500,
     spy: true,
     exact: 'true',
-    offset: -80
+    offset: -80,
+    dropdown: true,
 },
 {
     title: 'Contact',

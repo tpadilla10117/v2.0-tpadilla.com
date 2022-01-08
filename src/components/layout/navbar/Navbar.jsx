@@ -1,6 +1,6 @@
   /* This is the component for the Vertical Navbar view:  */  
 
-    import React from 'react';
+    import React, {useState} from 'react';
     import './Navbar.scss';
     /* import { CSSTransition } from "react-transition-group"; */
     /* import NavIcon from '../../../assets/icons/navIcon.svg'; */
@@ -25,6 +25,15 @@
                                         return (
                                             <NavLink to={item.path} exact activeClassName="active" className='main-nav-item' style={ {textDecoration: "none"} } key={index}>
                                                 <li key={index} className={item.title} id="navlinks">
+
+                                                {/* TODO: Logic for dropdown menus */}
+                                                    {/* <div className='navlinks-dropdown'>
+                                                        <span>{item.title}</span>
+                                                        <div className='navlinks-dropdown-content'>
+                                                            <p>Hello</p>
+                                                        </div>
+                                                    </div> */}
+
                                                     <span>{item.title}</span>
                                                 </li>
                                             </NavLink>
