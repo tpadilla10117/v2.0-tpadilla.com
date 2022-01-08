@@ -26,29 +26,29 @@ const AboutMe = (props) => {
     /* const [ isVisible, setIsVisible ] = useState(false); */
     const containerRef = useRef(null);
     const subheadingRef = useRef(null);
-    const imgRef = useRef(null);
-    const [threshold, setThreshold] = useState(null);
-    const [rootMargin, setRootMargin] = useState(null);
+    /* const imgRef = useRef(null); */
+    const [threshold] = useState({threshold: 1, rootMargin: "0px 0px -100px 0px"});
+    /* const [subHeadThreshold] = useState({}); */
 
     /*  "Options" argument for intersection observer:*/
-    /* const appearOptions = {
+   /*  const appearOptions = {
         threshold: 1,
         rootMargin: "0px 0px -300px 0px"
     }; */
 
-    
+    console.log("Heres threshold: ", threshold)
 
-    function computeValue(a, b) {
-        setThreshold(1);
-        setRootMargin("0px 0px -300px 0px");
+    function computeValue(a) {
+        return a;
     }
 
-    const appearOptions = useMemo( () => computeValue(threshold, rootMargin), [threshold, rootMargin]  );
+    const appearOptions = useMemo( () => computeValue(threshold), [threshold]  );
+    const subHeadAppearOptions = useMemo( () => computeValue(threshold), [threshold]  );
+    /* const imgAppearOptions = useMemo( () => computeValue(threshold, rootMargin), [threshold, rootMargin]  ); */
 
-    const imgAppearOptions = useMemo( () => computeValue(threshold, rootMargin), [threshold, rootMargin]  );
     /* Intersection Observer: */
-
-
+    /* console.log(computeValue) */
+console.log("Here is Appearoptions: ", appearOptions)
     /* faders.forEach(fader => {
         appearOnScroll.observe(fader);
     }) */
@@ -58,6 +58,7 @@ const AboutMe = (props) => {
     }); */
     
     /* TODO: Need to figure out why the useEffect doesn't work properly with Intersection Observer */
+    
     useEffect( () => {
 
         const appearOnScroll = new IntersectionObserver(
@@ -67,12 +68,16 @@ const AboutMe = (props) => {
                         return;
                     } else {
                         entry.target.classList.add('appear');
+                        console.log("Appeard here: ", entry)
+                        console.log(appearOptions)
                         /* appearOnScroll.unobserve(entry.target); */
                     }
                 })
             },
             
             appearOptions);
+
+            
 
         if (containerRef.current) appearOnScroll.observe(containerRef.current);
 
@@ -97,12 +102,16 @@ const AboutMe = (props) => {
                         return;
                     } else {
                         entry.target.classList.add('appear');
+                        /* console.log("Appeard here: ", entry)
+                        console.log(appearOptions) */
                         /* appearOnScroll.unobserve(entry.target); */
                     }
                 })
             },
             
-            appearOptions);
+            subHeadAppearOptions);
+
+            
 
         if (subheadingRef.current) appearOnScroll.observe(subheadingRef.current);
 
@@ -116,35 +125,9 @@ const AboutMe = (props) => {
         }
         
 
-    }, [appearOptions] );
+    }, [subHeadAppearOptions] );
+   
 
-    useEffect( () => {
-        const imgAppearOnScroll = new IntersectionObserver(
-            function ( entries, imgAppearOnScroll) {
-                entries.forEach( entry => {
-                    if(!entry.isIntersecting) {
-                        return;
-                    } else {
-                        entry.target.classList.add('appear');
-                    }
-                })
-            },
-
-            imgAppearOptions
-        )
-
-        if(imgRef.current) imgAppearOnScroll.observe(imgRef.current);
-
-        function cleanUp () {
-            if(imgRef.current) imgAppearOnScroll.unobserve(imgRef.current);
-        };
-            
-
-        return () => {
-            cleanUp();
-        }
-
-    }, [imgAppearOptions]);
 
     return (
         <main id="aboutme-wrapper">
