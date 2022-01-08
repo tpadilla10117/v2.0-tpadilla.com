@@ -78,16 +78,16 @@
                 font-size: 14px;
                 /* padding-left: 10px; */
                 font-family: 'Lora', sans-serif;
-                transition: all 850ms ease-in-out;
+                /* transition: all 850ms ease-in-out; */
 
                 &::placeholder {
                     font-family: "Lora", sans-serif;
                     /* color: blue; */
                 }
 
-                &:hover {
+                /* &:hover {
                     transform: scale(1.02);
-                }
+                } */
             }
         
             textarea {
@@ -104,11 +104,11 @@
                 /* border-bottom: 1px solid black; */
                 font-family: 'Lora', sans-serif;
                 /* padding-left: 10px; */
-                transition: all 850ms ease-in-out;
+                /* transition: all 850ms ease-in-out; */
 
-                &:hover {
+                /* &:hover {
                     transform: scale(1.02);
-                }
+                } */
 
                 &::placeholder {
                     font-family: "Lora", sans-serif;
