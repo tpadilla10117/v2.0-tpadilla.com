@@ -1,11 +1,7 @@
 .landing-section {
     width: 100%;
-
-    /* TODO: Mess with the background gradient and ensure it's transparent  - this isnt complete!!!*/
     :before {
         content: "";
-        /* background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100% ), linear-gradient(190deg, rgba(0,0,0,0.2) 0%, transparent 100%); */
-        /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); */
         z-index: 2;
         top: 0;
         left: 0;
@@ -26,8 +22,6 @@
         color: green;
         
     }
-
-   
 
 
     .landing-CardBox {
@@ -72,19 +66,6 @@
                      
             }
         }
-/* TODO: Finish styling - add text overlay to image */
-        /* .landing-detailsBox {
-
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            bottom: 10px;
-            right: 10px;
-            background: #2DBCB4;
-            border-radius: 18px;
-            opacity: .95;
-            transform: scaleY(0);
-            transition: transform .5s; */
 
                 .landing-contentBox {
                     
@@ -148,8 +129,6 @@
                     }
                     
                 }
-
-        /* } */
     
     }
 
@@ -206,7 +185,3 @@
     }
 }
 
-
-/* @media only screen and (min-device-width: 1366px) and (max-device-width: 2500px) {
-
-} */

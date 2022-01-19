@@ -121,7 +121,8 @@ export const LandingOptions = [
     cName: 'nav-text',
     activeObject: null,
     id: 2,
-    img: `${hike}`
+    img: `${hike}`,
+    alt: "Trin Padilla hiking on Fort Bragg"
 },
 
  {
@@ -131,7 +132,8 @@ export const LandingOptions = [
     activeObject: null,
     cName: 'nav-text',
     id: 3,
-    img: `${keyboard}`
+    img: `${keyboard}`,
+    alt: "A black keyboard with highlighted white keys"
 },
 {
     title: 'UX',
@@ -140,7 +142,8 @@ export const LandingOptions = [
     cName: 'nav-text',
     activeObject: null,
     id: 4,
-    img: `${ux}`
+    img: `${ux}`,
+    alt: "A person holding an iPhone with an image gallery on display"
 },
 {
     title: 'Contact',
@@ -149,7 +152,8 @@ export const LandingOptions = [
     cName: 'nav-text',
     activeObject: null,
     id: 5,
-    img: `${greeting}`
+    img: `${greeting}`,
+    alt: "Two people shaking hands"
 },
 
 /* {

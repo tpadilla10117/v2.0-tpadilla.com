@@ -7,13 +7,13 @@ import beach from '../../../assets/videos/beach.mp4';
 const Hero = () => {
     return (
         <section id="hero-container">
-            <div className='herobg'>
+            <figure className='herobg'>
                 <video className='videobg' autoPlay="autoPlay" loop="loop" muted="muted" preload="auto" playsInline="playsInline" src={beach} type="video/mp4"></video>
-            </div>
-            <div className='herocontent'>
+            </figure>
+            <header className='herocontent'>
                 <h1 className='hero-h1'>Contact</h1>
                 <p className='hero-p'>Like what you see? Send me a message!</p>
-            </div>
+            </header>
             
         </section>
     );

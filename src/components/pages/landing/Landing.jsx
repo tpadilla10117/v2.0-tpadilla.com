@@ -14,26 +14,22 @@ const Landing = () => {
                 
                 {LandingOptions.map(landingImage => {
                     return (
-                        <div id={landingImage.id} key={landingImage.id} className="landing-CardBox">
+                        <section id={landingImage.id} key={landingImage.id} className="landing-CardBox">
                             <NavLink to={landingImage.path} exact key={landingImage.id}>
-                            {/* <a href={landingImage.path} > */}
-                            <div className="landing-imgWrapper">
-                                <img src={landingImage.img} alt="" />
-                            </div>
+                            
+                            <figure className="landing-imgWrapper">
+                                <img src={landingImage.img} alt={landingImage.alt} />
+                            </figure>
                     
-                            {/* <div className="landing-detailsBox">  */}
                                 <div className="landing-contentBox">
                                     <div className='landing-textWrapper'>
                                         <p className="landing-cardText">{landingImage.title}</p>        
                                     </div>
                                 </div>
 
-                            {/* </div> */}
-
-                            {/* </a> */}
             
                         </NavLink>
-                        </div>
+                        </section>
                     )
                 })}
 

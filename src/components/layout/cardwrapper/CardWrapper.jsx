@@ -3,9 +3,9 @@ import styles from './CardWrapper.module.scss';
 
 const CardWrapper = ( { children }) => {
     return (
-        <div className={styles.CardWrapper}>
+        <article className={styles.CardWrapper}>
             { children }
-        </div>
+        </article>
     );
 };
 
