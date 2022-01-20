@@ -1,10 +1,10 @@
 # App Description
 
-- The second version of my personal portfolio
+- The second version of my personal portfolio built from the ground-up with React.js, SCSS / SASS, JS, & HTML.  End users can navigate a user-flow that teaches them about both myself and the work I do.  
 
 ## Deployment:
 
-N/A
+- (https://tpadilla.com)
 
 <!-- ## Usage Instructions:
 
@@ -15,12 +15,11 @@ N/A
 
 ## Tech Stack:
 
-- Node.js, JS, React.js, HTML, CSS, SASS, GoogleIcons
+- Node.js, JS, React.js, HTML, CSS, SASS, FaIcons, HeroIcons
 
 ## Limitations & Future Iterations:
 
 - As of 11/12/21 - Integrate a shopping cart for an e-commerce experience
-- * Need to create a contact form using email.js
 - Consider creating additional routes
 
 ## Integrations, Tools, & Libraries:
@@ -35,10 +34,10 @@ N/A
 
 - Exposes simple components useful for defining entering and exiting transitions. React Transition Group is not an animation library like React-Motion, it does not animate styles by itself. Instead it exposes transition stages, manages classes and group elements and manipulates the DOM in useful ways, making the implementation of actual visual transitions much easier.
 
-<!-- ### `npm install sass`
+### `npm install sass`
 
 - Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.
-(https://sass-lang.com/documentation) -->
+(https://sass-lang.com/documentation)
 
 ### `npm install classnames`
 
@@ -125,10 +124,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 ### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 

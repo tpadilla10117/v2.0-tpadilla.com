@@ -6,6 +6,7 @@ Apple	iMac 27-inch	69 (27)	2560 x 1440 -->
 
 
 <!-- TODO: DEPLOY BUGS!!!: -->
+    - Responvise design needs a revisit for some tablets
 
     <!-- TODO: Meta data -->
 
