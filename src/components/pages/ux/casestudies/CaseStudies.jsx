@@ -71,7 +71,7 @@ const CaseStudies = () => {
                 <p className='casestudy-hero-p'>I'm working on some details, stay tuned...</p>
                 <div className='countdown-heading-wrapper'>
 
-                {countdownComponents.length ? countdownComponents : <p>Here's my work!</p>}
+                {countdownComponents.length ? countdownComponents : countdownComponents /* <p>Here's my work!</p> */ }
 
                 </div>
                 <aside className='casestudy-socialmedia'>
