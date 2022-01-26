@@ -22,7 +22,6 @@ import "./Header.scss";
             return () => window.removeEventListener("resize", updateComponentView);
         }, []);
 
-
         return (
             <header className="header-wrapper">
                    
