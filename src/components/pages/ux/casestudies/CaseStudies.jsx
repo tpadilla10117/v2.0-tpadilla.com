@@ -47,13 +47,13 @@ const CaseStudies = () => {
 /* Used for the UI elements: */
     const countdownComponents = [];
 
-    Object.keys(timeRemaining).forEach( (interval) => {
+    Object.keys(timeRemaining).forEach( (interval,index) => {
         if(!timeRemaining[interval]) {
             return;
         }
 
         countdownComponents.push(
-            <p className='countdown-heading'>
+            <p className='countdown-heading' key={index}>
                 {timeRemaining[interval]} <span className='countdown-heading-interval'>  {interval}</span> {" "}
             </p>
         );
@@ -71,7 +71,7 @@ const CaseStudies = () => {
                 <p className='casestudy-hero-p'>I'm working on some details, stay tuned...</p>
                 <div className='countdown-heading-wrapper'>
 
-                {countdownComponents.length ? countdownComponents : countdownComponents /* <p>Here's my work!</p> */ }
+                {/* countdownComponents.length ? countdownComponents :  */countdownComponents /* <p>Here's my work!</p> */ }
 
                 </div>
                 <aside className='casestudy-socialmedia'>
