@@ -9,12 +9,12 @@ const CaseStudies = () => {
     /* 1) set the date im counting to */
     let countDownDate = () => {
         /* 2) Get the current year: */
-        let year = new Date().getFullYear();
+        let newYear = new Date().getFullYear();
         
         /* 3) Calculate difference in time between target date and current date: */
         /* + before new Date is shorthand to cast obj as integer -> yuelkds Unix timestamp in microseconds */
 
-        const difference = +new Date(`${year}-02-31`) - +new Date();
+        const difference = +new Date(`${newYear}-02-31`) - +new Date();
 
         /* 4) Calculate the remaining time: */
         let timeRemaining = {};
