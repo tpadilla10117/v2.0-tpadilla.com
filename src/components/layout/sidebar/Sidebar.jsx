@@ -3,6 +3,7 @@
     import { NavLink } from 'react-router-dom';
     import { CSSTransition } from "react-transition-group";
     import { NavbarData } from "../../../utils/seed";
+    /* import { scrollTop } from "../../utils"; */
     import closeIcon from '../../../assets/icons/closeIcon.svg';
     import { FaTwitter, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
     import './Sidebar.scss';

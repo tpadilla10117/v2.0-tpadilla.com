@@ -68,3 +68,9 @@ export { default as Resume } from './pages/resume/Resume.jsx';
 
 
 /* -------------------------------------------------------------------------- */
+/* Functions: */
+
+/* Scroll to top of the page after a user clicks a link: */
+    export const scrollTop = () => {
+        window.scrollTo({ behavior: "smooth", top: "0px"});
+    };

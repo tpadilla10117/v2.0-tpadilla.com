@@ -3,6 +3,7 @@ import './HorizontalNav.scss';
 import googleMenu from '../../../assets/icons/googlemenu.svg';
 import { NavLink } from 'react-router-dom';
 import { NavbarData } from '../../../utils/seed';
+import { scrollTop } from '../../utils';
 
 const HorizontalNav = (props) => {
 
@@ -38,7 +39,6 @@ const HorizontalNav = (props) => {
        return () => window.removeEventListener("scroll", changeNav);
    }, [] );
 
-
     return (
         <nav className="horizontal-navbar" style={  Object.assign({}, scrollNav ? box : transparent)      }>
             <div className="hnav-items-container">
@@ -46,7 +46,7 @@ const HorizontalNav = (props) => {
             {NavbarData.map( (item, index) => {
                                 return (
                                     <NavLink to={item.path} exact activeClassName="active" className='hnav-main-nav-item' style={ {textDecoration: "none"} } key={index}>
-                                        <li key={index} className={item.title} id="hnav-navlinks">
+                                        <li key={index} className={item.title} id="hnav-navlinks" onClick={scrollTop}>
                                             <span>{item.title}</span>
                                         </li>
                                     </NavLink>
