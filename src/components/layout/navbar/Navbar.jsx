@@ -7,7 +7,6 @@
     import googleMenu from '../../../assets/icons/googlemenu.svg';
     /* import Placeholder from '../../../assets/icons/placeholder.png'; */
     import { NavLink } from 'react-router-dom';
-    /* import { scrollTop } from '../../utils'; */
     import { NavbarData } from '../../../utils/seed';
 
     const Navbar = (props) => {
