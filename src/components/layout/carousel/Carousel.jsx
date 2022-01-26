@@ -87,7 +87,7 @@ console.log(slides)
                     {/* carouselData */cardInfo.map( (slide, index) => {
                     return (
                         <div className={index === current ? 'carousel-img-wrapper slide active' : 'carousel-img-wrapper slide'} key={index} >
-                            {index === current && (<PersonalCards image={slide.image} cardState={cardState} changeCardState={changeCardState} current={current} cardInfo={cardInfo} key={index} id={index} frontHeader={slide.frontHeader} backHeader2={slide.backHeader2} backHeader3={slide.backHeader3} text={slide.text} BackImage={slide.BackImage} name={slide.name} />)/* (<img src={slide.image} alt="travel" key={index} className='slider-image' />) */}
+                            {index === current && (<PersonalCards image={slide.image} index={index} cardState={cardState} changeCardState={changeCardState} current={current} cardInfo={cardInfo} key={index} id={index} frontHeader={slide.frontHeader} backHeader2={slide.backHeader2} backHeader3={slide.backHeader3} text={slide.text} BackImage={slide.BackImage} name={slide.name} />)/* (<img src={slide.image} alt="travel" key={index} className='slider-image' />) */}
                             
                         </div>
                         
