@@ -7,7 +7,7 @@
     import googleMenu from '../../../assets/icons/googlemenu.svg';
     /* import Placeholder from '../../../assets/icons/placeholder.png'; */
     import { NavLink } from 'react-router-dom';
-    import { scrollTop } from '../../utils';
+    /* import { scrollTop } from '../../utils'; */
     import { NavbarData } from '../../../utils/seed';
 
     const Navbar = (props) => {
@@ -16,6 +16,7 @@
 
         return (
           
+            
                 <nav className="navbar">
                     <div className="nav-items-container">
 
@@ -24,7 +25,8 @@
 
                     {NavbarData.map( (item, index) => {
                                         return (
-                                            <NavLink to={item.path} exact activeClassName="active" className='main-nav-item' style={ {textDecoration: "none"} } key={index} onClick={scrollTop}>
+                                        
+                                            <NavLink to={item.path} exact activeClassName="active" className='main-nav-item' style={ {textDecoration: "none"} } key={index} /* onClick={scrollTop} */>
                                                 <li key={index} className={item.title} id="navlinks">
 
                                                 {/* TODO: Logic for dropdown menus */}
@@ -38,6 +40,7 @@
                                                     <span>{item.title}</span>
                                                 </li>
                                             </NavLink>
+                                            
                                         )
                                     })}
                     </div>
@@ -49,6 +52,7 @@
                                 
 
                 </nav>
+                
             
         );
     };

@@ -1,6 +1,6 @@
-import React, { useState, /* useRef */ } from 'react';
-
-import { Route } from 'react-router-dom';
+import React, { useState /* useRef */ } from 'react';
+import { Route  } from 'react-router-dom';
+/* import { useLocation } from 'react-router'; */
 import { CSSTransition } from 'react-transition-group';
 /* import { caseStudies } from '../utils/seed'; */
 import { Developer, AboutMe, Landing, Ux, Contact, /* Resume, */ Header, TriTixApp, AerialTurtles } from './utils';
@@ -23,19 +23,28 @@ const [ cardState, changeCardState ] = useState({
 
   const nodeRef = React.useRef(null);
 
+/*   const ScrollToTop = (props) => {
+    const location = useLocation();
+    useEffect( () => {
+      window.scrollTo(0, 0);
+    }, [location])
+  
+    return <>{props.children}</>
+  } */
+
   return (
     
     <div className="app-container">
 
-
+    
       <CSSTransition 
       timeout={300}>
         <Header/>
       </CSSTransition>
-
-
+  
       <div className="route-container">
-
+    
+        
         {/* TODO: Landing Section */}
           <Route exact path='/'>
             <Landing/>
@@ -80,14 +89,16 @@ const [ cardState, changeCardState ] = useState({
           )} 
           </Route> */}
 
-          <Route exact path='/developer'>
-            <Developer 
+          <Route exact path='/developer' >
+          <Developer 
             modalVisibility={modalVisibility}
             setModalVisibility={setModalVisibility}
             activeProject={activeProject}
-            setActiveProject={setActiveProject}
-            />
+            setActiveProject={setActiveProject} />
           </Route>
+           
+            
+          
 
 
         {/* TODO: UX Design Section */}
@@ -174,7 +185,9 @@ const [ cardState, changeCardState ] = useState({
             </CSSTransition>
           )} 
           </Route>
-
+          
+        
+          
       </div>
 
 

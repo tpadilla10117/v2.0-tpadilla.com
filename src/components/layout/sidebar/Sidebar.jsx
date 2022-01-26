@@ -12,6 +12,7 @@
 
             const { isOpen, navToggle } = props;
 
+
             return (
                 <CSSTransition in={isOpen} timeout={300} unmountOnExit onEnter={ () => navToggle} onExited={ () => navToggle} classNames="sideBarTransition">
                     <div className="sidebar-container" isOpen={isOpen}>
