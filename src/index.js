@@ -19,7 +19,7 @@ function ScrollToTop() {
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-    <ScrollToTop/>
+    {/* <ScrollToTop/> */}
       <App />
     </Router>
   </React.StrictMode>,
