@@ -151,7 +151,7 @@
                     padding: 4rem;
                     display: flex;
                     height: 900px;
-                    align-items: center;
+                    /* align-items: center; */
                     /* justify-content: center; */
                     flex-direction: column;
                     color: #24496A;
@@ -196,6 +196,7 @@
                         letter-spacing: 5px;
                         font-weight: 700;
                         font-size: 48px;
+                        
             
                     //TODO: Need to define the variable in SCSS based in First Portfolio:
                         /* color: var(--sec-bg-color); */
@@ -216,6 +217,7 @@
                         /* font-weight: 500; */
                         font-size: 24px;
                         
+                        
                     }
             
                     p {
@@ -223,7 +225,7 @@
                         font-weight: 500;
                         /* overflow-x: hidden; */
                         /* overflow-y: auto; */
-                        text-align: center;
+                        text-align: left;
                         animation-duration: 1s;
                         /* animation-name: slidein; */
                         line-height: 26px;
