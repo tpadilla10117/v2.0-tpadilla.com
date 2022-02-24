@@ -40,6 +40,7 @@ const Developer = (props) => {
                                     key={project.id}
                                     cardCoverText={project.cardCoverText}
                                     img={project.img}
+                                    alt={project.alt}
                                 />
                             )
                         })}

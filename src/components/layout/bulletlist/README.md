@@ -3,7 +3,7 @@
 # bulletlist
 
 <!-- optional markdown-notes-tree directory description starts here -->
-
+- BulletList.jsx is a <ul> tag used for encasing a bulleted list of project details (tech highlights)
 <!-- optional markdown-notes-tree directory description ends here -->
 
 

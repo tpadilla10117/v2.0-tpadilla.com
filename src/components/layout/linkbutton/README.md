@@ -3,7 +3,7 @@
 # linkbutton
 
 <!-- optional markdown-notes-tree directory description starts here -->
-
+- LinkButton.jsx is a functional component that generates a <a> tag to be used as a button
 <!-- optional markdown-notes-tree directory description ends here -->
 
 

@@ -3,7 +3,7 @@
 # developer
 
 <!-- optional markdown-notes-tree directory description starts here -->
-
+- Developer.jsx refers to the page where a user can review all of my devloper work
 <!-- optional markdown-notes-tree directory description ends here -->
 
 

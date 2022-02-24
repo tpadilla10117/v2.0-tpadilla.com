@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './ProjectCard.module.scss';
 
-const ProjectCard = ( {img, cardCoverText, onClick} ) => {
+const ProjectCard = ( {img, alt, cardCoverText, onClick} ) => {
     return (
         <div className={styles.projCardContainer} onClick={onClick}>
 
              {/* Where I'm starting my styles: */}
         <div className={styles.projCardBox}>
           <div className={styles.imgWrapper}>
-              <img src={img} alt=""/>
+              <img src={img} alt={alt}/>
           </div>
 
           <div className={styles.detailsBox}>

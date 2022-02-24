@@ -3,7 +3,7 @@
 # contact
 
 <!-- optional markdown-notes-tree directory description starts here -->
-
+- Contact.jsx refers to the UI page where users can contact me via email
 <!-- optional markdown-notes-tree directory description ends here -->
 
 
