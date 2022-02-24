@@ -30,6 +30,13 @@ Other Tech Notes:
             - Facebook: (https://developers.facebook.com/tools/debug/)
             - Linkedin: (https://www.linkedin.com/post-inspector/inspect/)
 
+    - manifest.json:
+        - The manifest.json is a simple JSON file in your website that tells the browser about your website on user's mobile device or desktop. Having a manifest is required by Chrome to show the Add to Home Screen prompt.  When user installs or bookmark your web application to the homescreen or adds it to an application launcher, manifest.json provides to the browser so that it can treat your website the name, icons, etc.
+
+        - (https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
+
+        - (https://hackthestuff.com/article/what-is-manifest-json-file-and-how-it-is-useful#:~:text=The%20manifest.,Add%20to%20Home%20Screen%20prompt.&text=json%20provides%20to%20the%20browser,the%20name%2C%20icons%2C%20etc.)
+
 
 <!-- TODO: DEPLOY BUGS!!!: -->
     - Responvise design needs a revisit for some tablets
