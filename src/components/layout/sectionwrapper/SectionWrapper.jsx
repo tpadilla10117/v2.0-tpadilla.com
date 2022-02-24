@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './SectionWrapper.module.scss';
 import classnames from 'classnames';
 
-const SectionWrapper = ( { content, grayBg, id } ) => {
+const SectionWrapper = ( { content, id } ) => {
 
-    const classNames = classnames(styles.SectionWrapper, { [ styles.Graybg ]: grayBg } )
+    const classNames = classnames(styles.SectionWrapper)
 
     return (
         <section id={id} className={classNames}>
@@ -13,8 +13,5 @@ const SectionWrapper = ( { content, grayBg, id } ) => {
     );
 };
 
-SectionWrapper.defaultProps = {
-    grayBg: false
-}
 
 export default SectionWrapper;

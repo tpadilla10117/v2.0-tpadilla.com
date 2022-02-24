@@ -3,7 +3,8 @@
 # projectcard
 
 <!-- optional markdown-notes-tree directory description starts here -->
-
+- ProjectCard.jsx is a functional component that renders UI cards.
+- Data is dependent from the /utils/seed file.
 <!-- optional markdown-notes-tree directory description ends here -->
 
 

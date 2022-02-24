@@ -38,10 +38,7 @@ const Developer = (props) => {
                                     onClick={ () => 
                                     handleModalVisibility(project.id)}
                                     key={project.id}
-                                    title={project.title}
-                                    tech={project.tech}
                                     cardCoverText={project.cardCoverText}
-                                    svgImg={project.svgImg}
                                     img={project.img}
                                 />
                             )
@@ -71,6 +68,7 @@ const Developer = (props) => {
                                 listStyle="Modal"
                             />
                         }
+                        
                         linkBlock={
                             <LinkBlock>
                                 {activeProject.links.map((link, i) => {

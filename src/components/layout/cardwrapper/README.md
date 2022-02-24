@@ -3,7 +3,7 @@
 # cardwrapper
 
 <!-- optional markdown-notes-tree directory description starts here -->
-
+- CardWrapper.jsx is an <article> tag that displays it's children as a grid in the DOM or as a scrollable column.
 <!-- optional markdown-notes-tree directory description ends here -->
 
 
