@@ -5,6 +5,17 @@ Apple	iMac 21.5-inch	55 (21.5)	1920 x 1080
 Apple	iMac 27-inch	69 (27)	2560 x 1440 -->
 
 
+Library / Dependency Notes:
+
+    - CSS preprocessors: A scripting language that extends CSS by allowing developers to write code in one language and then compile it into CSS.
+
+    - Compilers: converts programmer's procedural language program (source code) into the machine language code (object code).  This object code can be then saved and run later.
+    
+    - Interpreter: Converts the procedural language one statement at a time into machine code just before it is executed.  No object code is saved. e.g. standard version of BASIC
+
+    - SASS ('Syntactically Awesome Style Sheets'): an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster. (Additional explanations at: https://www.creativebloq.com/web-design/what-is-sass-111517618 or see documentation at https://sass-lang.com/documentation)
+
+
 <!-- TODO: DEPLOY BUGS!!!: -->
     - Responvise design needs a revisit for some tablets
 
