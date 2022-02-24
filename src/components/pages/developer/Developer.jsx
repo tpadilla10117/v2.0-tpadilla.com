@@ -52,7 +52,7 @@ const Developer = (props) => {
 
             <Footer />
 
-        {/* TODO: The modal that appears when clicking a project card: */}
+        {/* The modal that appears when clicking a project card: */}
             {modalVisibility && 
                 <Modal onModalClose={() => setModalVisibility(false) }>
                     <ProjectPage 
@@ -85,14 +85,6 @@ const Developer = (props) => {
                 </Modal>
             
             }
-
-
-
-
-
-{/* TODO: make ProjectPage and BulletList components */}
-
-
 
         </>
     );

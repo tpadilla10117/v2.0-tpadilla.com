@@ -1,6 +1,5 @@
 import React from 'react';
 import './VideoSection.scss';
-/* import beach from '../../../assets/videos/beach.mp4'; */
 import water from '../../../assets/videos/water.mp4';
 
 const VideoSection = () => {

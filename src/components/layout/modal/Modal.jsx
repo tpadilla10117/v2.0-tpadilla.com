@@ -6,7 +6,7 @@ const Modal = ( { children, onModalClose }) => {
 
     const modalReference = useRef(null);
 
-    /* Merely shows that Modal is open in the body: */
+    /* Merely shows that Modal is open in the body -> body tag has the className 'ModalOpen': */
     useEffect( () => {
         document.body.classList.add(styles.ModalOpen);
 

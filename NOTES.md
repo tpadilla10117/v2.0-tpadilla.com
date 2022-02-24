@@ -37,6 +37,21 @@ Other Tech Notes:
 
         - (https://hackthestuff.com/article/what-is-manifest-json-file-and-how-it-is-useful#:~:text=The%20manifest.,Add%20to%20Home%20Screen%20prompt.&text=json%20provides%20to%20the%20browser,the%20name%2C%20icons%2C%20etc.)
 
+React Hook Notes (https://www.freecodecamp.org/news/react-hooks-cheatsheet/):
+
+    - useState Hook:
+        - The useState hook allows us to create state variables in a React function component.  State allows us to access and update certain values in our components over time.  When we create a state variable, we must provide it a default value (which can be any data type).
+
+    - useEffect Hook:
+        - useEffect lets us perform side effects in function components.  Side effects are when we need to reach into the outside world. Such as fetching data from an API or working with the DOM.  Side effects are actions that can change our component state in an unpredictable fashion (that have caused 'side effects').
+
+        - useEffect accepts a callback function (called the 'effect' function), which will by default run every time the component re-renders.
+        - useEffect lets us unsubscribe from listeners that we might have created by returning a function at the end.
+        - We want to unsubscribe from certain events, such as an event listener, because when the component unmounts (i.e. the user goes to a different page), React may attempt to update state that no longer exists, causing an error.
+
+    - useRef Hook:
+        - Refs are a special attribute that are available on all React components. They allow us to create a reference to a given element / component when the component mounts.  useRef allows us to easily use React refs. They are helpful when we want to directly interact with an element, such as to clear its value or focus it, as with an input.
+
 
 <!-- TODO: DEPLOY BUGS!!!: -->
     - Responvise design needs a revisit for some tablets
@@ -60,6 +75,8 @@ General:
         call to action: 
     //TODO: <!-- Place colors in the global scope -->
     <!-- TODO: Mobile largely done, need to adjust for bigger screens, esp iMacs -->
+
+    - manifest.json -> favicon not displaying on app home screen properly
 
     - Buttons: 
         Btn-Bg: #60D2B6 (Turquoise); 
