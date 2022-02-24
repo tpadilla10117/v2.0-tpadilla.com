@@ -99,16 +99,24 @@
 
 ### `npm i emailjs.com`
 
-- Email.js (email server provider library)
+- Email.js (email server provider library) (https://www.emailjs.com/docs/)
+- Notes from FAQS: "A better way to think of EmailJS in terms of security is not as a service that allows you to send email from Javascript, but rather as a service that allows you to create a predefined set of emails via the dashboard, and then just trigger the emails from the Javascript. This is quite similar to how emails are usually sent via a proprietary server code, and also to the way products like Intercom or customer.io are working.
+
+Additionally, we've also developed various tools to prevent abuse – for instance, we have IP based rate limits to prevent bots from spamming, the whitelist of origin, and also support reCAPTCHA tests to make sure that a human is sending the email (although it's up to the developer to turn this feature on)."
 
 ### `npm i styled-components`
 
 (https://styled-components.com/docs/basics#getting-started)
+- Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components. It also removes the mapping between components and styles – using components as a low-level styling construct could not be easier!
 
 ### `npm i react-scroll`
 
 - React component for animating vertical scrolling
 - (https://www.npmjs.com/package/react-scroll)
+
+### `npm install -D markdown-notes-tree`
+(https://github.com/mistermicheels/markdown-notes-tree)
+- If you have a folder structure with Markdown notes, you can use this tool to generate Markdown trees that act as a table of contents for the folder structure.
 
 
 # Getting Started with Create React App

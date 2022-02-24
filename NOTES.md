@@ -15,6 +15,21 @@ Library / Dependency Notes:
 
     - SASS ('Syntactically Awesome Style Sheets'): an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster. (Additional explanations at: https://www.creativebloq.com/web-design/what-is-sass-111517618 or see documentation at https://sass-lang.com/documentation)
 
+Other Tech Notes:
+
+    - Open Graph meta tags: Open Graph meta tags are snippets of code that control how URLs are displayed when shared on social media. They’re part of Facebook’s Open Graph protocol and are also used by other social media sites, including LinkedIn and Twitter (if Twitter Cards are absent). You can find them in the <head> section of a webpage. Any tags with og: before a property name are Open Graph tags.
+
+        - Resources:
+            - (https://ahrefs.com/blog/open-graph-meta-tags/)
+            - (https://developers.facebook.com/docs/sharing/webmasters/) - Official Documentation
+            - (https://ogp.me/) - Documentation
+            - (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) - Twitter Documentation
+        
+        - Validators:
+            - Twitter: (https://cards-dev.twitter.com/validator)
+            - Facebook: (https://developers.facebook.com/tools/debug/)
+            - Linkedin: (https://www.linkedin.com/post-inspector/inspect/)
+
 
 <!-- TODO: DEPLOY BUGS!!!: -->
     - Responvise design needs a revisit for some tablets
