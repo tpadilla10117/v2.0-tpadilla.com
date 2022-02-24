@@ -1,11 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import {Link} from 'react-router-dom';
-/* import paperPlane from '../../../assets/icons/paperPlane.svg'; */
 import mail from '../../../assets/icons/mail.svg';
-/* import chat from '../../../assets/icons/chat.svg'; */
 import './EmailForm.scss';
-/* import keyboard from '../../../assets/images/keyboard.jpg'; */
 import cabana from '../../../assets/images/cabana.jpg';
 import resume from '../../../assets/resume/fullstack_tpadilla.pdf';
 
@@ -59,13 +56,12 @@ const EmailForm = () => {
                 
             }    
             </form>
+
             <p className='formtxt'>Want to see my Resume ? <a href={resume} download={resume} className='form-download'>Download Resume</a></p>
             <Link className='sociallogo' to='/'>
                 Trin Padilla
             </Link>
-            {/* <img src="" width='100' align="center"></img> */}
-
-            {/* src={landingImage.img} */}
+    
             </div>
         </section>
     );

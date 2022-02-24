@@ -1,26 +1,22 @@
 # App Description
 
-- The second version of my personal portfolio built from the ground-up with React.js, SCSS / SASS, JS, & HTML.  End users can navigate a user-flow that teaches them about both myself and the work I do.  
+- The second version of my personal portfolio built from the ground-up as a Single Page Application (SPA) with React.js, SCSS / SASS, JS, & HTML.  End users can navigate a user-flow that teaches them about both myself and the work I do.  
 
 ## Deployment:
 
 - (https://tpadilla.com)
 
-<!-- ## Usage Instructions:
-
-- 1) In the searchbar, type in the name of a city who's conditions you wish to view.
-- 2) Click "return" or "enter" depending on the machine you're using.
-- 3) If city exists within dataset provided by OpenWeather API { https://openweathermap.org/api }, results will be displayed in the User Interface (UI)
-- 4) View Results! -->
-
 ## Tech Stack:
 
 - Node.js, JS, React.js, HTML, CSS, SASS, FaIcons, HeroIcons
+
+## File Structure:
 
 ## Limitations & Future Iterations:
 
 - As of 11/12/21 - Integrate a shopping cart for an e-commerce experience
 - Consider creating additional routes
+- Consider integrating a blog / feed
 
 ## Integrations, Tools, & Libraries:
 
