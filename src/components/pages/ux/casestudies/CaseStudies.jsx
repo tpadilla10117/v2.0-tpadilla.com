@@ -9,12 +9,14 @@ const CaseStudies = () => {
     /* 1) set the date im counting to */
     let countDownDate = () => {
         /* 2) Get the current year: */
-        let year = new Date().getFullYear();
+        let newYear = new Date().getFullYear();
         
         /* 3) Calculate difference in time between target date and current date: */
         /* + before new Date is shorthand to cast obj as integer -> yuelkds Unix timestamp in microseconds */
 
+
         const difference = +new Date(`${year}-05-31`) - +new Date();
+
 
         /* 4) Calculate the remaining time: */
         let timeRemaining = {};
@@ -47,17 +49,18 @@ const CaseStudies = () => {
 /* Used for the UI elements: */
     const countdownComponents = [];
 
-    Object.keys(timeRemaining).forEach( (interval) => {
+    Object.keys(timeRemaining).forEach( (interval,index) => {
         if(!timeRemaining[interval]) {
             return;
         }
 
         countdownComponents.push(
-            <p className='countdown-heading'>
+            <p className='countdown-heading' key={index}>
                 {timeRemaining[interval]} <span className='countdown-heading-interval'>  {interval}</span> {" "}
             </p>
         );
     });
+
 
     return (
         <section id="casestudy-countdown">
@@ -71,7 +74,7 @@ const CaseStudies = () => {
                 <p className='casestudy-hero-p'>I'm working on some details, stay tuned...</p>
                 <div className='countdown-heading-wrapper'>
 
-                {countdownComponents.length ? countdownComponents : <p>Here's my work!</p>}
+                {countdownComponents.length ? countdownComponents : <p>Here's my work!</p> }
 
                 </div>
                 <aside className='casestudy-socialmedia'>

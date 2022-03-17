@@ -38,11 +38,9 @@ const Developer = (props) => {
                                     onClick={ () => 
                                     handleModalVisibility(project.id)}
                                     key={project.id}
-                                    title={project.title}
-                                    tech={project.tech}
                                     cardCoverText={project.cardCoverText}
-                                    svgImg={project.svgImg}
                                     img={project.img}
+                                    alt={project.alt}
                                 />
                             )
                         })}
@@ -52,7 +50,7 @@ const Developer = (props) => {
 
             <Footer />
 
-        {/* TODO: The modal that appears when clicking a project card: */}
+        {/* The modal that appears when clicking a project card: */}
             {modalVisibility && 
                 <Modal onModalClose={() => setModalVisibility(false) }>
                     <ProjectPage 
@@ -71,6 +69,7 @@ const Developer = (props) => {
                                 listStyle="Modal"
                             />
                         }
+                        
                         linkBlock={
                             <LinkBlock>
                                 {activeProject.links.map((link, i) => {
@@ -85,14 +84,6 @@ const Developer = (props) => {
                 </Modal>
             
             }
-
-
-
-
-
-{/* TODO: make ProjectPage and BulletList components */}
-
-
 
         </>
     );
