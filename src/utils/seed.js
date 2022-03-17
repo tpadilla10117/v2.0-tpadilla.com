@@ -13,6 +13,8 @@ import Netflix from "../assets/images/Netflix.png";
 import hike from "../assets/images/hike.jpeg";
 import aerial from '../assets/images/aerial.jpg';
 import musicfest from '../assets/images/musicfest.jpg';
+import spacestagram from '../assets/images/spacestagram.png';
+import weather from '../assets/images/weather.jpg';
 /* import turtle from "../assets/images/turtleBeach.jpg";
 import fort1 from "../assets/images/FortBragg1.jpeg"; */
 import keyboard from '../assets/images/keyboard.jpg';
@@ -251,9 +253,47 @@ export const projects = [
         {text: "Demo", link: "https://netflix-clone-897d7.web.app/"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/netflix-clone"}
       ]
-    }, 
+    }, /* TODO: Need to update 3 & 4 for Spacestagram and Snake game */
     {
       id: 3,
+      title: "Spacestagram",
+      tech: "Node.js, JS, React.js, HTML, SCSS",
+      cardCoverText: "An image of a nebula fetched from the NASA APOD API",
+      svgImg: `${spacestagram}`,
+      img: `${spacestagram}`,
+      alt: "A nebula from the NASA APOD API",
+      description: "Spacestagram is an app that requests data from the NASA APOD API.  Users can query via the searchbar and “like” and “unlike” their favourite images.",
+      techHighlights: [
+        "Integrated Stripe API for successful test / mock transactions via Firebase extensions.  Users may use test-card #: 4242 4242 4242 4242 to mock a transaction",
+        "Managed app state via Redux Global Store to compensate for scalability",
+        "Designed a responsive, frontend UI with CSS",
+      ],
+      links: [
+        {text: "Demo", link: "https://netflix-clone-897d7.web.app/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/netflix-clone"}
+      ]
+    }, 
+    {
+      id: 4,
+      title: "weather-react",
+      tech: "Node.js, JS, React.js, HTML, CSS",
+      cardCoverText: "An app for querying the current weather around the world",
+      svgImg: `${weather}`,
+      img: `${weather}`,
+      alt: "Screenshot of sunlight gleaming through clouds",
+      description: "weather-react is a simple weather-tracking web-application in which users can query/search for the weather conditions in a given location around the world.",
+      techHighlights: [
+        "Designed UI to dynamically request data from OpenWeather API { https://openweathermap.org/api } ",
+        "Implemented a searchbar component",
+        "Designed a responsive, frontend UI with CSS",
+      ],
+      links: [
+        {text: "Demo", link: "https://affectionate-bell-bcf7a5.netlify.app/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/weather-react"}
+      ]
+    }, 
+    {
+      id: 5,
       title: "Airbnb-Clone / Replica",
       tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, Vercel, React.js, JS",
       cardCoverText: "A replica of the current Airbnb build",
@@ -273,7 +313,7 @@ export const projects = [
     }, 
 /* TODO: Need to update with latest build */
     {
-      id: 4,
+      id: 6,
       title: "Crwn Clothing",
       tech: "Sass, CSS, Firebase, HTML, React.js, JS",
       cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
@@ -292,7 +332,7 @@ export const projects = [
       ]
     },
     {
-      id: 5,
+      id: 7,
       title: "LinkedIn-Clone",
       tech: "Firebase (Firestore, NoSQL DB), React.js, Redux, JS, Material UI",
       cardCoverText: "A static replica of the LinkedIn Dashboard",
@@ -312,7 +352,7 @@ export const projects = [
     },
 
     {
-      id: 6,
+      id: 8,
       title: "Codalorians",
       tech: "Express.js, JS, HTML, React.js, PostgreSQL, CSS, Node.js, Axios, Stripe, Bootstrap, Heroku, bcrypt",
       cardCoverText: "An e-commerce for Musical Instruments",
@@ -332,7 +372,7 @@ export const projects = [
       ]
     },
     {
-      id: 7,
+      id: 9,
       title: "Pixel Draw",
       tech: "JS, React.js, CSS, Node.js, HTML",
       cardCoverText: "A Simple, Grid-Based, Pixel-Art Creator",
@@ -350,7 +390,7 @@ export const projects = [
       ]
     }, 
     {
-      id: 8,
+      id: 10,
       title: "Post Book",
       tech: "JS, Node.js, Express.js, jQuery, HTML, CSS, Bootstrap",
       cardCoverText: "An App Where Users Can Post Items For Sale",
@@ -370,7 +410,7 @@ export const projects = [
     },
     /* TODO: Need to update with latest deploy: */
     {
-      id: 9,
+      id: 11,
       title: "Post Integration",
       tech: "JS, Node.js, Express.js, PostgreSQL, Jest, CSS, HTML, SASS, jsonwebtoken, Axios",
       cardCoverText: "A custom backend for a Tumblr clone",
@@ -390,7 +430,7 @@ export const projects = [
       ]
     },
     {
-      id: 10,
+      id: 12,
       title: "Robo Search",
       tech: "JS, React.js, HTML, CSS",
       cardCoverText: "An image filter",
