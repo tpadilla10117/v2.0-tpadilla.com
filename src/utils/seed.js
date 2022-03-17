@@ -253,7 +253,7 @@ export const projects = [
         {text: "Demo", link: "https://netflix-clone-897d7.web.app/"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/netflix-clone"}
       ]
-    }, /* TODO: Need to update 3 & 4 for Spacestagram and Snake game */
+    }, 
     {
       id: 3,
       title: "Spacestagram",
@@ -283,7 +283,7 @@ export const projects = [
       alt: "Screenshot of sunlight gleaming through clouds",
       description: "weather-react is a simple weather-tracking web-application in which users can query/search for the weather conditions in a given location around the world.",
       techHighlights: [
-        "Create a dynamic UI to request data from OpenWeather API {https://openweathermap.org/api} ",
+        "Created a dynamic UI to request data from OpenWeather API {https://openweathermap.org/api} ",
         "Implemented a resuable searchbar component for user queries",
         "Designed a responsive, frontend UI with CSS",
       ],
