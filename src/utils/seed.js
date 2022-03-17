@@ -256,7 +256,7 @@ export const projects = [
     }, 
     {
       id: 3,
-      title: "Spacestagram",
+      title: "Space-Stagram",
       tech: "Node.js, JS, React.js, HTML, SCSS",
       cardCoverText: "An image of a nebula fetched from the NASA APOD API",
       svgImg: `${spacestagram}`,
