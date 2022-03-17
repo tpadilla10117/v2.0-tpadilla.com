@@ -15,7 +15,7 @@ const CaseStudies = () => {
         /* + before new Date is shorthand to cast obj as integer -> yuelkds Unix timestamp in microseconds */
 
 
-        const difference = +new Date(`${year}-05-31`) - +new Date();
+        const difference = +new Date(`${newYear}-05-31`) - +new Date();
 
 
         /* 4) Calculate the remaining time: */
