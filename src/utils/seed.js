@@ -264,13 +264,13 @@ export const projects = [
       alt: "A nebula from the NASA APOD API",
       description: "Spacestagram is an app that requests data from the NASA APOD API.  Users can query via the searchbar and “like” and “unlike” their favourite images.",
       techHighlights: [
-        "Integrated Stripe API for successful test / mock transactions via Firebase extensions.  Users may use test-card #: 4242 4242 4242 4242 to mock a transaction",
-        "Managed app state via Redux Global Store to compensate for scalability",
-        "Designed a responsive, frontend UI with CSS",
+        "Designed dynamic UI that requests data from NASA APOD API (https://github.com/nasa/apod-api)",
+        "Implemented 'like' button feature that allows users to keep track of favorite images",
+        "Utilized pagination for large user queries",
       ],
       links: [
-        {text: "Demo", link: "https://netflix-clone-897d7.web.app/"},
-        {text: "GitHub", link: "https://github.com/tpadilla10117/netflix-clone"}
+        {text: "Demo", link: "https://spacestagram-ghc1owmja-tpadilla10117.vercel.app/"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/spacestagram"}
       ]
     }, 
     {
@@ -283,8 +283,8 @@ export const projects = [
       alt: "Screenshot of sunlight gleaming through clouds",
       description: "weather-react is a simple weather-tracking web-application in which users can query/search for the weather conditions in a given location around the world.",
       techHighlights: [
-        "Designed UI to dynamically request data from OpenWeather API { https://openweathermap.org/api } ",
-        "Implemented a searchbar component",
+        "Create a dynamic UI to request data from OpenWeather API {https://openweathermap.org/api} ",
+        "Implemented a resuable searchbar component for user queries",
         "Designed a responsive, frontend UI with CSS",
       ],
       links: [
