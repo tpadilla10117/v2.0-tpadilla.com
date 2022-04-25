@@ -8,7 +8,8 @@ import RoboSearch from "../assets/images/robo_search.png";
 import Turtle from "../assets/images/turtleBeach.jpg";
 import AirBNB from "../assets/images/AirBNB.png";
 import Amazon from "../assets/images/Amazon.png";
-import LinkedIn from "../assets/images/LinkedIn.png";
+/* import LinkedIn from "../assets/images/LinkedIn.png"; */
+import Form from "../assets/images/form.png";
 import Netflix from "../assets/images/Netflix.png";
 import hike from "../assets/images/hike.jpeg";
 import aerial from '../assets/images/aerial.jpg';
@@ -272,9 +273,27 @@ export const projects = [
         {text: "Demo", link: "https://spacestagram-ghc1owmja-tpadilla10117.vercel.app/"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/spacestagram"}
       ]
-    }, 
+    },  
     {
       id: 4,
+      title: "Form Validator",
+      tech: "Vanilla JS, HTML, CSS",
+      cardCoverText: "A frontend web-application featuring form validation & page redirect",
+      svgImg: `${Form}`,
+      img: `${Form}`,
+      alt: "A form with empty values",
+      description: "A frontend web-application based on a desktop mockup in Figma.  Written in Vanilla JS featuring form validation & page redirect",
+      techHighlights: [
+        "Created frontend UI to match mockup specifications",
+        "Implemented conditional logic for page redirect based on user input",
+      ],
+      links: [
+        {text: "Demo", link: "https://eloquent-platypus-684d7f.netlify.app"},
+        {text: "GitHub", link: "https://github.com/tpadilla10117/FormValidator"}
+      ]
+    }, 
+    {
+      id: 5,
       title: "weather-react",
       tech: "Node.js, JS, React.js, HTML, CSS",
       cardCoverText: "An app for querying the current weather around the world",
@@ -293,7 +312,7 @@ export const projects = [
       ]
     }, 
     {
-      id: 5,
+      id: 6,
       title: "Airbnb-Clone / Replica",
       tech: "Next.js, Tailwind CSS, Mapbox GL, Geolib, HTML, Vercel, React.js, JS",
       cardCoverText: "A replica of the current Airbnb build",
@@ -313,7 +332,7 @@ export const projects = [
     }, 
 /* TODO: Need to update with latest build */
     {
-      id: 6,
+      id: 7,
       title: "Crwn Clothing",
       tech: "Sass, CSS, Firebase, HTML, React.js, JS",
       cardCoverText: "An e-commerce for Stylish, Trendy Clothing",
@@ -331,8 +350,8 @@ export const projects = [
         {text: "GitHub", link: "https://github.com/tpadilla10117/crwn-clothing"}
       ]
     },
-    {
-      id: 7,
+    /* {
+      id: 8,
       title: "LinkedIn-Clone",
       tech: "Firebase (Firestore, NoSQL DB), React.js, Redux, JS, Material UI",
       cardCoverText: "A static replica of the LinkedIn Dashboard",
@@ -346,10 +365,10 @@ export const projects = [
         "Designed frontend UI with Material UI and CSS",
       ],
       links: [
-        /* {text: "In Development", link: "https://peaceful-edison-ca2461.netlify.app/"}, */
+        {text: "In Development", link: "https://peaceful-edison-ca2461.netlify.app/"},
         {text: "GitHub", link: "https://github.com/tpadilla10117/linkedin-clone"}
       ]
-    },
+    }, */
 
     {
       id: 8,
@@ -411,7 +430,7 @@ export const projects = [
     /* TODO: Need to update with latest deploy: */
     {
       id: 11,
-      title: "Post Integration",
+      title: "Postboard.com",
       tech: "JS, Node.js, Express.js, PostgreSQL, Jest, CSS, HTML, SASS, jsonwebtoken, Axios",
       cardCoverText: "A custom backend for a Tumblr clone",
       svgImg: ``,
